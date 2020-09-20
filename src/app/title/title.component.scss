@@ -5,7 +5,6 @@
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    justify-content: left;
 }
 
 .text {
@@ -15,11 +14,12 @@
 }
 
 .contact {
+    margin: 5px;
     font-size: small;
     color: gray;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-.contact.hover {
+.contact:hover {
     text-decoration: underline;
 }
