@@ -1,0 +1,42 @@
+<mat-tab-group *ngIf="starInfo" mat-align-tabs="center">
+    <mat-tab label="{{starInfo.name}}">
+
+        <div *ngIf="starInfo.thumbnail.length > 0" class="tab-content">
+            <img src="{{starInfo.thumbnail}}" width=480px>
+        </div>
+
+        <div *ngIf="starInfo.polities && starInfo.polities.length > 0"  class="tab-content">
+            Polities Of {{starInfo.name}}
+        </div>
+
+        
+        <div *ngFor="let polity of starInfo.polities" class="tab-content">
+
+            <div>
+                <a href="{{polity.threadlink}}">{{polity.title}} <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div>
+                <img src="{{polity.thumbnail}}" width=480px>                
+            </div>
+            <div>
+                {{polity.description}}
+            </div>
+        </div>
+
+    </mat-tab>
+    <mat-tab label="History">
+
+        <div *ngFor="let history of orderedHistory"  class="tab-content">
+            <div>
+                {{history.title}} - {{history.date | number:'1.0-0'}}
+            </div>
+            <div>
+                <img src="{{history.thumbnail}}" width=480px>                
+            </div>
+            <div>
+                {{history.description}}
+            </div>
+        </div>
+
+    </mat-tab>
+  </mat-tab-group>

@@ -1,0 +1,25 @@
+.title {
+    font-size: x-large;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.text {
+    margin-top: 14px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.contact {
+    font-size: small;
+    color: gray;
+    text-decoration: none;    
+}
+
+.contact.hover {
+    text-decoration: underline;
+}
