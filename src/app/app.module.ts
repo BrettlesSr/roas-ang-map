@@ -18,8 +18,6 @@ import { TitleComponent } from './title/title.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { NgxPanZoomModule } from 'ngx-panzoom';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,8 +36,7 @@ import { NgxPanZoomModule } from 'ngx-panzoom';
     ReactiveFormsModule,
     MatAutocompleteModule,
     MatIconModule,
-    MatButtonModule,
-    NgxPanZoomModule
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

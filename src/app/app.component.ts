@@ -117,7 +117,7 @@ export class AppComponent implements OnInit {
 
       const vy = element.clientHeight;
       const vx = element.clientWidth;
-      
+
       element.scrollTo({
         top: y - (vy / 2),
         left: x - (vx / 2),
