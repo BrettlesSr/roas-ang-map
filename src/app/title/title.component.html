@@ -1,6 +1,29 @@
 <div class="title">
     <img src="https://i.imgur.com/1SnJoLu.png" width="49" height="64">
-    <div class="text">Political Atlas of the Verge</div>
-    <a class="contact" href="https://discord.com/channels/@me/605098019033186356" target="_blank">Contact</a>
-    <a class="contact" href="https://docs.google.com/spreadsheets/d/1vJk4oHUOQ1-hoEuMEjw6TxDBudmm5jtFhd7YnZPmS4Y/edit?usp=sharing" target="_blank">Spreadsheet</a>
+    <div class="text left">Political Atlas of the Verge</div>
+    <form class="example-form middle search" spellcheck="false">
+        <mat-form-field class="example-full-width" [style.fontSize.px]=17>
+          <mat-label><i class="fas fa-search"></i> Search</mat-label>
+          <input
+          type="text"
+          aria-label="search box"
+          [matAutocomplete]="auto"
+          matInput
+          [formControl]="searchFormControl"
+          (ngModelChange)="updatedVal($event)"
+          >
+          <button mat-button *ngIf="showClear" matSuffix mat-icon-button aria-label="Clear" (click)="clear()">
+            <mat-icon>close</mat-icon>
+          </button>
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option.value" [ngClass]="{'hide-autocomplete': !showAutoComplete}" (click)="optionClicked(option)">
+              {{option.value}}
+            </mat-option>
+        </mat-autocomplete>
+        </mat-form-field>
+    </form>
+    <span class="right">
+      <a class="contact" href="https://discord.com/channels/@me/605098019033186356" target="_blank">Contact</a>
+      <a class="contact" href="https://docs.google.com/spreadsheets/d/1vJk4oHUOQ1-hoEuMEjw6TxDBudmm5jtFhd7YnZPmS4Y/edit?usp=sharing" target="_blank">Spreadsheet</a>
+    </span>    
 </div>

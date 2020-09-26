@@ -4,5 +4,6 @@
 }
 
 .example-container {
-  height: 92%; 
+  height: calc(100% - 85px); 
 }
+

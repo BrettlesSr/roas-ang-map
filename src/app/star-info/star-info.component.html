@@ -1,7 +1,7 @@
 <mat-tab-group *ngIf="starInfo" mat-align-tabs="center">
     <mat-tab label="{{starInfo.name}}">
 
-        <div *ngIf="starInfo.thumbnail.length > 0" class="tab-content">
+        <div *ngIf="starInfo.thumbnail.length > 0" class="tab-content" class="image-container">
             <img src="{{starInfo.thumbnail}}" width=480px>
         </div>
 
@@ -15,8 +15,8 @@
             <div>
                 <a href="{{polity.threadlink}}" target="_blank">{{polity.title}} <i class="fas fa-external-link-alt fa-xs"></i></a>
             </div>
-            <div>
-                <img src="{{polity.thumbnail}}" width=480px>                
+            <div class="image-container">
+                <img src="{{polity.thumbnail}}" width=480px>
             </div>
             <div>
                 {{polity.description}}
@@ -26,13 +26,19 @@
     </mat-tab>
     <mat-tab label="History">
 
-        <div *ngFor="let history of orderedHistory"  class="tab-content">
+        <div *ngIf="starInfo.history && starInfo.history.length > 0"  class="title">
+            History Of {{starInfo.name}}
+        </div>
+
+        
+        <div *ngFor="let history of starInfo.history" class="tab-content">
+
             <div>
-                {{history.title}} - {{history.date | number:'1.0-0'}}
+                <a href="{{history.threadlink}}" target="_blank"> {{getHistoryDescriptor(history.title, history.date)}}<i class="fas fa-external-link-alt fa-xs"></i></a>
             </div>
-            <div>
-                <img src="{{history.thumbnail}}" width=480px>                
-            </div>
+            <div class="image-container">
+                <img src="{{history.thumbnail}}" width=480px>
+            </div>            
             <div>
                 {{history.description}}
             </div>

@@ -7,18 +7,20 @@ import { StarInfo } from '../models/starInfo';
   templateUrl: './star-info.component.html',
   styleUrls: ['./star-info.component.scss']
 })
-export class StarInfoComponent implements OnInit {
+export class StarInfoComponent {
 
   @Input() starInfo: StarInfo;
 
-  orderedHistory: HistoryFactoid[];
-
   constructor() { }
 
-  ngOnInit(): void {
-    if (!this.starInfo){
-      return;
-    }
-    this.orderedHistory = this.starInfo.history.sort((a, b) => a.date - b.date);
+  get orderedHistory(): HistoryFactoid[]{
+    return this.starInfo.history.sort((a, b) => a.date - b.date);
+  }
+
+  getHistoryDescriptor(title: string, date: number): string {
+    const year = Math.floor(date);
+    const yearString = year.toString();
+    const withoutCommas = yearString.replace(',', '');
+    return title + ' - ' + withoutCommas + ' ';
   }
 }
