@@ -8,7 +8,6 @@
         <div *ngIf="starInfo.polities && starInfo.polities.length > 0"  class="title">
             Polities Of {{starInfo.name}}
         </div>
-
         
         <div *ngFor="let polity of starInfo.polities" class="tab-content">
 
@@ -24,13 +23,12 @@
         </div>
 
     </mat-tab>
-    <mat-tab label="History">
+    <mat-tab label="History" *ngIf="starInfo.history && starInfo.history.length > 0">
 
-        <div *ngIf="starInfo.history && starInfo.history.length > 0"  class="title">
+        <div class="title">
             History Of {{starInfo.name}}
         </div>
 
-        
         <div *ngFor="let history of starInfo.history" class="tab-content">
 
             <div>

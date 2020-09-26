@@ -15,6 +15,8 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient, private parser: Papa) {}
   title = 'roas-ang-map';
   showFiller = false;
+  isOpen = false;
+  timeToOpen = 270;
   activeStar: StarInfo;
   allStars: StarInfo[] = [];
   @ViewChild('drawer') drawer;
@@ -95,20 +97,33 @@ export class AppComponent implements OnInit {
     const matchingStars = this.allStars.filter(a => a.name === name);
     if (matchingStars.length > 0) {
       this.drawer.open();
+      this.isOpen = true;
       this.activeStar = matchingStars[0];
     }
   }
 
-  scrollToStar(name: string): void {
-    this.openDrawer(name);
-    const x = (this.activeStar.xStart * 1 + this.activeStar.xEnd * 1) / 2;
-    const y = (this.activeStar.yStart * 1 + this.activeStar.yEnd * 1) / 2; // javascript is terrible
-    const element = document.getElementsByClassName('mat-drawer-content ng-star-inserted')[0];
+  closeDrawer(): void {
+    this.drawer.close();
+    setTimeout(() => {
+      this.isOpen = false;
+    }, this.timeToOpen);
+  }
 
-    element.scrollTo({
-      top: y - (element.clientHeight / 2),
-      left: x - (element.clientWidth / 2),
-      behavior: 'smooth'
-    });
+  scrollToStar(name: string): void {
+    setTimeout(() => {
+      const x = (this.activeStar.xStart * 1 + this.activeStar.xEnd * 1) / 2;
+      const y = (this.activeStar.yStart * 1 + this.activeStar.yEnd * 1) / 2; // javascript is terrible
+      const element = document.getElementsByClassName('mat-drawer-content ng-star-inserted')[0];
+
+      const vy = element.clientHeight;
+      const vx = element.clientWidth;
+      
+      element.scrollTo({
+        top: y - (vy / 2),
+        left: x - (vx / 2),
+        behavior: 'smooth'
+      });
+    }, (this.isOpen ? 0 : this.timeToOpen));
+    this.openDrawer(name);
   }
 }
