@@ -48,6 +48,10 @@ export class AppComponent implements OnInit {
           .subscribe(csv4 => {
             this.importTaskforces(csv4);
           });
+        this.http.get('assets/starLanes.tsv', {responseType: 'text'})
+          .subscribe(csv5 => {
+            this.importStarLanes(csv5);
+          });
       }
     };
 
@@ -118,12 +122,46 @@ export class AppComponent implements OnInit {
     this.parser.parse(csv, options2);
   }
 
+  importStarLanes(csv: string): void {
+    const options2 = {
+      header: true,
+      complete: (results, file2) => {
+        const lanes = results.data;
+        console.log(lanes);
+        for (const lane of lanes) {
+          const relevantStarA = this.allStars.filter(a => a.name === lane.starNameA)[0];
+          if (!relevantStarA) {
+            console.log('Could not find star ' + lane.starNameA);
+          }
+          else if (!relevantStarA.linkedStars) {
+            relevantStarA.linkedStars = [lane.starNameB];
+          }
+          else if (!relevantStarA.linkedStars.find(l => l === lane.starNameB)){
+            relevantStarA.linkedStars.push(lane.starNameB);
+          }
+          const relevantStarB = this.allStars.filter(a => a.name === lane.starNameB)[0];
+          if (!relevantStarB) {
+            console.log('Could not find star ' + lane.starNameB);
+          }
+          else if (!relevantStarB.linkedStars) {
+            relevantStarB.linkedStars = [lane.starNameA];
+          }
+          else if (!relevantStarA.linkedStars.find(l => l === lane.starNameA)){
+            relevantStarA.linkedStars.push(lane.starNameA);
+          }
+        }
+      }
+    };
+    this.parser.parse(csv, options2);
+  }
+
   openDrawer(name: string): void {
     const matchingStars = this.allStars.filter(a => a.name === name);
     if (matchingStars.length > 0) {
       this.drawer.open();
       this.isOpen = true;
       this.activeStar = matchingStars[0];
+      console.log(this.activeStar);
     }
   }
 

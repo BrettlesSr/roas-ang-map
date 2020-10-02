@@ -12,7 +12,8 @@
         <div *ngFor="let polity of starInfo.polities" class="tab-content">
 
             <div>
-                <a href="{{polity.threadlink}}" target="_blank">{{polity.title}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+                <a *ngIf="polity.threadlink" href="{{polity.threadlink}}" target="_blank">{{polity.title}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+                <div *ngIf="!polity.threadlink" class="non-link">{{polity.title}}</div>
             </div>
             <div class="image-container">
                 <img src="{{polity.thumbnail}}" width=480px>
@@ -32,7 +33,8 @@
         <div *ngFor="let history of starInfo.history" class="tab-content">
 
             <div>
-                <a href="{{history.threadlink}}" target="_blank"> {{getHistoryDescriptor(history.title, history.date)}}<i class="fas fa-external-link-alt fa-xs"></i></a>
+                <a *ngIf="history.threadlink" href="{{history.threadlink}}" target="_blank">{{getHistoryDescriptor(history.title, history.date)}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+                <div *ngIf="!history.threadlink" class="non-link">{{getHistoryDescriptor(history.title, history.date)}}</div>
             </div>
             <div class="image-container">
                 <img src="{{history.thumbnail}}" width=480px>
@@ -52,7 +54,8 @@
         <div *ngFor="let taskforce of starInfo.unTaskforces" class="tab-content">
 
             <div>
-                <a href="{{taskforce.threadlink}}" target="_blank">{{taskforce.title}}<i class="fas fa-external-link-alt fa-xs"></i></a>
+                <a *ngIf="taskforce.threadlink" href="{{taskforce.threadlink}}" target="_blank">{{taskforce.title}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+                <div *ngIf="!taskforce.threadlink" class="non-link">{{taskforce.title}}</div>
             </div>
             <div class="image-container">
                 <img src="{{taskforce.thumbnail}}" width=480px>

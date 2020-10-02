@@ -24,6 +24,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.non-link {
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+}
+
 .image-container {
     width:100%;
     max-height:240px;
