@@ -43,4 +43,24 @@
         </div>
 
     </mat-tab>
+    <mat-tab label="UN Taskforces" *ngIf="starInfo.unTaskforces && starInfo.unTaskforces.length > 0">
+
+        <div class="title">
+            UN Taskforces based in {{starInfo.name}}
+        </div>
+
+        <div *ngFor="let taskforce of starInfo.unTaskforces" class="tab-content">
+
+            <div>
+                <a href="{{taskforce.threadlink}}" target="_blank">{{taskforce.title}}<i class="fas fa-external-link-alt fa-xs"></i></a>
+            </div>
+            <div class="image-container">
+                <img src="{{taskforce.thumbnail}}" width=480px>
+            </div>            
+            <div>
+                {{taskforce.description}}
+            </div>
+        </div>
+
+    </mat-tab>
   </mat-tab-group>

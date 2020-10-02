@@ -5,6 +5,7 @@ export interface StarInfo {
     name: string;
     thumbnail: string;
     polities: Factoid[];
+    unTaskforces: Factoid[];
     history: HistoryFactoid[];
     xStart: number;
     yStart: number;

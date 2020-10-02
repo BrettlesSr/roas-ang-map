@@ -44,6 +44,10 @@ export class AppComponent implements OnInit {
           .subscribe(csv3 => {
             this.importHistory(csv3);
           });
+        this.http.get('assets/unTaskforces.tsv', {responseType: 'text'})
+          .subscribe(csv4 => {
+            this.importTaskforces(csv4);
+          });
       }
     };
 
@@ -86,6 +90,27 @@ export class AppComponent implements OnInit {
             relevantStar.history = [history];
           } else{
             relevantStar.history.push(history);
+          }
+        }
+      }
+    };
+    this.parser.parse(csv, options2);
+  }
+
+  importTaskforces(csv: string): void {
+    const options2 = {
+      header: true,
+      complete: (results, file2) => {
+        const taskforces = results.data;
+        for (const taskforce of taskforces) {
+          const relevantStar = this.allStars.filter(a => a.name === taskforce.starName)[0];
+          if (!relevantStar) {
+            console.log('Could not find star ' + taskforce.starName);
+          }
+          else if (!relevantStar.unTaskforces) {
+            relevantStar.unTaskforces = [taskforce];
+          } else{
+            relevantStar.unTaskforces.push(taskforce);
           }
         }
       }
