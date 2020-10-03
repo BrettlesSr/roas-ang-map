@@ -127,7 +127,6 @@ export class AppComponent implements OnInit {
       header: true,
       complete: (results, file2) => {
         const lanes = results.data;
-        console.log(lanes);
         for (const lane of lanes) {
           const relevantStarA = this.allStars.filter(a => a.name === lane.starNameA)[0];
           if (!relevantStarA) {
@@ -146,8 +145,8 @@ export class AppComponent implements OnInit {
           else if (!relevantStarB.linkedStars) {
             relevantStarB.linkedStars = [lane.starNameA];
           }
-          else if (!relevantStarA.linkedStars.find(l => l === lane.starNameA)){
-            relevantStarA.linkedStars.push(lane.starNameA);
+          else if (!relevantStarB.linkedStars.find(l => l === lane.starNameA)){
+            relevantStarB.linkedStars.push(lane.starNameA);
           }
         }
       }
@@ -161,7 +160,6 @@ export class AppComponent implements OnInit {
       this.drawer.open();
       this.isOpen = true;
       this.activeStar = matchingStars[0];
-      console.log(this.activeStar);
     }
   }
 

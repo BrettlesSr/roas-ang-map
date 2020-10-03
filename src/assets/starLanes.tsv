@@ -1,2 +1,218 @@
 starNameA	starNameB
-Sol	Barnard's Star
+Sol	New Earth
+Barnard's Star	Sol
+New Earth	Unity
+New Earth	Barnard's Star
+Wolf 359	Unity
+Barnard's Star	Matumaini
+Matumaini	Europa
+Europa	Kennedy
+Kennedy	Sirius
+Barnard's Star	Formalhaut
+Formalhaut	Van Maanen's Star
+Van Maanen's Star	Denebola
+Unity	HN Pegasi
+HN Pegasi	Pollux
+Pollux	New Sichuan
+New Sichuan	Denebola
+Denebola	New Bangkok
+New Bangkok	Praetoria
+Praetoria	New Sichuan
+Archaea	Pollux
+We Made It	Beyond
+Sirius	Big Sky
+Big Sky	Aldebaran
+Aldebaran	Kennedy
+Aldebaran	Praetoria
+Praetoria	Dis
+Dis	Istrelpia
+Istrelpia	Freehold
+Istrelpia	TORT-7
+TORT-7	Arta
+TORT-7	Oblivia
+Oblivia	TORT-2b
+TORT-2b	TORT-1
+Oblivia	TORT-14
+TORT-14	TORT-19
+TORT-19	TORT-26
+TORT-26	Outer Oblivia
+Outer Oblivia	TORT-19
+TORT-14	Albatross
+Aldebaran	Albatross
+Albatross	CGR-1A1
+CGR-1A1	GRF-1N
+GRF-1N	New Kanaan
+CGR-1A1	WLF-2
+CGR-1A1	Khan
+Khan	WSP-1A
+Artemis	Khan
+Artemis	Roland
+Artemis	KGC-000
+KGC-000	Aldebaran
+KGC-000	WTH-1
+KGC-000	TDR-5S
+WTH-1	LCT-1V
+TDR-5S	Karth
+Karth	Don Juan
+Don Juan	Rhine's Hope
+Rhine's Hope	Nahal
+Nahal	Yukon
+Rhine's Hope	Neue Lichenstein
+Neue Lichenstein	Europa
+Karth	PXH-1
+PXH-1	MSK-6S
+Archaea	BL-9
+Archaea	BL-19
+BL-19	BL-1000
+BL-19	Elysium
+BL-9	Elysium
+Mao	Elysium
+Elysium	BL-900
+Elysium	Azania
+Azania	Dilmun
+Khemet	Byblos
+Yamato	Byblos
+Khemet	Dilmun
+Elysium	Freehold
+Freehold	REM-15
+Old Stockton	REM-15
+Freehold	Tyran
+Tyran	Old Stockton
+Old Stockton	REM-19
+Solidarity	REM-19
+Albatross	PRISM-47
+PRISM-47	PRISM-71
+PRISM-71	Eisenhower
+Solidarity	REM-28
+REM-28	Midgard
+Midgard	REM-37
+Midgard	Tempest
+Tempest	REM-53
+Tempest	Real
+Real	REM-62
+REM-62	Solidarity
+Real	REM-88
+Real	REM-135
+REM-158	REM-135
+REM-135	REM-144
+REM-144	FUN-G1
+REM-135	Mycore
+Atreus	Mycore
+Atreus	REM-211
+REM-219	REM-211
+Atreus	REM-238
+REM-238	REM-300
+REM-300	Point Bau
+Point Bau	REM-287
+Point Bau	Far Osaka
+Point Bau	REM-265
+Atreus	REM-203
+Solidarity	Byron
+Byron	Canaan
+Byron	Neu Istanbul
+Byron	CRM-300
+Solidarity	SLM-650
+SLM-650	New Acre
+New Acre	Leitner's End
+Leitner's End	Leitner's Second End
+Leitner's End	Ecthelion
+Ecthelion	Shenzhen
+Shenzhen	Ho Chi Moon
+Ho Chi Moon	Ultor
+Ultor	Stop
+Ecthelion	Parsis
+Parsis	SLM-800
+SLM-800	New Cairo
+New Cairo	Cyran
+Cyran	SLM-500
+SLM-500	Solidarity
+Parsis	Monad
+Monad	Torgatu
+Torgatu	BiS-130
+BiS-130	BiS-157
+BiS-130	BiS-140
+Torgatu	Paradise
+Paradise	B-PRISM-300
+Larnax	B-PRISM-300
+Larnax	Concilium
+Concilium	Gran Navalon
+Gran Navalon	Durazo's Star
+Durazo's Star	Kesh
+Kesh	Rosalind
+Rosalind	New Albion
+New Albion	Nauroy
+Kesh	New Albion
+Durazo's Star	Nauroy
+Larnax	PRISM-121
+PRISM-121	PRISM-139
+PRISM-139	PRISM-901
+PRISM-139	PRISM-151
+PRISM-151	PRISM-502
+PRISM-151	Nixon
+Nixon	Fairchild
+Fairchild	PRISM-189
+PRISM-189	Trimegistus
+Trimegistus	PRISM-211
+PRISM-211	PRISM-230
+Trimegistus	RDSU-955
+RDSU-955	RDSU-975
+RDSU-975	RDSU-995
+RDSU-995	RDSU-889
+RDSU-889	RDSU-227
+RDSU-227	Arboria
+Arboria	CHIME-0227
+CHIME-0227	CHIME-0244
+Arboria	CHIME-0168
+CHIME-0168	CHIME-0157
+CHIME-0157	Haleuchia
+Haleuchia	Dorado
+Dorado	CHIME-0085
+CHIME-0085	Larnax
+Larnax	CHIME-0069
+CHIME-0069	Nova Vatican
+Nova Vatican	Nowhere
+Nowhere	CHIME-0081
+CHIME-0081	Dorado
+Nowhere	Sutukare
+Sutukare	CHIME-0057
+CHIME-0057	Eisenhower
+Sutukare	New Dakota
+Novopol	Sutukare
+Novopol	Nowhere
+Novopol	CHIME-0081
+Novopol	Bonus
+Bonus	Double Double
+Novopol	Virtue
+Virtue	HCT-3F
+HCT-3F	Stavanger
+Stavanger	Robin
+Robin	MAD-3R
+MAD-3R	BSW-X1
+BSW-X1	COM-2D
+MAD-3R	HSR-200-D
+Robin	CN9-A
+CN9-A	Von Stang's World
+Von Stang's World	KTO-19
+KTO-19	Dulce
+Dulce	MLN-1A
+Von Stang's World	DV-6M
+DV-6M	CRB-27
+CRB-27	Nouveau Manilla
+Nouveau Manilla	TBT-5N
+Nouveau Manilla	CLNT-2-3T
+TBT-5N	New Greater Michigan
+CLNT-2-3T	New California
+Novopol	JM6-S
+JM6-S	Newer York
+JR7-D	Newer York
+Newer York	BNC-3E
+BNC-3E	New Hawaii
+BNC-3E	New California
+Newer York	New California
+JM6-S	BNC-3E
+New California	New Ohio
+New California	GLT-3N
+New California	MSK-6S
+GLT-3N	Newer England
+GLT-3N	MSK-6S
+MSK-6S	New Carolina
