@@ -30,7 +30,7 @@
             History Of {{starInfo.name}}
         </div>
 
-        <div *ngFor="let history of starInfo.history" class="tab-content">
+        <div *ngFor="let history of orderedHistory | async" class="tab-content">
 
             <div>
                 <a *ngIf="history.threadlink" href="{{history.threadlink}}" target="_blank">{{getHistoryDescriptor(history.title, history.date)}} <i class="fas fa-external-link-alt fa-xs"></i></a>

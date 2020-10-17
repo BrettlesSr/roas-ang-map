@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { TitleComponent } from './title/title.component';
 
 import { HttpClientModule } from '@angular/common/http';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     MatAutocompleteModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

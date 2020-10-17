@@ -64,14 +64,14 @@ export class TitleComponent implements OnInit {
         order: 0
       };
       this.options.push(starOption);
-      if (!star.polities) {
+      if (!star.territories) {
         continue;
       }
-      for (const polity of star.polities) {
+      for (const territory of star.territories) {
         const polityOption = {
-        value: star.name + ' - ' + polity.title,
+        value: star.name + ' - ' + territory.name,
         starName: star.name,
-        fullSearchText: star.name + polity.title + polity.description,
+        fullSearchText: star.name + territory.name + territory.description,
         order: 1
         };
         this.options.push(polityOption);

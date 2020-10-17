@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HistoryFactoid } from '../models/historyFactoid';
-import { StarInfo } from '../models/starInfo';
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import { History } from '../models/history';
+import { Star } from '../models/star';
 
 @Component({
   selector: 'app-star-info',
@@ -8,13 +9,12 @@ import { StarInfo } from '../models/starInfo';
   styleUrls: ['./star-info.component.scss']
 })
 export class StarInfoComponent {
+  constructor(private db: AngularFireDatabase) {}
+  @Input() starInfo: Star;
 
-  @Input() starInfo: StarInfo;
 
-  constructor() { }
-
-  get orderedHistory(): HistoryFactoid[]{
-    return this.starInfo.history.sort((a, b) => a.date - b.date);
+  get orderedHistory(): AngularFireList<History>{
+    return this.db.list('/history', h => h.child('location').child('name').equalTo(this.starInfo.name));
   }
 
   getHistoryDescriptor(title: string, date: number): string {

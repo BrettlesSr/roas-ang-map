@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase : {
+    apiKey: 'AIzaSyDFlTCyRgoLlVNcpqilNHbM6dtEvPfpgDw',
+    authDomain: 'roas-ang-map.firebaseapp.com',
+    databaseURL: 'https://roas-ang-map.firebaseio.com',
+    projectId: 'roas-ang-map',
+    storageBucket: 'roas-ang-map.appspot.com',
+    messagingSenderId: '71048419613',
+    appId: '1:71048419613:web:76fe4571772140fe3829f4',
+    measurementId: 'G-MZ6GJ0FMCC'
+  }
 };
 
 /*
