@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import { Observable } from 'rxjs';
 import { History } from '../models/history';
 import { Star } from '../models/star';
 
@@ -8,13 +9,21 @@ import { Star } from '../models/star';
   templateUrl: './star-info.component.html',
   styleUrls: ['./star-info.component.scss']
 })
-export class StarInfoComponent {
+export class StarInfoComponent implements OnInit {
   constructor(private db: AngularFireDatabase) {}
+
   @Input() starInfo: Star;
+  history: History[] = [];
 
+  ngOnInit(): void {
+    this.db.list('/history').valueChanges().subscribe((x: History[]) => {
+      this.history = x; }
+      );
+  }
 
-  get orderedHistory(): AngularFireList<History>{
-    return this.db.list('/history', h => h.child('location').child('name').equalTo(this.starInfo.name));
+  get orderedHistory(): History[]{
+    return this.history.filter(h => h.location.name === this.starInfo.name)
+    .sort((a, b) => a.date - b.date);
   }
 
   getHistoryDescriptor(title: string, date: number): string {
