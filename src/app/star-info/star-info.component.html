@@ -46,5 +46,23 @@
         </div>
 
     </mat-tab>
+
+    <mat-tab label="Trade" *ngIf="nodes.length > 0">
+
+        <div class="title">
+            {{starInfo.name}} Trade Nodes
+        </div>
+    
+        <div *ngFor="let nodeIndex of nodes" class="tab-content">
+    
+            <div>
+                <div class="non-link">Trade Node</div>
+            </div>        
+            <div>
+                This system is acting as a trade node, and can support freighters.
+            </div>
+        </div>
+
+    </mat-tab>
     
   </mat-tab-group>
