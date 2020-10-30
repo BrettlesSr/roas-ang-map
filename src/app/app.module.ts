@@ -14,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { TitleComponent } from './title/title.component';
 
@@ -21,12 +22,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AddHistoryComponent } from './add-history/add-history.component';
+import { AddTerritoryComponent } from './add-territory/add-territory.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StarInfoComponent,
-    TitleComponent
+    TitleComponent,
+    AddHistoryComponent,
+    AddTerritoryComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     MatAutocompleteModule,
     MatIconModule,
     MatButtonModule,
+    MatDialogModule,
     AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
     AngularFireDatabaseModule
   ],

@@ -1,5 +1,6 @@
 import { Territory } from './territory';
 import { Lane } from './lane';
+import { CivilianFleet } from './civilianFleet';
 
 export class Star {
     name: string;
@@ -20,4 +21,6 @@ export class Star {
     lanes: Lane[] = [];
 
     nodesPresent: number;
+
+    civilianFleets: CivilianFleet[];
 }

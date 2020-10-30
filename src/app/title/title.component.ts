@@ -4,6 +4,9 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { AppComponent } from '../app.component';
 import { Option } from '../models/option';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { AddHistoryComponent } from '../add-history/add-history.component';
+import { AddTerritoryComponent } from '../add-territory/add-territory.component';
 
 @Component({
   selector: 'app-title',
@@ -18,7 +21,7 @@ export class TitleComponent implements OnInit {
   filteredOptions: Observable<Option[]>;
   showAutoComplete = false;
   showClear = false;
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.filteredOptions = this.searchFormControl.valueChanges
@@ -77,5 +80,28 @@ export class TitleComponent implements OnInit {
         this.options.push(polityOption);
       }
     }
+  }
+
+  openAddHistory(): void {
+    const dialogRef = this.dialog.open(AddHistoryComponent, {
+      width: '250px',
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
+  }
+
+  openAddTerritory(): void {
+    const dialogRef = this.dialog.open(AddTerritoryComponent, {
+      width: '250px',
+      data: {
+        possibleOwners: this.parent.allPolities,
+        possibleStars: this.parent.allStars
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
 }

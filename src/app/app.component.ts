@@ -4,6 +4,7 @@ import { Papa } from 'ngx-papaparse';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Star } from './models/star';
 import { ImportService } from './services/importService';
+import { Polity } from './models/polity';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
   timeToOpen = 270;
   activeStar: Star;
   allStars: Star[];
+  allPolities: Polity[];
 
   constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {
     this.importService = new ImportService(this.http, this.parser, this.db);
@@ -35,6 +37,9 @@ export class AppComponent implements OnInit {
       this.allStars = stars;
       this.activeStar = this.allStars[0];
       this.titleChild.buildOptions();
+    });
+    this.db.list('/polities').valueChanges().subscribe((polities: Polity[]) => {
+      this.allPolities = polities;
     });
   }
 
