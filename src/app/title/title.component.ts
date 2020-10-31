@@ -7,6 +7,7 @@ import { Option } from '../models/option';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { AddHistoryComponent } from '../add-history/add-history.component';
 import { AddTerritoryComponent } from '../add-territory/add-territory.component';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-title',
@@ -21,7 +22,7 @@ export class TitleComponent implements OnInit {
   filteredOptions: Observable<Option[]>;
   showAutoComplete = false;
   showClear = false;
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private db: AngularFireDatabase) { }
 
   ngOnInit(): void {
     this.filteredOptions = this.searchFormControl.valueChanges
@@ -84,24 +85,28 @@ export class TitleComponent implements OnInit {
 
   openAddHistory(): void {
     const dialogRef = this.dialog.open(AddHistoryComponent, {
-      width: '250px',
-      data: {}
+      width: '600px',
+      data: {
+        possibleOwners: this.parent.allPolities,
+        possibleStars: this.parent.allStars,
+        possibleTerritories: this.parent.allTerritories
+      }
     });
-
     dialogRef.afterClosed().subscribe(result => {
+      
     });
   }
 
   openAddTerritory(): void {
     const dialogRef = this.dialog.open(AddTerritoryComponent, {
-      width: '250px',
+      width: '600px',
       data: {
         possibleOwners: this.parent.allPolities,
         possibleStars: this.parent.allStars
       }
     });
-
     dialogRef.afterClosed().subscribe(result => {
+      
     });
   }
 }

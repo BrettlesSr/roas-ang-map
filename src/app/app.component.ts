@@ -5,6 +5,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { Star } from './models/star';
 import { ImportService } from './services/importService';
 import { Polity } from './models/polity';
+import { Territory } from './models/territory';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ export class AppComponent implements OnInit {
   activeStar: Star;
   allStars: Star[];
   allPolities: Polity[];
+  allTerritories: Territory[];
 
   constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {
     this.importService = new ImportService(this.http, this.parser, this.db);
@@ -40,6 +42,9 @@ export class AppComponent implements OnInit {
     });
     this.db.list('/polities').valueChanges().subscribe((polities: Polity[]) => {
       this.allPolities = polities;
+    });
+    this.db.list('/territories').valueChanges().subscribe((t: Territory[]) => {
+      this.allTerritories = t;
     });
   }
 
