@@ -1,1 +1,79 @@
-<p>add-history works!</p>
+<h1 mat-dialog-title><i class="fas fa-book"></i> Add new historical event</h1>
+<div mat-dialog-content>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput required [(ngModel)]="history.name">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+        <mat-label>Date</mat-label>
+        <input matInput [matDatepicker]="picker" [min]="minDate" [max]="maxDate" (dateChange)="dateChanged($event)">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Event details</mat-label>
+      <input matInput required [(ngModel)]="history.description">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+    <mat-label>Link to thread</mat-label>
+    <input matInput [(ngModel)]="history.threadlink">
+  </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Image link</mat-label>
+      <input matInput [(ngModel)]="history.thumbnail">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Star</mat-label>
+      <mat-select required [(value)]="history.location">
+          <mat-option *ngFor="let star of data.possibleStars" [value]="star">
+          {{star.name}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div> 
+
+  <div>
+    <mat-form-field>
+      <mat-label>Locations</mat-label>
+      <mat-select [disabled]="!(possibleTerritories.length > 0)" multiple [(value)]="history.territoriesInvolved">
+          <mat-option *ngFor="let territory of possibleTerritories" [value]="territory">
+          {{territory.name}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div> 
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Polities involved</mat-label>
+      <mat-select multiple [(value)]="history.politiesInvolved">
+          <mat-option *ngFor="let polity of data.possiblePolities" [value]="polity">
+          {{polity.name}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>    
+
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [disabled]="!isValid" [mat-dialog-close]="history" cdkFocusInitial>Add</button>
+</div>

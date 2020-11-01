@@ -1,3 +1,4 @@
+import { Polity } from './polity';
 import { Star } from './star';
 import { Territory } from './territory';
 
@@ -10,5 +11,5 @@ export class History {
 
     location: Star;
     territoriesInvolved: Territory[] = [];
-    politiesInvolved: Territory[] = [];
+    politiesInvolved: Polity[] = [];
 }

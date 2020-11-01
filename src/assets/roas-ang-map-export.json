@@ -2412,6 +2412,1294 @@
       } ],
       "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-71091373",
       "thumbnail" : ""
+    },
+    "-ML4D9R78eU5Dr-rylPD" : {
+      "date" : 2750.9182795698925,
+      "description" : "Sixty plus alien ships enter the system and destroy the jump beacon. They demand total surrender from Dulce.",
+      "location" : {
+        "key" : "-MKBl8dxNJDxiZ-CC9ro",
+        "lanes" : [ {
+          "starA" : "Dulce",
+          "starB" : "MLN-1A"
+        } ],
+        "name" : "MLN-1A",
+        "nodesPresent" : "0",
+        "thumbnail" : "",
+        "x" : "209",
+        "xEnd" : "224",
+        "xStart" : "133",
+        "y" : "1721",
+        "yEnd" : "1743",
+        "yStart" : "1689"
+      },
+      "name" : "Enemy Unknown",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71146312",
+      "thumbnail" : ""
+    },
+    "-ML4DpAiFz1YuHpN4gE7" : {
+      "date" : 2750.9182795698925,
+      "description" : "The Golden Lions surrender a copy of the Finder AI to UN forces",
+      "location" : {
+        "key" : "-MKBl8dequsnRITqgeNu",
+        "lanes" : [ {
+          "starA" : "Nowhere",
+          "starB" : "Sutukare"
+        }, {
+          "starA" : "Sutukare",
+          "starB" : "CHIME-0057"
+        }, {
+          "starA" : "Sutukare",
+          "starB" : "New Dakota"
+        }, {
+          "starA" : "Novopol",
+          "starB" : "Sutukare"
+        } ],
+        "name" : "Sutukare",
+        "nodesPresent" : "1",
+        "territories" : [ {
+          "description" : "Post-apocalyptic survivors par-excellence, the Crawler Clans provide the backbone of surviving 'civilized' technic society on Sutukare. Each crawler is a city and factory on wheels, continuously strip-mining the shattered planet to produce usable metals for their own uses, or as barter for essentials. The ingots are launched into orbit, where pirates typically handle transactions with outsiders. If threatened, Crawler railguns can be overcharged, transforming this veritable bullion into ship-wrecking ordnance to dissuade extortion.",
+          "name" : "The Crawler Clans",
+          "owner" : "The Crawler Clans",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "Rumored to be descendants of labor clones produced illegally on the planet, the Wildejadg are cruel bandits who terrorize the planetary back-country with heavily-armed technicals. Wildejadg society is noticeably insular and based on a handful of underground facilities in Kedah, with all those encountered reportedly consisting of 'exiles' from their real settlements. Their society is matriarchal and organized into mother-septs, based on matrilineal descent.",
+          "name" : "The Wildejadg",
+          "owner" : "The Wildejadg",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "The remains of the local UN garrison, now an embittered para-military force grounded on a dying world, keeping dangerous technology out of the hands of feuding natives. They operate out of a fortress in the Funeral Plains. Nearly all of the historically understrength Taskforce Occult's ships were destroyed, but the Buckriders have spent at least a few decades reconditioning an old Category-C General Mattis with limited tools in a bid to reestablish orbital dominance.",
+          "name" : "The Buckriders (formerly, Taskforce Occult)",
+          "owner" : "The Buckriders (formerly, Taskforce Occult)",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "New Akaroa's power brokers are village elders and warlords based in the valleys, controlling meltwater from the glaciers as well as significant water filtration facilities that have been built up in the last century. Their fleet of heavily-armed and armored tankers would comprise the equal of a Verge state's hover-panzer corps.",
+          "name" : "The Water-Men",
+          "owner" : "The Water-Men",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "Located in Purpurea, the System-3 crustal city was given the fantastic nomen of 'the Sunken' by the surface-dwelling people of the planet due to the fantastic depth at which the settlement typically resides. The last-built of the planet's defense bunkers and the only one to survive the tectonic disruption, it houses industrial facilities that could be the basis of renewed life on the surface. An unfortunate incident early in post-cataclysm history has left them unfortunately mistrustful of outsiders and unwilling to engage surfacers except via proxies.",
+          "name" : "The Sunken City",
+          "owner" : "The Sunken City",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "The Old King is the last powerful independent captain, too late in his career and without good prospects to attempt to crown himself a monarch as Barbarossa I did in Midgard. That possibility falls to his daughter, Elisabet Arnau, who seems far more ambitious but somewhat less able to rein the vassals in through fear and punishment.",
+          "name" : "The Old King",
+          "owner" : "The Old King",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "602",
+        "xEnd" : "681",
+        "xStart" : "587",
+        "y" : "1002",
+        "yEnd" : "1021",
+        "yStart" : "980"
+      },
+      "name" : "Finder AI Handover",
+      "territoriesInvolved" : [ {
+        "description" : "Located in Purpurea, the System-3 crustal city was given the fantastic nomen of 'the Sunken' by the surface-dwelling people of the planet due to the fantastic depth at which the settlement typically resides. The last-built of the planet's defense bunkers and the only one to survive the tectonic disruption, it houses industrial facilities that could be the basis of renewed life on the surface. An unfortunate incident early in post-cataclysm history has left them unfortunately mistrustful of outsiders and unwilling to engage surfacers except via proxies.",
+        "name" : "The Sunken City",
+        "owner" : "The Sunken City",
+        "star" : "Sutukare",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71160178",
+      "thumbnail" : ""
+    },
+    "-ML4E4dsjFs-nqNd8fW2" : {
+      "date" : 2750.9182795698925,
+      "description" : "Action by unknown forces results in an exact duplicate of the Maratha survey craft. It is unclear which of the two - the crewed or uncrewed - is the original",
+      "location" : {
+        "key" : "-MKBl8c3VHYVHCpziGfk",
+        "lanes" : [ {
+          "starA" : "Praetoria",
+          "starB" : "Dis"
+        }, {
+          "starA" : "Dis",
+          "starB" : "Istrelpia"
+        } ],
+        "name" : "Dis",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Dis was a prosperous mid-stage colony settled by a multinational cabal of libertarian organizations across the political spectrum. Previously quite icy, orbital mirrors built by the United Nations and risky terraforming practices quickly brought it up to a hothouse climate comparable to Tempest. The original government was a confederation of assorted city-states, with each settlement self-governing and having a seat to discuss global issues. This relative disunity during the Disconnect era made them easy pickings for an aspiring hegemon in the form of their neighbor Praetoria.",
+          "name" : "Autonomous State of Dis",
+          "owner" : "Autonomous State of Dis",
+          "star" : "Dis",
+          "threadlink" : "https://docs.google.com/document/d/1SyNy_jrMg5ZVo1YVteAaaU6ZKizuFPwrMkslWbio_5M/edit#",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "794",
+        "xEnd" : "808",
+        "xStart" : "743",
+        "y" : "343",
+        "yEnd" : "387",
+        "yStart" : "323"
+      },
+      "name" : "Maratha Duplicated",
+      "politiesInvolved" : [ {
+        "description" : "Praetoria was one of the first non-earth like worlds colonized during the expansion into the Verge. Created from seed money of several eccentric tech billionaires on a quest to create their own perfect ideal society ended up taking a darker tone as the colonial leaders had far more transhuman ideology than they told the colonists. While rumors had swirled about some of the more unethical nature of their human experimentation the colony backers were wealthy enough to keep the UN Fleet away inspecting it. During the Disconnect, with the need of secrecy no longer needed, Praetoria announced the creation of the Ascendancy and had during the follow time period conquered and invaded the nearby systems of Dis and New Bangkok, the later of which prompted the UN to slap them with sanctions and embargo. Today Praetoria is slowly being terraformed into an Earth-like world with self-contained arcology cities built both above and below the surface like techno mushrooms dotting the world, with an increasingly overriding genetic caste system.",
+        "gdp" : "",
+        "key" : "-MKBl8f1ubVNT_kUDshA",
+        "name" : "The Praetorian Ascendancy",
+        "starName" : "Praetoria",
+        "territories" : [ {
+          "description" : "Praetoria was one of the first non-earth like worlds colonized during the expansion into the Verge. Created from seed money of several eccentric tech billionaires on a quest to create their own perfect ideal society ended up taking a darker tone as the colonial leaders had far more transhuman ideology than they told the colonists. While rumors had swirled about some of the more unethical nature of their human experimentation the colony backers were wealthy enough to keep the UN Fleet away inspecting it. During the Disconnect, with the need of secrecy no longer needed, Praetoria announced the creation of the Ascendancy and had during the follow time period conquered and invaded the nearby systems of Dis and New Bangkok, the later of which prompted the UN to slap them with sanctions and embargo. Today Praetoria is slowly being terraformed into an Earth-like world with self-contained arcology cities built both above and below the surface like techno mushrooms dotting the world, with an increasingly overriding genetic caste system.",
+          "name" : "The Praetorian Ascendancy",
+          "owner" : "The Praetorian Ascendancy",
+          "star" : "Praetoria",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71191194",
+      "thumbnail" : ""
+    },
+    "-ML4EIeirMSgQFB8Y0FU" : {
+      "date" : 2750.9182795698925,
+      "description" : "I SUFFER THAT YOU EXIST",
+      "location" : {
+        "key" : "-MKBl8cOB2MJ-T6g_uEn",
+        "lanes" : [ {
+          "starA" : "CGR-1A1",
+          "starB" : "Khan"
+        }, {
+          "starA" : "Khan",
+          "starB" : "WSP-1A"
+        }, {
+          "starA" : "Artemis",
+          "starB" : "Khan"
+        } ],
+        "name" : "Khan",
+        "nodesPresent" : "0",
+        "thumbnail" : "",
+        "x" : "503",
+        "xEnd" : "519",
+        "xStart" : "458",
+        "y" : "643",
+        "yEnd" : "657",
+        "yStart" : "597"
+      },
+      "name" : "The King In Yellow",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71239905",
+      "thumbnail" : ""
+    },
+    "-ML4EckkBQw5zDyYQ2aD" : {
+      "date" : 2750.9182795698925,
+      "description" : "Revolutionaries theorized to have come from the original Sons of the Verge organization found a hotbed of insurrection in the Kingdom of Arvashir, oldest and most steadfastly conservative of all states on Archaea",
+      "location" : {
+        "key" : "-MKBl8c4hhCB3tW3bIPg",
+        "lanes" : [ {
+          "starA" : "Archaea",
+          "starB" : "Pollux"
+        }, {
+          "starA" : "Archaea",
+          "starB" : "BL-9"
+        }, {
+          "starA" : "Archaea",
+          "starB" : "BL-19"
+        } ],
+        "name" : "Archaea",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Large mercantile realms that emphasize financial power, family relations and patronage. Probably the most 'normal' of the bunch but also deeply vicious, greedy and backstabbing in the best of times. Free Principalities territory is nearly all coastal and has some of the best standards of living on the planet.",
+          "name" : "The Free Principalities",
+          "owner" : "The Free Principalities",
+          "star" : "Archaea",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-70318145",
+          "thumbnail" : ""
+        }, {
+          "description" : "After a generation of planetary hegemony, the death of the reigning emperor saw the Leopardine Emperor divided between its scions and satraps. The court has become a chamber in which several kingdoms convene. A little Holy Roman, although the local faiths are mostly Hinduism, Ermine Curia and neo-Nahuatl folk religion and the various kingdoms regularly fight over religious authority. Most people are obligate polytheists but have a \"well we won the war so my god's your god's boss\" attitude.",
+          "name" : "The Leopardine Empire",
+          "owner" : "The Leopardine Empire",
+          "star" : "Archaea",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-70318145",
+          "thumbnail" : ""
+        }, {
+          "description" : "Flying palaces of lostech construction house these aristocratic transhumans, who mostly stand above the minor nonsense conflicts of the surface and enjoy the sort of abundance expected of Archea's 'nobility'. Many have wings thanks to genetic engineering by their ancestors, which permit flight in Archea's weak gravity.",
+          "name" : "The High Countries",
+          "owner" : "The High Countries",
+          "star" : "Archaea",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-70318145",
+          "thumbnail" : ""
+        }, {
+          "description" : "Prosperity gospel preacherdoms that began as prosperous personal fiefs, but over the course of the planetary dark ages picked up progressively more retro-catholic elements. The current Pope wears a pinstripe robe and ermine cape, and lives in the orbital elevator, the source of the Curia's power.",
+          "name" : "The Ermine Curia",
+          "owner" : "The Ermine Curia",
+          "star" : "Archaea",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-70318145",
+          "thumbnail" : ""
+        }, {
+          "description" : "A coalition of high-tech pirates based in the hulls of the planet's many long-lost colony ships. Religious fanatics who believe they were imprisoned on the planet for a terrible sin and that the ocean is a 'false sea', to the 'true sea' of outer space.",
+          "name" : "The Interseadia",
+          "owner" : "The Interseadia",
+          "star" : "Archaea",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-70318145",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "759",
+        "xEnd" : "787",
+        "xStart" : "738",
+        "y" : "205",
+        "yEnd" : "228",
+        "yStart" : "175"
+      },
+      "name" : "Prometheus Rising",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71250582",
+      "thumbnail" : ""
+    },
+    "-ML4EpHiwdzCSxNn_X6f" : {
+      "date" : 2750.917634408602,
+      "description" : "UN plances Golden Lions on trial for reckless endangerment. Most charges do not stick.",
+      "location" : {
+        "key" : "-MKBl8dequsnRITqgeNu",
+        "lanes" : [ {
+          "starA" : "Nowhere",
+          "starB" : "Sutukare"
+        }, {
+          "starA" : "Sutukare",
+          "starB" : "CHIME-0057"
+        }, {
+          "starA" : "Sutukare",
+          "starB" : "New Dakota"
+        }, {
+          "starA" : "Novopol",
+          "starB" : "Sutukare"
+        } ],
+        "name" : "Sutukare",
+        "nodesPresent" : "1",
+        "territories" : [ {
+          "description" : "Post-apocalyptic survivors par-excellence, the Crawler Clans provide the backbone of surviving 'civilized' technic society on Sutukare. Each crawler is a city and factory on wheels, continuously strip-mining the shattered planet to produce usable metals for their own uses, or as barter for essentials. The ingots are launched into orbit, where pirates typically handle transactions with outsiders. If threatened, Crawler railguns can be overcharged, transforming this veritable bullion into ship-wrecking ordnance to dissuade extortion.",
+          "name" : "The Crawler Clans",
+          "owner" : "The Crawler Clans",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "Rumored to be descendants of labor clones produced illegally on the planet, the Wildejadg are cruel bandits who terrorize the planetary back-country with heavily-armed technicals. Wildejadg society is noticeably insular and based on a handful of underground facilities in Kedah, with all those encountered reportedly consisting of 'exiles' from their real settlements. Their society is matriarchal and organized into mother-septs, based on matrilineal descent.",
+          "name" : "The Wildejadg",
+          "owner" : "The Wildejadg",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "The remains of the local UN garrison, now an embittered para-military force grounded on a dying world, keeping dangerous technology out of the hands of feuding natives. They operate out of a fortress in the Funeral Plains. Nearly all of the historically understrength Taskforce Occult's ships were destroyed, but the Buckriders have spent at least a few decades reconditioning an old Category-C General Mattis with limited tools in a bid to reestablish orbital dominance.",
+          "name" : "The Buckriders (formerly, Taskforce Occult)",
+          "owner" : "The Buckriders (formerly, Taskforce Occult)",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "New Akaroa's power brokers are village elders and warlords based in the valleys, controlling meltwater from the glaciers as well as significant water filtration facilities that have been built up in the last century. Their fleet of heavily-armed and armored tankers would comprise the equal of a Verge state's hover-panzer corps.",
+          "name" : "The Water-Men",
+          "owner" : "The Water-Men",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "Located in Purpurea, the System-3 crustal city was given the fantastic nomen of 'the Sunken' by the surface-dwelling people of the planet due to the fantastic depth at which the settlement typically resides. The last-built of the planet's defense bunkers and the only one to survive the tectonic disruption, it houses industrial facilities that could be the basis of renewed life on the surface. An unfortunate incident early in post-cataclysm history has left them unfortunately mistrustful of outsiders and unwilling to engage surfacers except via proxies.",
+          "name" : "The Sunken City",
+          "owner" : "The Sunken City",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "The Old King is the last powerful independent captain, too late in his career and without good prospects to attempt to crown himself a monarch as Barbarossa I did in Midgard. That possibility falls to his daughter, Elisabet Arnau, who seems far more ambitious but somewhat less able to rein the vassals in through fear and punishment.",
+          "name" : "The Old King",
+          "owner" : "The Old King",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "602",
+        "xEnd" : "681",
+        "xStart" : "587",
+        "y" : "1002",
+        "yEnd" : "1021",
+        "yStart" : "980"
+      },
+      "name" : "Golden Lions on trial",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71260527",
+      "thumbnail" : ""
+    },
+    "-ML4FEAd-oR8c3PbeztU" : {
+      "date" : 2750.9182795698925,
+      "description" : "BRITSOC seizes Foscari Prison Complex after murder of envoys! The prison's ringleaders are being flown back to Solidarity for trial.",
+      "location" : {
+        "key" : "-MKBl8cwCUUUs0giCgxK",
+        "lanes" : [ {
+          "starA" : "Solidarity",
+          "starB" : "Byron"
+        }, {
+          "starA" : "Byron",
+          "starB" : "Canaan"
+        }, {
+          "starA" : "Byron",
+          "starB" : "Neu Istanbul"
+        }, {
+          "starA" : "Byron",
+          "starB" : "CRM-300"
+        } ],
+        "name" : "Byron",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "The strongest 'native' power is a modern techno-progressive city state, inhabited largely by women due to bias among the first colonists and later custom in the creches. The locals learn how to speak binary using vocoding implants.",
+          "name" : "Lovelace",
+          "owner" : "Lovelace",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        }, {
+          "description" : "A moderate Neu Istanbul client state that sits on a valuable series of locks and canals that connect many layers and basins of the underground waterways.",
+          "name" : "Bosphorus Republic",
+          "owner" : "Bosphorus Republic",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        }, {
+          "description" : "A New Istanbul client state, a small city-state that recently endured a palace coup and is now dealing with an oversized population of exiled anti-secularist activists and mercenaries from N.I.. The Autarch of Stanza is an elected, but lifelong dictator who can be voted to death at any time by a majority of his peers.",
+          "name" : "Stanza",
+          "owner" : "Stanza",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        }, {
+          "description" : " A Canaanite client state ruled by a sect of monks who believe that technology must be preserved as a religious rite to endure in a faithless cosmos.",
+          "name" : "Canticle",
+          "owner" : "Canticle",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        }, {
+          "description" : "  A reclusive, fortified Canaanite client state.",
+          "name" : "Sennacherib",
+          "owner" : "Sennacherib",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        }, {
+          "description" : "A former ISA mega-prison complex, currently under warlord rule.",
+          "name" : "Foscari",
+          "owner" : "Foscari",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        }, {
+          "description" : "A city-state formed by Grecophile poets and philosophers. Initially neo-agrarian, currently revising to a robotic chattel society to sustain luxury and remove the need for proper armed forces.",
+          "name" : "New Athens",
+          "owner" : "New Athens",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        }, {
+          "description" : "Anti-foreign guerillas attempting to reduce the expansion of both the BR and Canticle.",
+          "name" : "Antielginists",
+          "owner" : "Antielginists",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        }, {
+          "description" : "A faction based entirely in the Deep, researching fauna there.",
+          "name" : "3306",
+          "owner" : "3306",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "1476",
+        "xEnd" : "1545",
+        "xStart" : "1463",
+        "y" : "466",
+        "yEnd" : "500",
+        "yStart" : "460"
+      },
+      "name" : "BRITSOC Police Action",
+      "politiesInvolved" : [ {
+        "description" : "The British Socialist Republic is a totalitarian state, ostensibly organized according to the ideology of \"Cosmo-Socialism\". Political authority ultimately rests with The Party, the BSR's only permitted political party.",
+        "gdp" : "",
+        "key" : "-MKBl8f0FmQaj75sGEjk",
+        "name" : "British Socialist Republics",
+        "starName" : "Solidarity",
+        "territories" : [ {
+          "description" : "The British Socialist Republic is a totalitarian state, ostensibly organized according to the ideology of \"Cosmo-Socialism\". Political authority ultimately rests with The Party, the BSR's only permitted political party.",
+          "name" : "British Socialist Republics",
+          "owner" : "British Socialist Republics",
+          "star" : "Solidarity",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67926277",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67926277",
+        "thumbnail" : "",
+        "type" : 0
+      }, {
+        "description" : "A former ISA mega-prison complex, currently under warlord rule.",
+        "gdp" : "",
+        "key" : "-MKBl8fzBAN-DQtNWSha",
+        "name" : "Foscari",
+        "starName" : "Byron",
+        "territories" : [ {
+          "description" : "A former ISA mega-prison complex, currently under warlord rule.",
+          "name" : "Foscari",
+          "owner" : "Foscari",
+          "star" : "Byron",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "territoriesInvolved" : [ {
+        "description" : "A former ISA mega-prison complex, currently under warlord rule.",
+        "name" : "Foscari",
+        "owner" : "Foscari",
+        "star" : "Byron",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-68827501",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71280492",
+      "thumbnail" : ""
+    },
+    "-ML4FVo1TqqcwxRFfvly" : {
+      "date" : 2750.9182795698925,
+      "description" : "An SoV attack is turned into an ambush in Alderbaran.",
+      "location" : {
+        "key" : "-MKBl8bxmcbyWnQIcjaF",
+        "lanes" : [ {
+          "starA" : "Big Sky",
+          "starB" : "Aldebaran"
+        }, {
+          "starA" : "Aldebaran",
+          "starB" : "Kennedy"
+        }, {
+          "starA" : "Aldebaran",
+          "starB" : "Praetoria"
+        }, {
+          "starA" : "Aldebaran",
+          "starB" : "Albatross"
+        }, {
+          "starA" : "KGC-000",
+          "starB" : "Aldebaran"
+        } ],
+        "name" : "Aldebaran",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Born as a long term investment by the formerly rich oil kingdoms of Earth in a arranged intermarriage back conglomerate, the founders of the Sultanate had managed to have agents within the UN Survey Corp to falsify Aldebaran data making it appear to only have 2 jump points rather then its staggering 7 which mean it was easily snatched up by the backers when it went to the UN System Auction that was in place during the early days of the FTL expansion wave. Ironically news about the Survey Corps’s perfidy had caused the reforms that allowed van der Graff to obtain centralized power. During the Disconnect the system was able to weather the storm relying off a bought off UN Task Force which became their system military after the defeat of the mutiny. Aldebaran is unique in that it has no centralized planet that is settlement but in fact is civilization of rockhopppers and miners and pleasure stations arranged in a giant ring around the star. It is “known” that the Sultanate is the primer place for black market goods, PMCs, or fenced goods as its in system police looks the other way at piracy in system. In common parlance, when goes to Aldebaran they either go to the Gold Ring which is where the pleasure stations are or, the Shadow Ring where pirate stations and hidden bases are.",
+          "name" : "Sultanate of Aldebaran",
+          "owner" : "Sultanate of Aldebaran",
+          "star" : "Aldebaran",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "501",
+        "xEnd" : "568",
+        "xStart" : "490",
+        "y" : "428",
+        "yEnd" : "444",
+        "yStart" : "408"
+      },
+      "name" : "Operation Dynamo",
+      "politiesInvolved" : [ {
+        "description" : "Born as a long term investment by the formerly rich oil kingdoms of Earth in a arranged intermarriage back conglomerate, the founders of the Sultanate had managed to have agents within the UN Survey Corp to falsify Aldebaran data making it appear to only have 2 jump points rather then its staggering 7 which mean it was easily snatched up by the backers when it went to the UN System Auction that was in place during the early days of the FTL expansion wave. Ironically news about the Survey Corps’s perfidy had caused the reforms that allowed van der Graff to obtain centralized power. During the Disconnect the system was able to weather the storm relying off a bought off UN Task Force which became their system military after the defeat of the mutiny. Aldebaran is unique in that it has no centralized planet that is settlement but in fact is civilization of rockhopppers and miners and pleasure stations arranged in a giant ring around the star. It is “known” that the Sultanate is the primer place for black market goods, PMCs, or fenced goods as its in system police looks the other way at piracy in system. In common parlance, when goes to Aldebaran they either go to the Gold Ring which is where the pleasure stations are or, the Shadow Ring where pirate stations and hidden bases are.",
+        "gdp" : "",
+        "key" : "-MKBl8f3BBUJNn2-6Sp9",
+        "name" : "Sultanate of Aldebaran",
+        "starName" : "Aldebaran",
+        "territories" : [ {
+          "description" : "Born as a long term investment by the formerly rich oil kingdoms of Earth in a arranged intermarriage back conglomerate, the founders of the Sultanate had managed to have agents within the UN Survey Corp to falsify Aldebaran data making it appear to only have 2 jump points rather then its staggering 7 which mean it was easily snatched up by the backers when it went to the UN System Auction that was in place during the early days of the FTL expansion wave. Ironically news about the Survey Corps’s perfidy had caused the reforms that allowed van der Graff to obtain centralized power. During the Disconnect the system was able to weather the storm relying off a bought off UN Task Force which became their system military after the defeat of the mutiny. Aldebaran is unique in that it has no centralized planet that is settlement but in fact is civilization of rockhopppers and miners and pleasure stations arranged in a giant ring around the star. It is “known” that the Sultanate is the primer place for black market goods, PMCs, or fenced goods as its in system police looks the other way at piracy in system. In common parlance, when goes to Aldebaran they either go to the Gold Ring which is where the pleasure stations are or, the Shadow Ring where pirate stations and hidden bases are.",
+          "name" : "Sultanate of Aldebaran",
+          "owner" : "Sultanate of Aldebaran",
+          "star" : "Aldebaran",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "territoriesInvolved" : [ {
+        "description" : "Born as a long term investment by the formerly rich oil kingdoms of Earth in a arranged intermarriage back conglomerate, the founders of the Sultanate had managed to have agents within the UN Survey Corp to falsify Aldebaran data making it appear to only have 2 jump points rather then its staggering 7 which mean it was easily snatched up by the backers when it went to the UN System Auction that was in place during the early days of the FTL expansion wave. Ironically news about the Survey Corps’s perfidy had caused the reforms that allowed van der Graff to obtain centralized power. During the Disconnect the system was able to weather the storm relying off a bought off UN Task Force which became their system military after the defeat of the mutiny. Aldebaran is unique in that it has no centralized planet that is settlement but in fact is civilization of rockhopppers and miners and pleasure stations arranged in a giant ring around the star. It is “known” that the Sultanate is the primer place for black market goods, PMCs, or fenced goods as its in system police looks the other way at piracy in system. In common parlance, when goes to Aldebaran they either go to the Gold Ring which is where the pleasure stations are or, the Shadow Ring where pirate stations and hidden bases are.",
+        "name" : "Sultanate of Aldebaran",
+        "owner" : "Sultanate of Aldebaran",
+        "star" : "Aldebaran",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71282232",
+      "thumbnail" : ""
+    },
+    "-ML4FmuvrZi6mmGgqaI7" : {
+      "date" : 2750.9182795698925,
+      "description" : "The SoV undertake an intensive attack on repairing forces in Eisenhower's orbit",
+      "location" : {
+        "key" : "-MKBl8dfzDX3jWCcPOKf",
+        "lanes" : [ {
+          "starA" : "PRISM-71",
+          "starB" : "Eisenhower"
+        }, {
+          "starA" : "CHIME-0057",
+          "starB" : "Eisenhower"
+        } ],
+        "name" : "Eisenhower",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "UN Garrison for Eisenhower",
+          "name" : "Garrison Fleet Bradley",
+          "owner" : "Garrison Fleet Bradley",
+          "star" : "Eisenhower",
+          "threadlink" : "",
+          "thumbnail" : ""
+        }, {
+          "description" : "Known as the furthest place where the Stars and Strips fly and one of the few places where it is graced by the breeze of a free sky, the United American Commonwealth is a diverse democratic union of 'American' states known for an enterprising spirit and commitment to scientific exploration and research.",
+          "name" : "United American Commonwealth",
+          "owner" : "United American Commonwealth",
+          "star" : "Eisenhower",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67989205",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "729",
+        "xEnd" : "741",
+        "xStart" : "631",
+        "y" : "915",
+        "yEnd" : "928",
+        "yStart" : "866"
+      },
+      "name" : "Operation Torch",
+      "politiesInvolved" : [ {
+        "description" : "UN Garrison for Eisenhower",
+        "key" : "-MKBl8ejm7ZVqLjTQEvK",
+        "name" : "Garrison Fleet Bradley",
+        "starName" : "Eisenhower",
+        "territories" : [ {
+          "description" : "UN Garrison for Eisenhower",
+          "name" : "Garrison Fleet Bradley",
+          "owner" : "Garrison Fleet Bradley",
+          "star" : "Eisenhower",
+          "threadlink" : "",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "",
+        "thumbnail" : "",
+        "type" : 1
+      }, {
+        "description" : "Known as the furthest place where the Stars and Strips fly and one of the few places where it is graced by the breeze of a free sky, the United American Commonwealth is a diverse democratic union of 'American' states known for an enterprising spirit and commitment to scientific exploration and research.",
+        "gdp" : "",
+        "key" : "-MKBl8f8scS-QtLp-aQC",
+        "name" : "United American Commonwealth",
+        "starName" : "Eisenhower",
+        "territories" : [ {
+          "description" : "Known as the furthest place where the Stars and Strips fly and one of the few places where it is graced by the breeze of a free sky, the United American Commonwealth is a diverse democratic union of 'American' states known for an enterprising spirit and commitment to scientific exploration and research.",
+          "name" : "United American Commonwealth",
+          "owner" : "United American Commonwealth",
+          "star" : "Eisenhower",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67989205",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67989205",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "territoriesInvolved" : [ {
+        "description" : "UN Garrison for Eisenhower",
+        "name" : "Garrison Fleet Bradley",
+        "owner" : "Garrison Fleet Bradley",
+        "star" : "Eisenhower",
+        "threadlink" : "",
+        "thumbnail" : ""
+      }, {
+        "description" : "Known as the furthest place where the Stars and Strips fly and one of the few places where it is graced by the breeze of a free sky, the United American Commonwealth is a diverse democratic union of 'American' states known for an enterprising spirit and commitment to scientific exploration and research.",
+        "name" : "United American Commonwealth",
+        "owner" : "United American Commonwealth",
+        "star" : "Eisenhower",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67989205",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71282232",
+      "thumbnail" : ""
+    },
+    "-ML4FzTbWhscoXRiwCsB" : {
+      "date" : 2750.9182795698925,
+      "description" : "The SoV fail to seize the Glory-class Battleship UNC Victory",
+      "location" : {
+        "key" : "-MKBl8dhGqj3VeDfCVKq",
+        "lanes" : [ {
+          "starA" : "Novopol",
+          "starB" : "Sutukare"
+        }, {
+          "starA" : "Novopol",
+          "starB" : "Nowhere"
+        }, {
+          "starA" : "Novopol",
+          "starB" : "CHIME-0081"
+        }, {
+          "starA" : "Novopol",
+          "starB" : "Bonus"
+        }, {
+          "starA" : "Novopol",
+          "starB" : "Virtue"
+        }, {
+          "starA" : "Novopol",
+          "starB" : "JM6-S"
+        } ],
+        "name" : "Novopol",
+        "nodesPresent" : "1",
+        "territories" : [ {
+          "description" : "The Union is a mostly democratic entity, with its own planetary parliament known as Prezydium that consists of representatives from each Administrative District. They are known as Elektors, for this very Prezydium also elects for a period of five years a Konsul to preside over the body and perform administrative decisions as the Head of Government. That person does not enjoy total control over the executive, however. Since Novopol had been a closely overseen colony for a very long time it still maintains many meritocratic traditions and far stronger institutions that used to be the only source of law and order, and accordingly members of his or her cabinet are chosen from a pre-made list of people considered to be well experienced and competent in the relevant field. According to Novopolan beliefs, elected officials are there to give direction to the Union, one as closely resembling the wishes of its people as possible. It is competent, experienced experts and career administrators that can and shall move it in said direction, however.",
+          "name" : "Greater Visegrad Union",
+          "owner" : "Greater Visegrad Union",
+          "star" : "Novopol",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67882023",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "515",
+        "xEnd" : "526",
+        "xStart" : "417",
+        "y" : "1071",
+        "yEnd" : "1087",
+        "yStart" : "1030"
+      },
+      "name" : "Operation Mincemeat",
+      "politiesInvolved" : [ {
+        "description" : "The Union is a mostly democratic entity, with its own planetary parliament known as Prezydium that consists of representatives from each Administrative District. They are known as Elektors, for this very Prezydium also elects for a period of five years a Konsul to preside over the body and perform administrative decisions as the Head of Government. That person does not enjoy total control over the executive, however. Since Novopol had been a closely overseen colony for a very long time it still maintains many meritocratic traditions and far stronger institutions that used to be the only source of law and order, and accordingly members of his or her cabinet are chosen from a pre-made list of people considered to be well experienced and competent in the relevant field. According to Novopolan beliefs, elected officials are there to give direction to the Union, one as closely resembling the wishes of its people as possible. It is competent, experienced experts and career administrators that can and shall move it in said direction, however.",
+        "gdp" : "",
+        "key" : "-MKBl8euC4QaCj0w3bFv",
+        "name" : "Greater Visegrad Union",
+        "starName" : "Novopol",
+        "territories" : [ {
+          "description" : "The Union is a mostly democratic entity, with its own planetary parliament known as Prezydium that consists of representatives from each Administrative District. They are known as Elektors, for this very Prezydium also elects for a period of five years a Konsul to preside over the body and perform administrative decisions as the Head of Government. That person does not enjoy total control over the executive, however. Since Novopol had been a closely overseen colony for a very long time it still maintains many meritocratic traditions and far stronger institutions that used to be the only source of law and order, and accordingly members of his or her cabinet are chosen from a pre-made list of people considered to be well experienced and competent in the relevant field. According to Novopolan beliefs, elected officials are there to give direction to the Union, one as closely resembling the wishes of its people as possible. It is competent, experienced experts and career administrators that can and shall move it in said direction, however.",
+          "name" : "Greater Visegrad Union",
+          "owner" : "Greater Visegrad Union",
+          "star" : "Novopol",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67882023",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67882023",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "territoriesInvolved" : [ {
+        "description" : "The Union is a mostly democratic entity, with its own planetary parliament known as Prezydium that consists of representatives from each Administrative District. They are known as Elektors, for this very Prezydium also elects for a period of five years a Konsul to preside over the body and perform administrative decisions as the Head of Government. That person does not enjoy total control over the executive, however. Since Novopol had been a closely overseen colony for a very long time it still maintains many meritocratic traditions and far stronger institutions that used to be the only source of law and order, and accordingly members of his or her cabinet are chosen from a pre-made list of people considered to be well experienced and competent in the relevant field. According to Novopolan beliefs, elected officials are there to give direction to the Union, one as closely resembling the wishes of its people as possible. It is competent, experienced experts and career administrators that can and shall move it in said direction, however.",
+        "name" : "Greater Visegrad Union",
+        "owner" : "Greater Visegrad Union",
+        "star" : "Novopol",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67882023",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71282232",
+      "thumbnail" : ""
+    },
+    "-ML4G6rKJzqfEKjC5tRr" : {
+      "date" : 2750.917634408602,
+      "description" : "The duplicate Maratha is revealed to be a titanic alien lifeform mimicing the original ship. The Golden Lions achieve first non-hostile contact with alien life",
+      "location" : {
+        "key" : "-MKBl8c3VHYVHCpziGfk",
+        "lanes" : [ {
+          "starA" : "Praetoria",
+          "starB" : "Dis"
+        }, {
+          "starA" : "Dis",
+          "starB" : "Istrelpia"
+        } ],
+        "name" : "Dis",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Dis was a prosperous mid-stage colony settled by a multinational cabal of libertarian organizations across the political spectrum. Previously quite icy, orbital mirrors built by the United Nations and risky terraforming practices quickly brought it up to a hothouse climate comparable to Tempest. The original government was a confederation of assorted city-states, with each settlement self-governing and having a seat to discuss global issues. This relative disunity during the Disconnect era made them easy pickings for an aspiring hegemon in the form of their neighbor Praetoria.",
+          "name" : "Autonomous State of Dis",
+          "owner" : "Autonomous State of Dis",
+          "star" : "Dis",
+          "threadlink" : "https://docs.google.com/document/d/1SyNy_jrMg5ZVo1YVteAaaU6ZKizuFPwrMkslWbio_5M/edit#",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "794",
+        "xEnd" : "808",
+        "xStart" : "743",
+        "y" : "343",
+        "yEnd" : "387",
+        "yStart" : "323"
+      },
+      "name" : "Leviathan of Dis",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71283882",
+      "thumbnail" : ""
+    },
+    "-ML4HgC1x8wWyWEsIo3H" : {
+      "date" : 2750.917634408602,
+      "description" : "Hostile Aliens Arrive in Dulce",
+      "location" : {
+        "key" : "-MKBl8dwprhnGixxR0h6",
+        "lanes" : [ {
+          "starA" : "KTO-19",
+          "starB" : "Dulce"
+        }, {
+          "starA" : "Dulce",
+          "starB" : "MLN-1A"
+        } ],
+        "name" : "Dulce",
+        "nodesPresent" : "0",
+        "thumbnail" : "",
+        "x" : "294",
+        "xEnd" : "348",
+        "xStart" : "257",
+        "y" : "1611",
+        "yEnd" : "1619",
+        "yStart" : "1565"
+      },
+      "name" : "Hostile Aliens Arrive in Dulce",
+      "threadlink" : "https://docs.google.com/document/d/1lwGMPJG60Y_8vXiYLcYVFS4iXPx_WnJZo57O5TRTor8/edit#heading=h.yrqff6htby6d",
+      "thumbnail" : ""
+    },
+    "-ML4HqhRe5YSzrmylB-4" : {
+      "date" : 2751.0003225806454,
+      "description" : "Hostile Aliens Arrive in Von Stang's World",
+      "location" : {
+        "key" : "-MKBl8dvaa34gxKF63qn",
+        "lanes" : [ {
+          "starA" : "CN9-A",
+          "starB" : "Von Stang's World"
+        }, {
+          "starA" : "Von Stang's World",
+          "starB" : "KTO-19"
+        }, {
+          "starA" : "Von Stang's World",
+          "starB" : "DV-6M"
+        } ],
+        "name" : "Von Stang's World",
+        "nodesPresent" : "0",
+        "thumbnail" : "",
+        "x" : "114",
+        "xEnd" : "231",
+        "xStart" : "104",
+        "y" : "1445",
+        "yEnd" : "1459",
+        "yStart" : "1402"
+      },
+      "name" : "Hostile Aliens Arrive in Von Stang's World",
+      "threadlink" : "https://docs.google.com/document/d/1lwGMPJG60Y_8vXiYLcYVFS4iXPx_WnJZo57O5TRTor8/edit#heading=h.yrqff6htby6d",
+      "thumbnail" : ""
+    },
+    "-ML4I14MKxJgD2X7pdK-" : {
+      "date" : 2751.0006451612903,
+      "description" : "Hostile Aliens Arrive in Stavanger",
+      "location" : {
+        "key" : "-MKBl8e-pB9QUspQAoxW",
+        "lanes" : [ {
+          "starA" : "HCT-3F",
+          "starB" : "Stavanger"
+        }, {
+          "starA" : "Stavanger",
+          "starB" : "Robin"
+        } ],
+        "name" : "Stavanger",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Stavenger is a dry cool world that is on the verge of having its ecology collapsed before the arrival of humans who pushed it back to stability. Smaller than the average planet, it was settled by a joint US-Midwestern and Taiwainess corporate cartel which shuttered during the Disconnect to take advantage of Stavenger’s heavy metals deposits that could be mined in shirt sleeve environments. The collapse of the economy sent the planet into a full Disrupted status, but thankfully the colonists were able to ride out the storm and where among the first to venture back out into the stars, and is a popular flag of convenience for traders. There is some tension the original government was an emergency councilor of the first leaders of the colonies and since then has taken on the shape if not form of old style aristocratic republic which has left those with new money jealous and some of those without any increasing agitation.",
+          "name" : "State of Stavanger",
+          "owner" : "State of Stavanger",
+          "star" : "Stavanger",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "328",
+        "xEnd" : "341",
+        "xStart" : "250",
+        "y" : "1274",
+        "yEnd" : "1286",
+        "yStart" : "1252"
+      },
+      "name" : "Hostile Aliens Arrive in Stavanger",
+      "politiesInvolved" : [ {
+        "description" : "Stavenger is a dry cool world that is on the verge of having its ecology collapsed before the arrival of humans who pushed it back to stability. Smaller than the average planet, it was settled by a joint US-Midwestern and Taiwainess corporate cartel which shuttered during the Disconnect to take advantage of Stavenger’s heavy metals deposits that could be mined in shirt sleeve environments. The collapse of the economy sent the planet into a full Disrupted status, but thankfully the colonists were able to ride out the storm and where among the first to venture back out into the stars, and is a popular flag of convenience for traders. There is some tension the original government was an emergency councilor of the first leaders of the colonies and since then has taken on the shape if not form of old style aristocratic republic which has left those with new money jealous and some of those without any increasing agitation.",
+        "gdp" : "",
+        "key" : "-MKBl8f2yEP_PHlO3cjV",
+        "name" : "State of Stavanger",
+        "starName" : "Stavanger",
+        "territories" : [ {
+          "description" : "Stavenger is a dry cool world that is on the verge of having its ecology collapsed before the arrival of humans who pushed it back to stability. Smaller than the average planet, it was settled by a joint US-Midwestern and Taiwainess corporate cartel which shuttered during the Disconnect to take advantage of Stavenger’s heavy metals deposits that could be mined in shirt sleeve environments. The collapse of the economy sent the planet into a full Disrupted status, but thankfully the colonists were able to ride out the storm and where among the first to venture back out into the stars, and is a popular flag of convenience for traders. There is some tension the original government was an emergency councilor of the first leaders of the colonies and since then has taken on the shape if not form of old style aristocratic republic which has left those with new money jealous and some of those without any increasing agitation.",
+          "name" : "State of Stavanger",
+          "owner" : "State of Stavanger",
+          "star" : "Stavanger",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "territoriesInvolved" : [ {
+        "description" : "Stavenger is a dry cool world that is on the verge of having its ecology collapsed before the arrival of humans who pushed it back to stability. Smaller than the average planet, it was settled by a joint US-Midwestern and Taiwainess corporate cartel which shuttered during the Disconnect to take advantage of Stavenger’s heavy metals deposits that could be mined in shirt sleeve environments. The collapse of the economy sent the planet into a full Disrupted status, but thankfully the colonists were able to ride out the storm and where among the first to venture back out into the stars, and is a popular flag of convenience for traders. There is some tension the original government was an emergency councilor of the first leaders of the colonies and since then has taken on the shape if not form of old style aristocratic republic which has left those with new money jealous and some of those without any increasing agitation.",
+        "name" : "State of Stavanger",
+        "owner" : "State of Stavanger",
+        "star" : "Stavanger",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://docs.google.com/document/d/1lwGMPJG60Y_8vXiYLcYVFS4iXPx_WnJZo57O5TRTor8/edit#heading=h.yrqff6htby6d",
+      "thumbnail" : ""
+    },
+    "-ML4IDhAVWRIu4cwFooP" : {
+      "date" : 2750.0006451612903,
+      "description" : "Hostile Aliens Arrive in Nouveau Manilla",
+      "location" : {
+        "key" : "-MKBl8drCJWqMR3y4SkD",
+        "lanes" : [ {
+          "starA" : "CRB-27",
+          "starB" : "Nouveau Manilla"
+        }, {
+          "starA" : "Nouveau Manilla",
+          "starB" : "TBT-5N"
+        }, {
+          "starA" : "Nouveau Manilla",
+          "starB" : "CLNT-2-3T"
+        } ],
+        "name" : "Nouveau Manilla",
+        "nodesPresent" : "0",
+        "thumbnail" : "",
+        "x" : "167",
+        "xEnd" : "275",
+        "xStart" : "150",
+        "y" : "1198",
+        "yEnd" : "1246",
+        "yStart" : "1186"
+      },
+      "name" : "Hostile Aliens Arrive in Nouveau Manilla",
+      "threadlink" : "https://docs.google.com/document/d/1lwGMPJG60Y_8vXiYLcYVFS4iXPx_WnJZo57O5TRTor8/edit#heading=h.yrqff6htby6d",
+      "thumbnail" : ""
+    },
+    "-ML4ISUmwPLeYY2J-4iJ" : {
+      "date" : 2751.0003225806454,
+      "description" : "Task Force Serpent and the Golden Lions encounter the King In Yellow at the Dark Jupiter in the Khan system",
+      "location" : {
+        "key" : "-MKBl8cOB2MJ-T6g_uEn",
+        "lanes" : [ {
+          "starA" : "CGR-1A1",
+          "starB" : "Khan"
+        }, {
+          "starA" : "Khan",
+          "starB" : "WSP-1A"
+        }, {
+          "starA" : "Artemis",
+          "starB" : "Khan"
+        } ],
+        "name" : "Khan",
+        "nodesPresent" : "0",
+        "thumbnail" : "",
+        "x" : "503",
+        "xEnd" : "519",
+        "xStart" : "458",
+        "y" : "643",
+        "yEnd" : "657",
+        "yStart" : "597"
+      },
+      "name" : "Dark Jupiter",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71362483",
+      "thumbnail" : ""
+    },
+    "-ML4Ieo8gowfAXoNa4qk" : {
+      "date" : 2751.0003225806454,
+      "description" : "Azania signs a peace treaty with Yamato, ceding their leadership of and membership in the Erythraean League",
+      "location" : {
+        "key" : "-MKBl8c9sEU7wuOj1y3e",
+        "lanes" : [ {
+          "starA" : "Elysium",
+          "starB" : "Azania"
+        }, {
+          "starA" : "Azania",
+          "starB" : "Dilmun"
+        } ],
+        "name" : "Azania",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+          "name" : "People's Democratic Federation of Azania",
+          "owner" : "People's Democratic Federation of Azania",
+          "star" : "Azania",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "978",
+        "xEnd" : "1008",
+        "xStart" : "946",
+        "y" : "161",
+        "yEnd" : "177",
+        "yStart" : "108"
+      },
+      "name" : "Peace With Honor",
+      "politiesInvolved" : [ {
+        "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+        "gdp" : "",
+        "key" : "-MKBl8enhyRHwoMwofJV",
+        "name" : "People's Democratic Federation of Azania",
+        "starName" : "Azania",
+        "territories" : [ {
+          "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+          "name" : "People's Democratic Federation of Azania",
+          "owner" : "People's Democratic Federation of Azania",
+          "star" : "Azania",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+        "thumbnail" : "",
+        "type" : 0
+      }, {
+        "description" : "Yamato has become a militarized police state, its population indoctrinated into the tenets of stellar-Bushido and belief that any minute the former colonies will make a move on them and close off their routes to the stars out of revenge, unless of course they strike first.",
+        "gdp" : "",
+        "key" : "-MKBl8f2yEP_PHlO3cjW",
+        "name" : "The Akagi Shogunate of Yamato",
+        "starName" : "Yamato",
+        "territories" : [ {
+          "description" : "Yamato has become a militarized police state, its population indoctrinated into the tenets of stellar-Bushido and belief that any minute the former colonies will make a move on them and close off their routes to the stars out of revenge, unless of course they strike first.",
+          "name" : "The Akagi Shogunate of Yamato",
+          "owner" : "The Akagi Shogunate of Yamato",
+          "star" : "Yamato",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67936942",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "territoriesInvolved" : [ {
+        "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+        "name" : "People's Democratic Federation of Azania",
+        "owner" : "People's Democratic Federation of Azania",
+        "star" : "Azania",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71468260",
+      "thumbnail" : ""
+    },
+    "-ML4It1qUJhRFCBJuFs1" : {
+      "date" : 2751.0003225806454,
+      "description" : "Eisenhower, the Golden Lions and several other parties invest in trade in Sutukare",
+      "location" : {
+        "key" : "-MKBl8dequsnRITqgeNu",
+        "lanes" : [ {
+          "starA" : "Nowhere",
+          "starB" : "Sutukare"
+        }, {
+          "starA" : "Sutukare",
+          "starB" : "CHIME-0057"
+        }, {
+          "starA" : "Sutukare",
+          "starB" : "New Dakota"
+        }, {
+          "starA" : "Novopol",
+          "starB" : "Sutukare"
+        } ],
+        "name" : "Sutukare",
+        "nodesPresent" : "1",
+        "territories" : [ {
+          "description" : "Post-apocalyptic survivors par-excellence, the Crawler Clans provide the backbone of surviving 'civilized' technic society on Sutukare. Each crawler is a city and factory on wheels, continuously strip-mining the shattered planet to produce usable metals for their own uses, or as barter for essentials. The ingots are launched into orbit, where pirates typically handle transactions with outsiders. If threatened, Crawler railguns can be overcharged, transforming this veritable bullion into ship-wrecking ordnance to dissuade extortion.",
+          "name" : "The Crawler Clans",
+          "owner" : "The Crawler Clans",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "Rumored to be descendants of labor clones produced illegally on the planet, the Wildejadg are cruel bandits who terrorize the planetary back-country with heavily-armed technicals. Wildejadg society is noticeably insular and based on a handful of underground facilities in Kedah, with all those encountered reportedly consisting of 'exiles' from their real settlements. Their society is matriarchal and organized into mother-septs, based on matrilineal descent.",
+          "name" : "The Wildejadg",
+          "owner" : "The Wildejadg",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "The remains of the local UN garrison, now an embittered para-military force grounded on a dying world, keeping dangerous technology out of the hands of feuding natives. They operate out of a fortress in the Funeral Plains. Nearly all of the historically understrength Taskforce Occult's ships were destroyed, but the Buckriders have spent at least a few decades reconditioning an old Category-C General Mattis with limited tools in a bid to reestablish orbital dominance.",
+          "name" : "The Buckriders (formerly, Taskforce Occult)",
+          "owner" : "The Buckriders (formerly, Taskforce Occult)",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "New Akaroa's power brokers are village elders and warlords based in the valleys, controlling meltwater from the glaciers as well as significant water filtration facilities that have been built up in the last century. Their fleet of heavily-armed and armored tankers would comprise the equal of a Verge state's hover-panzer corps.",
+          "name" : "The Water-Men",
+          "owner" : "The Water-Men",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "Located in Purpurea, the System-3 crustal city was given the fantastic nomen of 'the Sunken' by the surface-dwelling people of the planet due to the fantastic depth at which the settlement typically resides. The last-built of the planet's defense bunkers and the only one to survive the tectonic disruption, it houses industrial facilities that could be the basis of renewed life on the surface. An unfortunate incident early in post-cataclysm history has left them unfortunately mistrustful of outsiders and unwilling to engage surfacers except via proxies.",
+          "name" : "The Sunken City",
+          "owner" : "The Sunken City",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        }, {
+          "description" : "The Old King is the last powerful independent captain, too late in his career and without good prospects to attempt to crown himself a monarch as Barbarossa I did in Midgard. That possibility falls to his daughter, Elisabet Arnau, who seems far more ambitious but somewhat less able to rein the vassals in through fear and punishment.",
+          "name" : "The Old King",
+          "owner" : "The Old King",
+          "star" : "Sutukare",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68590336",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "602",
+        "xEnd" : "681",
+        "xStart" : "587",
+        "y" : "1002",
+        "yEnd" : "1021",
+        "yStart" : "980"
+      },
+      "name" : "Eisenhower makes investment",
+      "politiesInvolved" : [ {
+        "description" : "Known as the furthest place where the Stars and Strips fly and one of the few places where it is graced by the breeze of a free sky, the United American Commonwealth is a diverse democratic union of 'American' states known for an enterprising spirit and commitment to scientific exploration and research.",
+        "gdp" : "",
+        "key" : "-MKBl8f8scS-QtLp-aQC",
+        "name" : "United American Commonwealth",
+        "starName" : "Eisenhower",
+        "territories" : [ {
+          "description" : "Known as the furthest place where the Stars and Strips fly and one of the few places where it is graced by the breeze of a free sky, the United American Commonwealth is a diverse democratic union of 'American' states known for an enterprising spirit and commitment to scientific exploration and research.",
+          "name" : "United American Commonwealth",
+          "owner" : "United American Commonwealth",
+          "star" : "Eisenhower",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67989205",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67989205",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71501992",
+      "thumbnail" : ""
+    },
+    "-ML4J1m1r39EutWMtDOV" : {
+      "date" : 2751.0003225806454,
+      "description" : "The PMC Fortune Hunters eliminate a Purifier drone in PRISM-121.",
+      "location" : {
+        "key" : "-MKBl8dOwbG282JAmwAR",
+        "lanes" : [ {
+          "starA" : "Larnax",
+          "starB" : "PRISM-121"
+        }, {
+          "starA" : "PRISM-121",
+          "starB" : "PRISM-139"
+        } ],
+        "name" : "PRISM-121",
+        "nodesPresent" : "0",
+        "thumbnail" : "",
+        "x" : "951",
+        "xEnd" : "985",
+        "xStart" : "915",
+        "y" : "1087",
+        "yEnd" : "1117",
+        "yStart" : "1075"
+      },
+      "name" : "Purifier Contact",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71502679",
+      "thumbnail" : ""
+    },
+    "-ML4JAYkpf-DYTIgJXBz" : {
+      "date" : 2751.0009677419357,
+      "description" : "The controversial peace treaty signed earlier trigger increasing political unrest across Azania.",
+      "location" : {
+        "key" : "-MKBl8c9sEU7wuOj1y3e",
+        "lanes" : [ {
+          "starA" : "Elysium",
+          "starB" : "Azania"
+        }, {
+          "starA" : "Azania",
+          "starB" : "Dilmun"
+        } ],
+        "name" : "Azania",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+          "name" : "People's Democratic Federation of Azania",
+          "owner" : "People's Democratic Federation of Azania",
+          "star" : "Azania",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "978",
+        "xEnd" : "1008",
+        "xStart" : "946",
+        "y" : "161",
+        "yEnd" : "177",
+        "yStart" : "108"
+      },
+      "name" : "Planetwide Unrest",
+      "politiesInvolved" : [ {
+        "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+        "gdp" : "",
+        "key" : "-MKBl8enhyRHwoMwofJV",
+        "name" : "People's Democratic Federation of Azania",
+        "starName" : "Azania",
+        "territories" : [ {
+          "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+          "name" : "People's Democratic Federation of Azania",
+          "owner" : "People's Democratic Federation of Azania",
+          "star" : "Azania",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "territoriesInvolved" : [ {
+        "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+        "name" : "People's Democratic Federation of Azania",
+        "owner" : "People's Democratic Federation of Azania",
+        "star" : "Azania",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71523397",
+      "thumbnail" : ""
+    },
+    "-ML4JLK511Sqj4KtNTwI" : {
+      "date" : 2751.0009677419357,
+      "description" : "Alien forces defeat the defenders at Virtue. The elite Espatier Corp takes significant casualties: effectively removing them from the fight for now.",
+      "location" : {
+        "key" : "-MKBl8e1RfVQOM0rv1bb",
+        "lanes" : [ {
+          "starA" : "Novopol",
+          "starB" : "Virtue"
+        }, {
+          "starA" : "Virtue",
+          "starB" : "HCT-3F"
+        } ],
+        "name" : "Virtue",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Originally calling their colony 'El Dorado', the local wildcat miners were forced to change the name after being sued by the actual Dorado government when they finally incorporated. What the planet lacked in mineral diversity or a useable biosphere, it made up in sheer abnormal amounts of gold- still a useful component in low-corrosion electronics, particularly in various high-precision alloys. High yearly production and a reliable export market ensured a very low gold price for many long years before Disconnect, eventually drawing the attention of traditional craftsmen from across old Earth. Religious authorities from India and Southeast Asia, as well as the Roman Catholic Church, took it upon themselves to settle local merchants and artisans who could take advantage of cheap prices to produce high-purity gold handiworks for the interstellar faithful.",
+          "name" : "Virtue",
+          "owner" : "Virtue",
+          "star" : "Virtue",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68667274",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "506",
+        "xEnd" : "573",
+        "xStart" : "488",
+        "y" : "1189",
+        "yEnd" : "1212",
+        "yStart" : "1173"
+      },
+      "name" : "Battle of Virtue",
+      "territoriesInvolved" : [ {
+        "description" : "Originally calling their colony 'El Dorado', the local wildcat miners were forced to change the name after being sued by the actual Dorado government when they finally incorporated. What the planet lacked in mineral diversity or a useable biosphere, it made up in sheer abnormal amounts of gold- still a useful component in low-corrosion electronics, particularly in various high-precision alloys. High yearly production and a reliable export market ensured a very low gold price for many long years before Disconnect, eventually drawing the attention of traditional craftsmen from across old Earth. Religious authorities from India and Southeast Asia, as well as the Roman Catholic Church, took it upon themselves to settle local merchants and artisans who could take advantage of cheap prices to produce high-purity gold handiworks for the interstellar faithful.",
+        "name" : "Virtue",
+        "owner" : "Virtue",
+        "star" : "Virtue",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2749-ic-thread-ending-year-moving-into-year-2.861199/post-68667274",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71558155",
+      "thumbnail" : ""
+    },
+    "-ML4JUPcyDO4HtJc8URa" : {
+      "date" : 2751.084623655914,
+      "description" : "A lightning coup on Azania sees the dominant Cientificos ousted. Azania will now join the East African Federation.",
+      "location" : {
+        "key" : "-MKBl8c9sEU7wuOj1y3e",
+        "lanes" : [ {
+          "starA" : "Elysium",
+          "starB" : "Azania"
+        }, {
+          "starA" : "Azania",
+          "starB" : "Dilmun"
+        } ],
+        "name" : "Azania",
+        "nodesPresent" : "0",
+        "territories" : [ {
+          "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+          "name" : "People's Democratic Federation of Azania",
+          "owner" : "People's Democratic Federation of Azania",
+          "star" : "Azania",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+          "thumbnail" : ""
+        } ],
+        "thumbnail" : "",
+        "x" : "978",
+        "xEnd" : "1008",
+        "xStart" : "946",
+        "y" : "161",
+        "yEnd" : "177",
+        "yStart" : "108"
+      },
+      "name" : "Coup on Azania",
+      "politiesInvolved" : [ {
+        "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+        "gdp" : "",
+        "key" : "-MKBl8enhyRHwoMwofJV",
+        "name" : "People's Democratic Federation of Azania",
+        "starName" : "Azania",
+        "territories" : [ {
+          "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+          "name" : "People's Democratic Federation of Azania",
+          "owner" : "People's Democratic Federation of Azania",
+          "star" : "Azania",
+          "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+          "thumbnail" : ""
+        } ],
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+        "thumbnail" : "",
+        "type" : 0
+      } ],
+      "territoriesInvolved" : [ {
+        "description" : "Azania is a major player in the Verge. Its fleet of 'patrol' ships and cruisers patrol the spacelanes to protect its expansive merchant marine and those of other nations. Despite its industrial and economic power, Azania is a state that lives and dies based on trade and access to markets. It needs to import food even with operational agricultural habitats, and needs to export finished goods and rare materials to pay for that food. The state itself, the People's Democratic Federation of Azania, is a Democratic Confederalist state of communes, wards, and stations that work together for the betterment of one another. Azania's foreign policy extends this idea of cooperation and tolerance to the stars: Azanians are perfectly happy to make friends with everyone and help the helpless, and are generally distasteful of conquerors or imperialists; they're also perfectly willing to lumber into a fight swinging, and then put both sides under their stewardship for everyone's well being.",
+        "name" : "People's Democratic Federation of Azania",
+        "owner" : "People's Democratic Federation of Azania",
+        "star" : "Azania",
+        "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-67869162",
+        "thumbnail" : ""
+      } ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71585029",
+      "thumbnail" : ""
+    },
+    "-ML4K4cGqI6jaNXNne6N" : {
+      "date" : 2750.9182795698925,
+      "description" : "Two alien Punisher vessels attack and destroy the Golden Lions survey frigate Ganges.",
+      "location" : {
+        "key" : "-MKBl8dNevMBjVpAY3Ze",
+        "lanes" : [ {
+          "starA" : "Larnax",
+          "starB" : "Concilium"
+        }, {
+          "starA" : "Concilium",
+          "starB" : "Gran Navalon"
+        } ],
+        "name" : "Concilium",
+        "nodesPresent" : "0",
+        "thumbnail" : "",
+        "x" : "898",
+        "xEnd" : "916",
+        "xStart" : "807",
+        "y" : "903",
+        "yEnd" : "924",
+        "yStart" : "879"
+      },
+      "name" : "Punisher Incursion",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-71152150",
+      "thumbnail" : ""
     }
   },
   "lanes" : {

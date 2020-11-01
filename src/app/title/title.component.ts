@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { AppComponent } from '../app.component';
 import { Option } from '../models/option';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog } from '@angular/material/dialog';
 import { AddHistoryComponent } from '../add-history/add-history.component';
 import { AddTerritoryComponent } from '../add-territory/add-territory.component';
 import { AngularFireDatabase } from 'angularfire2/database';
@@ -87,12 +87,14 @@ export class TitleComponent implements OnInit {
     const dialogRef = this.dialog.open(AddHistoryComponent, {
       width: '600px',
       data: {
-        possibleOwners: this.parent.allPolities,
-        possibleStars: this.parent.allStars,
-        possibleTerritories: this.parent.allTerritories
+        possiblePolities: this.parent.allPolities.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0),
+        possibleStars: this.parent.allStars.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0)
       }
     });
     dialogRef.afterClosed().subscribe(result => {
+      if (result === undefined) {
+        return;
+      }
       this.db.list('/history').push(result);
     });
   }
