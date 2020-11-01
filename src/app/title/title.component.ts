@@ -93,7 +93,7 @@ export class TitleComponent implements OnInit {
       }
     });
     dialogRef.afterClosed().subscribe(result => {
-      
+      this.db.list('/history').push(result);
     });
   }
 
@@ -101,12 +101,22 @@ export class TitleComponent implements OnInit {
     const dialogRef = this.dialog.open(AddTerritoryComponent, {
       width: '600px',
       data: {
-        possibleOwners: this.parent.allPolities,
-        possibleStars: this.parent.allStars
+        possibleOwners: this.parent.allPolities.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0),
+        possibleStars: this.parent.allStars.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0)
       }
     });
+
     dialogRef.afterClosed().subscribe(result => {
-      
+      if (result === undefined) {
+        return;
+      }
+      const star = this.parent.allStars.filter(s => s.name === result.star)[0];
+      const existingCount = star.territories === undefined ? 0 : star.territories.length;
+      const key = this.db.database.ref().child('territories').push().key;
+      const updates = {};
+      updates['/territories/' + key] = result;
+      updates['/stars/' + star.key + '/territories/' + existingCount] = result;
+      this.db.database.ref().update(updates);
     });
   }
 }

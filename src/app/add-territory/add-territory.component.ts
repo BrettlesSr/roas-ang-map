@@ -15,7 +15,7 @@ export interface AddTerritoryData {
   styleUrls: ['./add-territory.component.scss']
 })
 export class AddTerritoryComponent implements OnInit {
-  territory: Territory = {
+  territory = {
     name: '',
     description: '',
     thumbnail: '',
@@ -32,5 +32,11 @@ export class AddTerritoryComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  get isValid(): boolean {
+    return this.territory.name.length > 0 &&
+    this.territory.owner.length > 0 &&
+    this.territory.star.length > 0;
   }
 }

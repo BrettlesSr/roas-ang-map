@@ -6,6 +6,7 @@ import { Star } from './models/star';
 import { ImportService } from './services/importService';
 import { Polity } from './models/polity';
 import { Territory } from './models/territory';
+import { map } from 'rxjs/internal/operators/map';
 
 @Component({
   selector: 'app-root',
@@ -35,17 +36,7 @@ export class AppComponent implements OnInit {
     // this only needs to be run once ever
     // this.importFromFiles();
 
-    this.db.list('/stars').valueChanges().subscribe((stars: Star[]) => {
-      this.allStars = stars;
-      this.activeStar = this.allStars[0];
-      this.titleChild.buildOptions();
-    });
-    this.db.list('/polities').valueChanges().subscribe((polities: Polity[]) => {
-      this.allPolities = polities;
-    });
-    this.db.list('/territories').valueChanges().subscribe((t: Territory[]) => {
-      this.allTerritories = t;
-    });
+    this.readInFromDatabase();
   }
 
   openDrawer(name: string): void {
@@ -87,5 +78,49 @@ export class AppComponent implements OnInit {
         .subscribe(csv => {
           this.importService.importLocations(csv);
         });
+  }
+
+  readInFromDatabase(): void {
+    this.db.list('/stars').valueChanges()
+    .subscribe(
+      (stars: Star[]) => {
+        this.allStars = stars;
+        this.activeStar = this.allStars[0];
+        this.titleChild.buildOptions();
+        this.db.list('/stars').snapshotChanges()
+        .pipe(
+          map(actions => actions.map(a => a.key))
+        )
+        .subscribe(k => {
+          for (let i = 0; i < k.length; i++) {
+            this.allStars[i].key = k[i];
+          }
+        });
+      }
+    );
+    this.db.list('/polities').valueChanges().subscribe((polities: Polity[]) => {
+      this.allPolities = polities;
+      this.db.list('/polities').snapshotChanges()
+        .pipe(
+          map(actions => actions.map(a => a.key))
+        )
+        .subscribe(k => {
+          for (let i = 0; i < k.length; i++) {
+            this.allPolities[i].key = k[i];
+          }
+        });
+    });
+    this.db.list('/territories').valueChanges().subscribe((t: Territory[]) => {
+      this.allTerritories = t;
+      this.db.list('/territories').snapshotChanges()
+        .pipe(
+          map(actions => actions.map(a => a.key))
+        )
+        .subscribe(k => {
+          for (let i = 0; i < k.length; i++) {
+            this.allTerritories[i].key = k[i];
+          }
+        });
+    });
   }
 }

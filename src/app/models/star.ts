@@ -3,6 +3,8 @@ import { Lane } from './lane';
 import { CivilianFleet } from './civilianFleet';
 
 export class Star {
+    key: string;
+
     name: string;
     thumbnail: string;
 

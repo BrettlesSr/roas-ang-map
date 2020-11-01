@@ -17,6 +17,7 @@ export class ImportService{
     allHistory: History[] = [];
     allLanes: Lane[] = [];
 
+    // todo: this all needs redrafting since the addition of key tracking in the objects
     updateDb(): void{
         for (const s of this.allStars) {
           this.db.list('/stars').push(s);
@@ -73,6 +74,7 @@ export class ImportService{
                 continue;
               }
               const t: Territory = {
+                key: undefined,
                 name: polity.name,
                 description: polity.description,
                 thumbnail: polity.thumbnail,
@@ -140,6 +142,7 @@ export class ImportService{
                 continue;
               }
               const t: Territory = {
+                key: undefined,
                 name: taskforce.name,
                 description: taskforce.description,
                 thumbnail: taskforce.thumbnail,

@@ -1,46 +1,59 @@
-<h1 mat-dialog-title>Add new colony</h1>
+<h1 mat-dialog-title><i class="fas fa-globe-americas"></i> Add new colony</h1>
 <div mat-dialog-content>
 
-  <mat-form-field>
-    <mat-label>Territory name</mat-label>
-    <input matInput [(ngModel)]="territory.name">
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Territory description</mat-label>
-    <input matInput [(ngModel)]="territory.description">
-  </mat-form-field>
-
-  <mat-form-field>
+  <div>
+    <mat-form-field>
+      <mat-label>Territory name</mat-label>
+      <input matInput required [(ngModel)]="territory.name">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Territory description</mat-label>
+      <input matInput [(ngModel)]="territory.description">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
     <mat-label>Link to thread</mat-label>
     <input matInput [(ngModel)]="territory.threadlink">
   </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Image link</mat-label>
-    <input matInput [(ngModel)]="territory.thumbnail">
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Owner</mat-label>
-    <mat-select [(value)]="territory.owner">
-        <mat-option *ngFor="let polity of data.possibleOwners" [value]="polity.name">
-        {{polity.name}}
-        </mat-option>
-    </mat-select>
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Star</mat-label>
-    <mat-select [(value)]="territory.star">
-        <mat-option *ngFor="let star of data.possibleStars" [value]="star.name">
-        {{star.name}}
-        </mat-option>
-    </mat-select>
-  </mat-form-field>
+  </div>
   
+  <div>
+    <mat-form-field>
+      <mat-label>Image link</mat-label>
+      <input matInput [(ngModel)]="territory.thumbnail">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Owner</mat-label>
+      <mat-select required [(value)]="territory.owner">
+          <mat-option *ngFor="let polity of data.possibleOwners" [value]="polity.name">
+          {{polity.name}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>  
+
+  <div>
+    <mat-form-field>
+      <mat-label>Star</mat-label>
+      <mat-select required [(value)]="territory.star">
+          <mat-option *ngFor="let star of data.possibleStars" [value]="star.name">
+          {{star.name}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>  
+
 </div>
+
 <div mat-dialog-actions>
   <button mat-button (click)="onNoClick()">Cancel</button>
-  <button mat-button [mat-dialog-close]="territory" cdkFocusInitial>Add</button>
+  <button mat-button [disabled]="!isValid" [mat-dialog-close]="territory" cdkFocusInitial>Add</button>
 </div>
