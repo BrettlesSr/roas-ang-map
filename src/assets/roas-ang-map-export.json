@@ -771,7 +771,7 @@
           "starB" : "Sutukare"
         } ],
         "name" : "Sutukare",
-        "nodesPresent" : "1",
+        "nodesPresent" : "0",
         "territories" : [ {
           "description" : "Post-apocalyptic survivors par-excellence, the Crawler Clans provide the backbone of surviving 'civilized' technic society on Sutukare. Each crawler is a city and factory on wheels, continuously strip-mining the shattered planet to produce usable metals for their own uses, or as barter for essentials. The ingots are launched into orbit, where pirates typically handle transactions with outsiders. If threatened, Crawler railguns can be overcharged, transforming this veritable bullion into ship-wrecking ordnance to dissuade extortion.",
           "name" : "The Crawler Clans",
@@ -1026,7 +1026,7 @@
           "starB" : "Sutukare"
         } ],
         "name" : "Sutukare",
-        "nodesPresent" : "1",
+        "nodesPresent" : "0",
         "territories" : [ {
           "description" : "Post-apocalyptic survivors par-excellence, the Crawler Clans provide the backbone of surviving 'civilized' technic society on Sutukare. Each crawler is a city and factory on wheels, continuously strip-mining the shattered planet to produce usable metals for their own uses, or as barter for essentials. The ingots are launched into orbit, where pirates typically handle transactions with outsiders. If threatened, Crawler railguns can be overcharged, transforming this veritable bullion into ship-wrecking ordnance to dissuade extortion.",
           "name" : "The Crawler Clans",
