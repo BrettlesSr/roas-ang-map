@@ -2,5 +2,6 @@ export enum PolityType {
     VergeState,
     UNTaskforce,
     PMC,
-    Alien
+    Alien,
+    SolGreatPower
 }

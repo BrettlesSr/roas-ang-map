@@ -7,6 +7,7 @@ import { Option } from '../models/option';
 import {MatDialog } from '@angular/material/dialog';
 import { AddHistoryComponent } from '../add-history/add-history.component';
 import { AddTerritoryComponent } from '../add-territory/add-territory.component';
+import { AddStarComponent } from '../add-star/add-star.component';
 import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
@@ -60,6 +61,10 @@ export class TitleComponent implements OnInit {
   }
 
   buildOptions(): void {
+    if (this.parent.allTerritories === undefined ||
+        this.parent.allStars === undefined) {
+        return;
+    }
     for (const star of this.parent.allStars) {
       const starOption = {
         value: star.name,
@@ -68,10 +73,11 @@ export class TitleComponent implements OnInit {
         order: 0
       };
       this.options.push(starOption);
-      if (!star.territories) {
+      if (!this.parent.allTerritories) {
         continue;
       }
-      for (const territory of star.territories) {
+      const territories = this.parent.allTerritories.filter(t => t.star === star.name);
+      for (const territory of territories) {
         const polityOption = {
         value: star.name + ' - ' + territory.name,
         starName: star.name,
@@ -112,12 +118,39 @@ export class TitleComponent implements OnInit {
       if (result === undefined) {
         return;
       }
-      const star = this.parent.allStars.filter(s => s.name === result.star)[0];
-      const existingCount = star.territories === undefined ? 0 : star.territories.length;
       const key = this.db.database.ref().child('territories').push().key;
       const updates = {};
       updates['/territories/' + key] = result;
-      updates['/stars/' + star.key + '/territories/' + existingCount] = result;
+      this.db.database.ref().update(updates);
+    });
+  }
+
+  openAddStar(): void {
+    const dialogRef = this.dialog.open(AddStarComponent, {
+      width: '600px',
+      data: {
+        possibleStars: this.parent.allStars.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0)
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === undefined) {
+        return;
+      }
+      const lanes = result.lanes;
+      result.lanes = undefined;
+      const updates = {};
+      const keyStar = this.db.database.ref().child('stars').push().key;
+      updates['/stars/' + keyStar] = result;
+
+      for (const lane of lanes) {
+        const keyLane = this.db.database.ref().child('lanes').push().key;
+        updates['/lanes/' + keyLane] = {
+          starA: result.name,
+          starB: lane
+        };
+      }
+
       this.db.database.ref().update(updates);
     });
   }

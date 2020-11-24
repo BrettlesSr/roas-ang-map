@@ -22,7 +22,7 @@ export class StarInfoComponent implements OnInit {
   }
 
   get orderedHistory(): History[]{
-    return this.history.filter(h => h.location.name === this.starInfo.name)
+    return this.history.filter(h => h.location === this.starInfo.name)
     .sort((a, b) => a.date - b.date);
   }
 

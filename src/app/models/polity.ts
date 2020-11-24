@@ -10,6 +10,4 @@ export class Polity {
     threadlink: string;
     gdp: number;
     type: PolityType;
-
-    territories: Territory[] = [];
 }

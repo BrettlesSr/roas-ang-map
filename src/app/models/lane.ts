@@ -1,4 +1,4 @@
 export class Lane {
-    starA: string;
-    starB: string;
+    starA: string; // must be a star name
+    starB: string; // must be a star name
 }

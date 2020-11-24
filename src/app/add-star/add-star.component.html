@@ -1,0 +1,63 @@
+<h1 mat-dialog-title cdkDrag
+cdkDragRootElement=".cdk-overlay-pane" 
+cdkDragHandle><i class="fas fa-star"></i> Add a new star system</h1>
+<div mat-dialog-content>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Star name</mat-label>
+      <input matInput required [(ngModel)]="star.name">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Image link</mat-label>
+      <input matInput [(ngModel)]="star.thumbnail">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Hitbox coordinates</mat-label>
+      <input matInput required (change)="hitboxChanged($event)">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Point coordinates</mat-label>
+      <input matInput required (change)="pointChanged($event)">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Trade nodes</mat-label>
+      <input matInput required type="number" [(ngModel)]="star.nodesPresent">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Adjacent stars</mat-label>
+      <mat-select multiple [(ngModel)]="star.lanes">
+          <input
+          type="text"
+          aria-label="search box"
+          matInput
+          class="mat-select-search-input"
+          (keyup)="starSearchChanged($event)">
+          <mat-option *ngFor="let star of filteredStars" [value]="star.name">
+          {{star.name}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>  
+
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="star" cdkFocusInitial>Add</button>
+</div>

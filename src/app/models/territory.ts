@@ -6,6 +6,6 @@ export class Territory {
     thumbnail: string;
     threadlink: string;
 
-    owner: string;
-    star: string;
+    owner: string; // must be a polity name
+    star: string; // must be a star name
 }

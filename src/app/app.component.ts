@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Papa } from 'ngx-papaparse';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Star } from './models/star';
-import { ImportService } from './services/importService';
 import { Polity } from './models/polity';
 import { Territory } from './models/territory';
 import { map } from 'rxjs/internal/operators/map';
@@ -15,7 +14,6 @@ import { map } from 'rxjs/internal/operators/map';
 })
 
 export class AppComponent implements OnInit {
-  importService: ImportService;
   title = 'roas-ang-map';
   showFiller = false;
   isOpen = false;
@@ -26,16 +24,12 @@ export class AppComponent implements OnInit {
   allTerritories: Territory[];
 
   constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {
-    this.importService = new ImportService(this.http, this.parser, this.db);
   }
 
   @ViewChild('drawer') drawer: { open: () => void; close: () => void; };
   @ViewChild('titleChild') titleChild: { buildOptions: () => void; };
 
   ngOnInit(): void {
-    // this only needs to be run once ever
-    // this.importFromFiles();
-
     this.readInFromDatabase();
   }
 
@@ -73,13 +67,6 @@ export class AppComponent implements OnInit {
     this.openDrawer(name);
   }
 
-  importFromFiles(): void {
-    this.http.get('assets/starLocations.tsv', {responseType: 'text'})
-        .subscribe(csv => {
-          this.importService.importLocations(csv);
-        });
-  }
-
   readInFromDatabase(): void {
     this.db.list('/stars').valueChanges()
     .subscribe(
@@ -112,6 +99,7 @@ export class AppComponent implements OnInit {
     });
     this.db.list('/territories').valueChanges().subscribe((t: Territory[]) => {
       this.allTerritories = t;
+      this.titleChild.buildOptions();
       this.db.list('/territories').snapshotChanges()
         .pipe(
           map(actions => actions.map(a => a.key))

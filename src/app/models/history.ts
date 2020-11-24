@@ -1,7 +1,3 @@
-import { Polity } from './polity';
-import { Star } from './star';
-import { Territory } from './territory';
-
 export class History {
     name: string;
     description: string;
@@ -9,7 +5,7 @@ export class History {
     threadlink: string;
     date: number;
 
-    location: Star;
-    territoriesInvolved: Territory[] = [];
-    politiesInvolved: Polity[] = [];
+    location: string; // must be a star name
+    territoriesInvolved: string[] = []; // must be a list of territory names
+    politiesInvolved: string[] = []; // must be a list of polity names
 }

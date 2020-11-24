@@ -18,11 +18,5 @@ export class Star {
     x: number;
     y: number;
 
-    // for convenience's sake, the capital should always be the first territory in the array
-    territories: Territory[] = [];
-    lanes: Lane[] = [];
-
     nodesPresent: number;
-
-    civilianFleets: CivilianFleet[];
 }

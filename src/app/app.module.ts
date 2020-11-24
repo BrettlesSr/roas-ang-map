@@ -6,6 +6,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { StarInfoComponent } from './star-info/star-info.component';
@@ -26,6 +27,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AddHistoryComponent } from './add-history/add-history.component';
 import { AddTerritoryComponent } from './add-territory/add-territory.component';
+import { AddStarComponent } from './add-star/add-star.component';
 import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
@@ -34,7 +36,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     StarInfoComponent,
     TitleComponent,
     AddHistoryComponent,
-    AddTerritoryComponent
+    AddTerritoryComponent,
+    AddStarComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     MatNativeDateModule,
     AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
