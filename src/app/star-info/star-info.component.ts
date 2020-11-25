@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { History } from '../models/history';
 import { Star } from '../models/star';
+import { Territory } from '../models/territory';
 
 @Component({
   selector: 'app-star-info',
@@ -13,10 +14,15 @@ export class StarInfoComponent implements OnInit {
 
   @Input() starInfo: Star;
   history: History[] = [];
+  territories: Territory[] = [];
 
   ngOnInit(): void {
     this.db.list('/history').valueChanges().subscribe((h: History[]) => {
       this.history = h;
+      }
+    );
+    this.db.list('/territories').valueChanges().subscribe((territories: Territory[]) => {
+      this.territories = territories.filter(t => t.star === this.starInfo.name);
       }
     );
   }

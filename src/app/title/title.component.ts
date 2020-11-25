@@ -138,7 +138,7 @@ export class TitleComponent implements OnInit {
         return;
       }
       const lanes = result.lanes;
-      result.lanes = undefined;
+      result.lanes = null;
       const updates = {};
       const keyStar = this.db.database.ref().child('stars').push().key;
       updates['/stars/' + keyStar] = result;

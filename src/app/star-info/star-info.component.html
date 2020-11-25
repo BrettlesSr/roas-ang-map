@@ -5,11 +5,11 @@
             <img src="{{starInfo.thumbnail}}" width=480px>
         </div>
 
-        <div *ngIf="starInfo.territories && starInfo.territories.length > 0"  class="title">
+        <div *ngIf="territories && territories.length > 0"  class="title">
             Territories In {{starInfo.name}}
         </div>
         
-        <div *ngFor="let territory of starInfo.territories" class="tab-content">
+        <div *ngFor="let territory of territories" class="tab-content">
 
             <div>
                 <a *ngIf="territory.threadlink" href="{{territory.threadlink}}" target="_blank">{{territory.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
