@@ -24,7 +24,7 @@ export class AddStarComponent implements OnInit {
     nodesPresent: 0,
     lanes: []
   };
-  filteredStars: Star[];
+  searchTerm: string;
   constructor(
     public dialogRef: MatDialogRef<AddStarData>,
     @Inject(MAT_DIALOG_DATA) public data: AddStarData
@@ -36,7 +36,7 @@ export class AddStarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.filteredStars = this.data.possibleStars;
+    this.searchTerm = '';
   }
 
   hitboxChanged(event): void {
@@ -54,11 +54,10 @@ export class AddStarComponent implements OnInit {
   }
 
   starSearchChanged(event): void {
-    this.filteredStars = this._filter(event.target.value);
+    this.searchTerm = event.target.value;
   }
 
-  private _filter(value: string): Star[] {
-    return this.data.possibleStars
-    .filter(star => star.name.toLowerCase().includes(value.toLowerCase()));
+  isVisible(starName: string): boolean {
+    return starName.toLowerCase().includes(this.searchTerm.toLowerCase());
   }
 }

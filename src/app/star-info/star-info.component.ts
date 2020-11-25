@@ -22,7 +22,7 @@ export class StarInfoComponent implements OnInit {
       }
     );
     this.db.list('/territories').valueChanges().subscribe((territories: Territory[]) => {
-      this.territories = territories.filter(t => t.star === this.starInfo.name);
+      this.territories = territories;
       }
     );
   }
@@ -32,7 +32,11 @@ export class StarInfoComponent implements OnInit {
     .sort((a, b) => a.date - b.date);
   }
 
-  get nodes(): number[]{
+  get filteredTerritories(): Territory[] {
+    return this.territories.filter(t => t.star === this.starInfo.name);
+  }
+
+  get nodes(): number[] {
     const nodes = [];
     for (let i = 0; i < (this.starInfo.nodesPresent * 1); i++) {
       nodes.push(i);

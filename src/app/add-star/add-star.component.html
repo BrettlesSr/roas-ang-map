@@ -48,7 +48,7 @@ cdkDragHandle><i class="fas fa-star"></i> Add a new star system</h1>
           matInput
           class="mat-select-search-input"
           (keyup)="starSearchChanged($event)">
-          <mat-option *ngFor="let star of filteredStars" [value]="star.name">
+          <mat-option *ngFor="let star of data.possibleStars" [value]="star.name" [ngStyle]="{ display : isVisible(star.name) ? '' : 'none' }">
           {{star.name}}
           </mat-option>
       </mat-select>
