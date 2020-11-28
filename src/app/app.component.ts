@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
   allStars: Star[];
   allPolities: Polity[];
   allTerritories: Territory[];
+  x = false;
 
   constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {
   }
