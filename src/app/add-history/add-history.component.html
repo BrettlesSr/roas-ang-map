@@ -44,7 +44,13 @@ cdkDragHandle><i class="fas fa-book"></i> Add new historical event</h1>
     <mat-form-field>
       <mat-label>Star</mat-label>
       <mat-select required [(value)]="history.location">
-          <mat-option *ngFor="let star of data.possibleStars" [value]="star">
+        <input
+          type="text"
+          aria-label="search box"
+          matInput
+          class="mat-select-search-input"
+          (keyup)="starSearchChanged($event)">  
+          <mat-option *ngFor="let star of data.possibleStars" [value]="star.name" [ngStyle]="{ display : isStarVisible(star.name) ? '' : 'none' }">
           {{star.name}}
           </mat-option>
       </mat-select>
@@ -55,7 +61,13 @@ cdkDragHandle><i class="fas fa-book"></i> Add new historical event</h1>
     <mat-form-field>
       <mat-label>Locations</mat-label>
       <mat-select [disabled]="!(possibleTerritories.length > 0)" multiple [(value)]="history.territoriesInvolved">
-          <mat-option *ngFor="let territory of possibleTerritories" [value]="territory">
+        <input
+          type="text"
+          aria-label="search box"
+          matInput
+          class="mat-select-search-input"
+          (keyup)="territorySearchChanged($event)">    
+        <mat-option *ngFor="let territory of possibleTerritories" [value]="territory.name" [ngStyle]="{ display : isTerritoryVisible(territory.name) ? '' : 'none' }">
           {{territory.name}}
           </mat-option>
       </mat-select>
@@ -66,7 +78,13 @@ cdkDragHandle><i class="fas fa-book"></i> Add new historical event</h1>
     <mat-form-field>
       <mat-label>Polities involved</mat-label>
       <mat-select multiple [(value)]="history.politiesInvolved">
-          <mat-option *ngFor="let polity of data.possiblePolities" [value]="polity">
+        <input
+          type="text"
+          aria-label="search box"
+          matInput
+          class="mat-select-search-input"
+          (keyup)="politySearchChanged($event)">  
+          <mat-option *ngFor="let polity of data.possiblePolities" [value]="polity.name" [ngStyle]="{ display : isPolityVisible(polity.name) ? '' : 'none' }">
           {{polity.name}}
           </mat-option>
       </mat-select>

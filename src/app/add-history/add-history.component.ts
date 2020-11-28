@@ -7,6 +7,7 @@ import { Territory } from '../models/territory';
 export interface AddHistoryData {
   possiblePolities: Polity[];
   possibleStars: Star[];
+  possibleTerritories: Territory[];
 }
 
 @Component({
@@ -27,6 +28,9 @@ export class AddHistoryComponent implements OnInit {
   };
   minDate = new Date(Date.UTC(2747, 0));
   maxDate = new Date(Date.UTC(2800, 0));
+  politySearchTerm = '';
+  starSearchTerm = '';
+  territorySearchTerm = '';
   constructor(
     public dialogRef: MatDialogRef<AddHistoryComponent>,
     @Inject(MAT_DIALOG_DATA) public data: AddHistoryData) {}
@@ -47,10 +51,10 @@ export class AddHistoryComponent implements OnInit {
   }
 
   get possibleTerritories(): Territory[] {
-    if (this.history.location === null || this.history.location.territories === undefined) {
+    if (this.history.location === null || this.data.possibleTerritories === undefined) {
       return [];
     }
-    return this.history.location.territories;
+    return this.data.possibleTerritories.filter(t => t.star === this.history.location);
   }
 
   dateChanged(event): void {
@@ -58,5 +62,29 @@ export class AddHistoryComponent implements OnInit {
     const pDate = new Date(date);
     const year = pDate.getFullYear() + ((pDate.getMonth()) / 12) + ((pDate.getDay() / 31) * 0.01);
     this.history.date = year;
+  }
+
+  starSearchChanged(event): void {
+    this.starSearchTerm = event.target.value;
+  }
+
+  isStarVisible(starName: string): boolean {
+    return starName.toLowerCase().includes(this.starSearchTerm.toLowerCase());
+  }
+
+  territorySearchChanged(event): void {
+    this.territorySearchTerm = event.target.value;
+  }
+
+  isTerritoryVisible(starName: string): boolean {
+    return starName.toLowerCase().includes(this.territorySearchTerm.toLowerCase());
+  }
+
+  politySearchChanged(event): void {
+    this.politySearchTerm = event.target.value;
+  }
+
+  isPolityVisible(starName: string): boolean {
+    return starName.toLowerCase().includes(this.politySearchTerm.toLowerCase());
   }
 }

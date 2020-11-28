@@ -22,6 +22,8 @@ export class AddTerritoryComponent implements OnInit {
     owner: '',
     star: ''
   };
+  politySearchTerm = '';
+  starSearchTerm = '';
   constructor(
     public dialogRef: MatDialogRef<AddTerritoryComponent>,
     @Inject(MAT_DIALOG_DATA) public data: AddTerritoryData) {}
@@ -37,5 +39,21 @@ export class AddTerritoryComponent implements OnInit {
     return this.territory.name.length > 0 &&
     this.territory.owner.length > 0 &&
     this.territory.star.length > 0;
+  }
+
+  starSearchChanged(event): void {
+    this.starSearchTerm = event.target.value;
+  }
+
+  isStarVisible(starName: string): boolean {
+    return starName.toLowerCase().includes(this.starSearchTerm.toLowerCase());
+  }
+
+  politySearchChanged(event): void {
+    this.politySearchTerm = event.target.value;
+  }
+
+  isPolityVisible(starName: string): boolean {
+    return starName.toLowerCase().includes(this.politySearchTerm.toLowerCase());
   }
 }

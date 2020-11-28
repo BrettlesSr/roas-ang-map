@@ -35,9 +35,15 @@ cdkDragHandle><i class="fas fa-globe-americas"></i> Add new colony</h1>
     <mat-form-field>
       <mat-label>Owner</mat-label>
       <mat-select required [(value)]="territory.owner">
-          <mat-option *ngFor="let polity of data.possibleOwners" [value]="polity.name">
+        <input
+          type="text"
+          aria-label="search box"
+          matInput
+          class="mat-select-search-input"
+          (keyup)="politySearchChanged($event)">  
+        <mat-option *ngFor="let polity of data.possibleOwners" [value]="polity.name" [ngStyle]="{ display : isPolityVisible(polity.name) ? '' : 'none' }">
           {{polity.name}}
-          </mat-option>
+        </mat-option>
       </mat-select>
     </mat-form-field>
   </div>  
@@ -46,9 +52,15 @@ cdkDragHandle><i class="fas fa-globe-americas"></i> Add new colony</h1>
     <mat-form-field>
       <mat-label>Star</mat-label>
       <mat-select required [(value)]="territory.star">
-          <mat-option *ngFor="let star of data.possibleStars" [value]="star.name">
+        <input
+          type="text"
+          aria-label="search box"
+          matInput
+          class="mat-select-search-input"
+          (keyup)="starSearchChanged($event)">  
+        <mat-option *ngFor="let star of data.possibleStars" [value]="star.name" [ngStyle]="{ display : isStarVisible(star.name) ? '' : 'none' }">
           {{star.name}}
-          </mat-option>
+        </mat-option>
       </mat-select>
     </mat-form-field>
   </div>  

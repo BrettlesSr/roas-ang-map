@@ -94,7 +94,8 @@ export class TitleComponent implements OnInit {
       width: '600px',
       data: {
         possiblePolities: this.parent.allPolities.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0),
-        possibleStars: this.parent.allStars.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0)
+        possibleStars: this.parent.allStars.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0),
+        possibleTerritories: this.parent.allTerritories.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0)
       }
     });
     dialogRef.afterClosed().subscribe(result => {
