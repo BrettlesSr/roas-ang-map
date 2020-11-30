@@ -23,6 +23,8 @@ export class AppComponent implements OnInit {
   allPolities: Polity[];
   allTerritories: Territory[];
   x = false;
+  mapUrls = ['https://i.imgur.com/7cZpgrg.jpg', 'https://i.imgur.com/4tmZpN4.png'];
+  mapIndex = 0;
 
   constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {
   }
@@ -66,6 +68,13 @@ export class AppComponent implements OnInit {
       });
     }, (this.isOpen ? 0 : this.timeToOpen));
     this.openDrawer(name);
+  }
+
+  bumpMapIndex(): void {
+    this.mapIndex++;
+    if (this.mapIndex + 1 > this.mapUrls.length) {
+      this.mapIndex = 0;
+    }
   }
 
   readInFromDatabase(): void {

@@ -1,17 +1,19 @@
 <app-title [parent]="this" #titleChild></app-title>
 
+<button class="fab" mat-fab color="primary" aria-label="Example icon button with a home icon" (click)="bumpMapIndex()">
+  <mat-icon>donut_small</mat-icon>
+</button>
+
 <mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="sidenav-fixed" mode="side" position="end">
+    <app-star-info
+      [starInfo]="activeStar">
+    </app-star-info>
+  </mat-drawer>
 
-    <mat-drawer #drawer class="sidenav-fixed" mode="side" position="end">
-      <app-star-info
-      [starInfo]="activeStar"
-      ></app-star-info>
-    </mat-drawer>
-
-    <img src="https://i.imgur.com/7cZpgrg.jpg" width="2400" height="2400" usemap="#starmap">    
-          <map name="starmap">
-            <area *ngFor="let star of allStars" shape="rect" coords="{{star.xStart}}, {{star.yStart}}, {{star.xEnd}}, {{star.yEnd}}" alt="{{star.name}}" (click)="openDrawer(star.name)">
-            <area shape="rect" coords="0,0,2000,2000" (click)="closeDrawer()"> 
-          </map>
-  
+  <img src="{{mapUrls[mapIndex]}}" width="2400" height="2400" usemap="#starmap">    
+  <map name="starmap">
+    <area *ngFor="let star of allStars" shape="rect" coords="{{star.xStart}}, {{star.yStart}}, {{star.xEnd}}, {{star.yEnd}}" alt="{{star.name}}" (click)="openDrawer(star.name)">
+    <area shape="rect" coords="0,0,2000,2000" (click)="closeDrawer()"> 
+  </map>
 </mat-drawer-container>
