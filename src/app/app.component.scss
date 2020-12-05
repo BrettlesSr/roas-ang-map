@@ -7,3 +7,9 @@
   height: calc(100% - 89px); 
 }
 
+.fab {
+  position: absolute;
+  top: 90%;
+  left: 1%;
+  z-index: 10;
+}
