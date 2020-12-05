@@ -40,7 +40,6 @@ export class AddHistoryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.data);
   }
 
   get isValid(): boolean {
