@@ -47,22 +47,19 @@
 
     </mat-tab>
 
-    <mat-tab label="Trade" *ngIf="nodes.length > 0">
+    <mat-tab label="Trade" *ngIf="starInfo.nodesPresent > 0">
 
         <div class="title">
             {{starInfo.name}} Trade Nodes
         </div>
     
-        <div *ngFor="let nodeIndex of nodes" class="tab-content">
-    
+        <div class="tab-content">    
             <div>
                 <div class="non-link">Trade Node</div>
             </div>        
             <div>
-                This system is acting as a trade node, and can support freighters.
-            </div>
-            <div *ngFor="let civi">
-
+                This system contains {{starInfo.nodesPresent}} Trade Node(s).
+                It can support freighters providing up to {{starInfo.nodesPresent * 25}}% of a state's territorial income (twice that for Merchant Marine).
             </div>
         </div>
 

@@ -29,6 +29,7 @@ import { AddHistoryComponent } from './add-history/add-history.component';
 import { AddTerritoryComponent } from './add-territory/add-territory.component';
 import { AddStarComponent } from './add-star/add-star.component';
 import { MatNativeDateModule } from '@angular/material/core';
+import { AddPolityComponent } from './add-polity/add-polity.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     TitleComponent,
     AddHistoryComponent,
     AddTerritoryComponent,
-    AddStarComponent
+    AddStarComponent,
+    AddPolityComponent
   ],
   imports: [
     BrowserModule,

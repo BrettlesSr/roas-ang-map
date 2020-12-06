@@ -36,14 +36,6 @@ export class StarInfoComponent implements OnInit {
     return this.territories.filter(t => t.star === this.starInfo.name);
   }
 
-  get nodes(): number[] {
-    const nodes = [];
-    for (let i = 0; i < (this.starInfo.nodesPresent * 1); i++) {
-      nodes.push(i);
-    }
-    return nodes;
-  }
-
   getHistoryDescriptor(title: string, date: number): string {
     const year = Math.floor(date);
     const yearString = year.toString();

@@ -1,0 +1,74 @@
+<h1 mat-dialog-title cdkDrag
+cdkDragRootElement=".cdk-overlay-pane" 
+cdkDragHandle><i class="fas fa-globe-americas"></i> Add new polity</h1>
+<div mat-dialog-content>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Polity name</mat-label>
+      <input matInput required [(ngModel)]="polity.name">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input matInput [(ngModel)]="polity.description">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+    <mat-label>Link to thread</mat-label>
+    <input matInput [(ngModel)]="polity.threadlink">
+  </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Image link</mat-label>
+      <input matInput [(ngModel)]="polity.thumbnail">
+    </mat-form-field>
+  </div>
+
+  <div>
+      <mat-form-field>
+        <mat-label>GDP</mat-label>
+        <input matInput type="number" [(ngModel)]="polity.gdp">
+      </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Polity Type</mat-label>
+      <mat-select required [(value)]="polity.type">
+        <mat-option *ngFor="let t of types" [value]="t[0]">
+          {{t[1]}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>  
+
+  <div>
+    <mat-form-field>
+      <mat-label>Star</mat-label>
+      <mat-select required [(value)]="star">
+        <input
+          type="text"
+          aria-label="search box"
+          matInput
+          class="mat-select-search-input"
+          (keyup)="starSearchChanged($event)">  
+        <mat-option *ngFor="let s of data.possibleStars" [value]="s.name" [ngStyle]="{ display : isStarVisible(s.name) ? '' : 'none' }">
+          {{s.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>  
+
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [disabled]="!isValid" [mat-dialog-close]="toMake">Add</button>
+</div>

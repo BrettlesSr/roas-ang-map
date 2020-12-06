@@ -9,6 +9,7 @@ import { AddHistoryComponent } from '../add-history/add-history.component';
 import { AddTerritoryComponent } from '../add-territory/add-territory.component';
 import { AddStarComponent } from '../add-star/add-star.component';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { AddPolityComponent } from '../add-polity/add-polity.component';
 
 @Component({
   selector: 'app-title',
@@ -122,6 +123,34 @@ export class TitleComponent implements OnInit {
       const key = this.db.database.ref().child('territories').push().key;
       const updates = {};
       updates['/territories/' + key] = result;
+      this.db.database.ref().update(updates);
+    });
+  }
+
+  openAddPolity(): void {
+    const dialogRef = this.dialog.open(AddPolityComponent, {
+      width: '600px',
+      data: {
+        possibleStars: this.parent.allStars.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0)
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === undefined) {
+        return;
+      }
+      const key1 = this.db.database.ref().child('polities').push().key;
+      const updates = {};
+      updates['/polities/' + key1] = result.polity;
+      const key2 = this.db.database.ref().child('territories').push().key;
+      updates['/territories/' + key2] = {
+        name: result.polity.name,
+        description: result.polity.description,
+        thumbnail: result.polity.thumbnail,
+        threadlink: result.polity.threadlink,
+        owner: result.polity.name,
+        star: result.star
+      };
       this.db.database.ref().update(updates);
     });
   }
