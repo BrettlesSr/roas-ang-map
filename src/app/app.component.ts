@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   allPolities: Polity[];
   allTerritories: Territory[];
   x = false;
-  mapUrls = ['https://i.imgur.com/5VHgMAj.jpg', 'https://i.imgur.com/ANKe8RD.png'];
+  mapUrls = ['https://i.imgur.com/G0vtvJU.jpg', 'https://i.imgur.com/ANKe8RD.png'];
   mapIndex = 0;
 
   constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {
