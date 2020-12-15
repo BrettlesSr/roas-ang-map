@@ -3597,6 +3597,22 @@
       "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2750-year-3.861199/post-70318145",
       "thumbnail" : "",
       "type" : 0
+    },
+    "-MNoNnEje_xES-_E1Rm1" : {
+      "description" : "The poorest member of the Don Juan League.",
+      "gdp" : 0,
+      "name" : "Don Quixote",
+      "threadlink" : "",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MNoOS3pzbJbr7kZVmHT" : {
+      "description" : "Praetoria now is a blasted world in an extended nuclear winter, the Ascendency’s designer biome put to the torch. The surface bears the often still-glowing scars of nuclear devastation, and collapsed archologies contain terrible things unleashed from the destroyed vaults of the planet’s long-gone overlords. The orbitals are significantly dirtied as a consequence of the destruction of all industrial stations around the planet, concealing smuggling ships and wildcat scavengers attempting to plunder the wreckage of civilization there. ",
+      "gdp" : 0,
+      "name" : "The Ruins of Praetoria",
+      "threadlink" : "https://docs.google.com/document/d/1SyNy_jrMg5ZVo1YVteAaaU6ZKizuFPwrMkslWbio_5M/edit#",
+      "thumbnail" : "",
+      "type" : 0
     }
   },
   "stars" : {
@@ -5351,7 +5367,7 @@
     },
     "-MN5j270pVI3Jdol9r_u" : {
       "name" : "Larnax",
-      "nodesPresent" : 0,
+      "nodesPresent" : "3",
       "thumbnail" : "",
       "x" : "957",
       "xEnd" : "1053",
@@ -5769,7 +5785,7 @@
     },
     "-MN5rtzd8665Xdm4ctJe" : {
       "name" : "Eisenhower",
-      "nodesPresent" : 0,
+      "nodesPresent" : "1",
       "thumbnail" : "",
       "x" : "798",
       "xEnd" : "807",
@@ -7120,6 +7136,22 @@
       "owner" : "Star Kingdom of Elysium",
       "star" : "BL-19",
       "threadlink" : "",
+      "thumbnail" : ""
+    },
+    "-MNoNnEje_xES-_E1Rm2" : {
+      "description" : "The poorest member of the Don Juan League.",
+      "name" : "Don Quixote",
+      "owner" : "Don Quixote",
+      "star" : "Don Juan",
+      "threadlink" : "",
+      "thumbnail" : ""
+    },
+    "-MNoOS3pzbJbr7kZVmHU" : {
+      "description" : "Praetoria now is a blasted world in an extended nuclear winter, the Ascendency’s designer biome put to the torch. The surface bears the often still-glowing scars of nuclear devastation, and collapsed archologies contain terrible things unleashed from the destroyed vaults of the planet’s long-gone overlords. The orbitals are significantly dirtied as a consequence of the destruction of all industrial stations around the planet, concealing smuggling ships and wildcat scavengers attempting to plunder the wreckage of civilization there. ",
+      "name" : "The Ruins of Praetoria",
+      "owner" : "The Ruins of Praetoria",
+      "star" : "Praetoria",
+      "threadlink" : "https://docs.google.com/document/d/1SyNy_jrMg5ZVo1YVteAaaU6ZKizuFPwrMkslWbio_5M/edit#",
       "thumbnail" : ""
     }
   }
