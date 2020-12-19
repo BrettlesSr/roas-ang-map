@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { NgxPanZoomModule } from 'ngx-panzoom';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { StarInfoComponent } from './star-info/star-info.component';
@@ -39,7 +40,7 @@ import { AddPolityComponent } from './add-polity/add-polity.component';
     AddHistoryComponent,
     AddTerritoryComponent,
     AddStarComponent,
-    AddPolityComponent
+    AddPolityComponent    
   ],
   imports: [
     BrowserModule,
@@ -60,7 +61,8 @@ import { AddPolityComponent } from './add-polity/add-polity.component';
     MatNativeDateModule,
     AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
     AngularFireDatabaseModule,
-    DragDropModule
+    DragDropModule,
+    NgxPanZoomModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,8 @@ import { Polity } from './models/polity';
 import { Territory } from './models/territory';
 import { map } from 'rxjs/internal/operators/map';
 import { CookieService } from './services/cookie-service';
+import { PanZoomConfig, PanZoomAPI, PanZoomModel, PanZoomConfigOptions } from 'ngx-panzoom';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -24,19 +26,30 @@ export class AppComponent implements OnInit {
   allPolities: Polity[];
   allTerritories: Territory[];
   x = false;
-  mapUrls = ['https://i.imgur.com/G0vtvJU.jpg', 'https://i.imgur.com/clLgk7G.jpg'];
+  mapUrls = ['https://i.imgur.com/8XXFnFj.jpg', 'https://i.imgur.com/clLgk7G.jpg'];
   mapIndex = 0;
   cookieService = new CookieService();
   displayNotification = true;
+  panZoomConfig: PanZoomConfig = new PanZoomConfig();
+  private panZoomAPI: PanZoomAPI;
+  private apiSubscription: Subscription;
 
-  constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {
+  constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {    
   }
 
   @ViewChild('drawer') drawer: { open: () => void; close: () => void; };
   @ViewChild('titleChild') titleChild: { buildOptions: () => void; };
 
   ngOnInit(): void {
+    this.panZoomConfig.keepInBounds = false;
+    this.panZoomConfig.zoomLevels = 7;
+    this.panZoomConfig.neutralZoomLevel = 3;
+    this.panZoomConfig.scalePerZoomLevel = 1.5; 
+    this.panZoomConfig.freeMouseWheel = false;   
+    this.panZoomConfig.invertMouseWheel = true;
+    this.panZoomConfig.initialZoomLevel = 3;
     this.readInFromDatabase();
+    this.apiSubscription = this.panZoomConfig.api.subscribe( (api: PanZoomAPI) => this.panZoomAPI = api );
     for (let i = 0; i < this.mapUrls.length; i++) {
       const url = this.mapUrls[i];
       var img = new Image();
@@ -48,6 +61,10 @@ export class AppComponent implements OnInit {
     } else if (notCookie === 'no'){
       this.displayNotification = false;
     }
+  }
+
+  ngOnDestroy(): void {
+    this.apiSubscription.unsubscribe();
   }
 
   openDrawer(name: string): void {
@@ -66,22 +83,20 @@ export class AppComponent implements OnInit {
     }, this.timeToOpen);
   }
 
-  scrollToStar(name: string): void {
-    setTimeout(() => {
-      const x = (this.activeStar.xStart * 1 + this.activeStar.xEnd * 1) / 2;
-      const y = (this.activeStar.yStart * 1 + this.activeStar.yEnd * 1) / 2; // javascript is terrible
-      const element = document.getElementsByClassName('mat-drawer-content ng-star-inserted')[0];
-
-      const vy = element.clientHeight;
-      const vx = element.clientWidth;
-
-      element.scrollTo({
-        top: y - (vy / 2),
-        left: x - (vx / 2),
-        behavior: 'smooth'
-      });
-    }, (this.isOpen ? 0 : this.timeToOpen));
+  scrollToStar(name: string): void {  
     this.openDrawer(name);
+    const zoom = this.panZoomAPI.model.zoomLevel;
+    const adjustment = (1080/zoom)-110;
+    console.log(adjustment);
+    const point = {
+      x: this.activeStar.x * 1 + adjustment,
+      y: this.activeStar.y * 1
+    };
+    setTimeout(() => {
+      console.log(point);
+      this.panZoomAPI.detectContentDimensions();
+      this.panZoomAPI.panToPoint(point);
+    }, (this.isOpen ? 0 : this.timeToOpen));        
   }
 
   bumpMapIndex(): void {
