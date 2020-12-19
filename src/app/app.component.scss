@@ -5,6 +5,8 @@
 
 .example-container {
   height: calc(100% - 89px); 
+  width: 100%;
+  background-color: black;
 }
 
 .fab {
@@ -12,4 +14,19 @@
   top: 90%;
   left: 1%;
   z-index: 10;
+}
+
+.notice {
+  position: absolute;
+  top: 80%;
+  left: 1%;
+  z-index: 10;
+}
+
+.invisible-area {
+  display: none;
+}
+
+.visible-area {
+  background-color: brown;
 }
