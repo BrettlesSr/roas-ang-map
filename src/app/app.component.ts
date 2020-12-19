@@ -6,6 +6,7 @@ import { Star } from './models/star';
 import { Polity } from './models/polity';
 import { Territory } from './models/territory';
 import { map } from 'rxjs/internal/operators/map';
+import { CookieService } from './services/cookie-service';
 
 @Component({
   selector: 'app-root',
@@ -23,8 +24,10 @@ export class AppComponent implements OnInit {
   allPolities: Polity[];
   allTerritories: Territory[];
   x = false;
-  mapUrls = ['https://i.imgur.com/G0vtvJU.jpg', 'https://i.imgur.com/ANKe8RD.png'];
+  mapUrls = ['https://i.imgur.com/G0vtvJU.jpg', 'https://i.imgur.com/clLgk7G.jpg'];
   mapIndex = 0;
+  cookieService = new CookieService();
+  displayNotification = true;
 
   constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {
   }
@@ -34,6 +37,17 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.readInFromDatabase();
+    for (let i = 0; i < this.mapUrls.length; i++) {
+      const url = this.mapUrls[i];
+      var img = new Image();
+      img.src = url;
+    }
+    const notCookie = this.cookieService.getCookie('roas-ang-map.displayNotification');
+    if (notCookie === 'yes') {
+      this.displayNotification = true;
+    } else if (notCookie === 'no'){
+      this.displayNotification = false;
+    }
   }
 
   openDrawer(name: string): void {
@@ -75,6 +89,11 @@ export class AppComponent implements OnInit {
     if (this.mapIndex + 1 > this.mapUrls.length) {
       this.mapIndex = 0;
     }
+  }
+
+  dismissNotification(): void {
+    this.cookieService.setCookie('roas-ang-map.displayNotification', 'no', 600);
+    this.displayNotification = false;
   }
 
   readInFromDatabase(): void {

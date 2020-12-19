@@ -1,6 +1,8 @@
 <app-title [parent]="this" #titleChild></app-title>
 
-<button class="fab" mat-fab color="primary" aria-label="Example icon button with a home icon" (click)="bumpMapIndex()">
+<img src="https://i.imgur.com/KX4Etcm.png" class="notice" width="230" height="84" (click)="dismissNotification()" (mouseover)="dismissNotification()" *ngIf="displayNotification">
+
+<button class="fab" mat-fab color="primary" (click)="bumpMapIndex()">
   <mat-icon>donut_small</mat-icon>
 </button>
 
