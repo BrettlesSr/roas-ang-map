@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/KX4Etcm.png" class="notice" width="230" height="84" (click)="dismissNotification()" (mouseover)="dismissNotification()" *ngIf="displayNotification">
 
-<button class="fab" mat-fab color="primary" (click)="bumpMapIndex()">
+<button *ngIf="mapUrls.length > 1" class="fab" mat-fab color="primary" (click)="bumpMapIndex()">
   <mat-icon>donut_small</mat-icon>
 </button>
 <mat-drawer-container class="example-container" autosize>
