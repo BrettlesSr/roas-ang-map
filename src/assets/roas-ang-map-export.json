@@ -687,7 +687,7 @@
     },
     "-MNEHNpuSXifNxVPFn_b" : {
       "date" : 2751.9186021505375,
-      "description" : "The latest reports suggest that Menkent is amassing forces at their land border with Larnax in order to stem the flow of refugees. The nation's anemic naval capacity has largely been bled out to pay for GTOs, fortifications and a massive, modern army including several regiments of cutting-edge Gungriffon Hoverpanzers. On the ground in this particular situation, Tantalus is outnumbered roughly 3 to 1. Phantom Llama said:",
+      "description" : "The latest reports suggest that Menkent is amassing forces at their land border with Larnax in order to stem the flow of refugees. The nation's anemic naval capacity has largely been bled out to pay for GTOs, fortifications and a massive, modern army including several regiments of cutting-edge Gungriffon Hoverpanzers. On the ground in this particular situation, Tantalus is outnumbered roughly 3 to 1.",
       "location" : "Larnax",
       "name" : "Refugee Conflict Looms on Larnax",
       "politiesInvolved" : [ "Menkent Republic", "Republic of Tantalus" ],
@@ -701,6 +701,104 @@
       "name" : "Flying Dutchman",
       "politiesInvolved" : [ "People's Democratic Federation of Azania" ],
       "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2751-year-4.861199/post-72202406",
+      "thumbnail" : ""
+    },
+    "-MO8caqzzR_GxrhA6JsW" : {
+      "date" : 2752.0006451612903,
+      "description" : "The Don Juan League is admitted to the Outer States Compact",
+      "location" : "Don Juan",
+      "name" : "Don Juan League joins the OSC",
+      "politiesInvolved" : [ "Don Juan League", "The People’s States of America" ],
+      "territoriesInvolved" : [ "Don Juan League" ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72283325",
+      "thumbnail" : ""
+    },
+    "-MO8sKQparRyjIgpJxcv" : {
+      "date" : 2751.8352688172045,
+      "description" : "In a historic referendum, the United American Commonwealth of Eisenhower votes to become a Commonwealth Territory of the Imperial States of America. ",
+      "location" : "Eisenhower",
+      "name" : "Eisenhower becomes a Commonwealth Territory of the ISA",
+      "politiesInvolved" : [ "Imperial States of America", "United American Commonwealth" ],
+      "territoriesInvolved" : [ "United American Commonwealth" ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72294256",
+      "thumbnail" : ""
+    },
+    "-MO8suvcvOijM44blyUB" : {
+      "date" : 2752.0006451612903,
+      "description" : "A group of alien pilgrims make first contact in PRISM-71. They are interested in trade, and in ... cultural exchange.",
+      "location" : "PRISM-71",
+      "name" : "The Pilgrims Arrive",
+      "politiesInvolved" : [ "United American Commonwealth" ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72349713",
+      "thumbnail" : ""
+    },
+    "-MO8ts9VleZnhYX4IeDM" : {
+      "date" : 2752.0006451612903,
+      "description" : "The revocation of the Gateway Edict and the release of the Macbeth-class Generation Ships has unleashed a new enthusiasm for space colonization. Chief among supporters of this shift in Solarian politics is the Pilgrim Way, a new religion with that believes in the manifest destiny of humanity in the stars, right of humans to the technological artifacts of those came before and the sublime wisdom of our ancient forbears. ",
+      "location" : "Sol",
+      "name" : "Revocation of the Gateway Edict",
+      "threadlink" : "",
+      "thumbnail" : ""
+    },
+    "-MO8vM9gTGN-xluqeMM8" : {
+      "date" : 2752.1686021505375,
+      "description" : "UN Taskforces make contact with the Eight Imperium: a neo-Roman autocratic slaving regime. A conflict almost immediately breaks out when a battleship of the Imperium's fleet mutinies, successfully claiming refuge with the UN to the ire of the Imperium. ",
+      "location" : "BiS-179",
+      "name" : "New contact: Eight Imperium",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MO8vyY6FW5izBSLG32A" : {
+      "date" : 2751.7503225806454,
+      "description" : "A cultist slavery ring, consisting of kidnapped citizens from the settlement of New Italy, is broken up.",
+      "location" : "Ultor",
+      "name" : "Cultist slavery ring broken up",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72410549",
+      "thumbnail" : ""
+    },
+    "-MOw9KQdtkRamj5TLAp1" : {
+      "date" : 2752.4166666666665,
+      "description" : "The Golden Lions contact another artificial intelligence below the surface of Sutukare: this one is able  to start a process that will fix the planet's aberrant vulcanism, and perhaps fix the damaged world eventually. ",
+      "location" : "Sutukare",
+      "name" : "Sutukare Reborn",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72527190",
+      "thumbnail" : "https://i.ytimg.com/vi/7uBOdUinfq8/maxresdefault.jpg"
+    },
+    "-MOwBIPjAlbX0Tx0TWyi" : {
+      "date" : 2752.4166666666665,
+      "description" : "On the planet designated 5R-a, forces from Freehold, Azania and Yamato discover a primitive machine intelligence.",
+      "location" : "BL-1000",
+      "name" : "Empyrean League discovers new machine intelligence",
+      "politiesInvolved" : [ "People's Democratic Federation of Azania", "The Akagi Shogunate of Yamato", "The Freehold Coalition and the Enlisted Fleet" ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72662760",
+      "thumbnail" : ""
+    },
+    "-MOwChA5EPxCURBdCJZA" : {
+      "date" : 2752.4166666666665,
+      "description" : "The Freehold's leading magnates and freeshipman guild leaders have agreed by majority vote to only pursue associate status with the OSC for the moment, acknowleding the historical friendship of the PSA (harribo) and their continued military support. The Free Navy is amassing forces to provide a picket against the possible advance of the 8th Imperium, and requests any parties intending to deploy to their space request right of passage considering the sensitive nature of the political situation.",
+      "location" : "Torgatu",
+      "name" : "Torgatu becomes associate of the OSC",
+      "politiesInvolved" : [ "The People’s States of America", "Torgatu Freehold" ],
+      "territoriesInvolved" : [ "Torgatu Freehold" ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72705417",
+      "thumbnail" : ""
+    },
+    "-MOwDrk2c1MCkGc9DzBE" : {
+      "date" : 2752.2506451612903,
+      "description" : "A joint Drone fighting action in Larnax almost goes badly wrong when a disagreement about salvage rights grows out of hand.",
+      "location" : "Larnax",
+      "name" : "Salvage Disagreement",
+      "politiesInvolved" : [ "People's Democratic Federation of Azania", "Inheritors of Ussela", "Republic of Tantalus" ],
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72478505",
+      "thumbnail" : ""
+    },
+    "-MOwEdxpp8roWC_--1zr" : {
+      "date" : 2752.1686021505375,
+      "description" : "Representatives from the UCCT and Golden Lions make first contact with another Quon Remnent: this time through a mysterious wormhole in the Tempest system. These Quon have if anything even more advanced technology.",
+      "location" : "Tempest",
+      "name" : "Quon Remnent Discovered",
+      "politiesInvolved" : [ "United Council Cities of Tempest" ],
+      "threadlink" : "",
       "thumbnail" : ""
     }
   },
@@ -1017,10 +1115,6 @@
       "starA" : "BL-900",
       "starB" : "Elysium"
     },
-    "-MN0QeJs6xMPsEKxaKJy" : {
-      "starA" : "Freehold",
-      "starB" : "Istrelpia"
-    },
     "-MN0R-PB8f3ctb2UNI-k" : {
       "starA" : "REM-15",
       "starB" : "Freehold"
@@ -1090,7 +1184,7 @@
       "starB" : "Tempest"
     },
     "-MN0UiCCyS3ZdnFLuBiy" : {
-      "starA" : "REM-28",
+      "starA" : "Shiloh",
       "starB" : "Midgard"
     },
     "-MN0V-6_nwE3kdqI46GT" : {
@@ -1099,11 +1193,7 @@
     },
     "-MN0V-6_nwE3kdqI46GU" : {
       "starA" : "Solidarity",
-      "starB" : "REM-28"
-    },
-    "-MN0WGIWkHlno9C-xXL8" : {
-      "starA" : "Byron",
-      "starB" : "Solidarity"
+      "starB" : "Shiloh"
     },
     "-MN0WaQ4u6y45qMEsw9T" : {
       "starA" : "Canaan",
@@ -1116,10 +1206,6 @@
     "-MN0WwV65_AV5LQc2vKr" : {
       "starA" : "Neu Istanbul",
       "starB" : "Byron"
-    },
-    "-MN0kHB_ekm4mQfVMSmP" : {
-      "starA" : "REM-62",
-      "starB" : "Solidarity"
     },
     "-MN0kle6HH2n3Fwdy1UK" : {
       "starA" : "Real",
@@ -1212,10 +1298,6 @@
     "-MN0opF6QOqiyKlBZJYu" : {
       "starA" : "REM-287",
       "starB" : "Point Bau"
-    },
-    "-MN4pA3ZJCCLP9MhISTu" : {
-      "starA" : "SLM-650",
-      "starB" : "Solidarity"
     },
     "-MN4pLm09u393XKYCgFA" : {
       "starA" : "New Acre",
@@ -1438,7 +1520,7 @@
       "starB" : "BiS-163"
     },
     "-MN5kuew5ToHUkwD88Kg" : {
-      "starA" : "Paradise",
+      "starA" : "Octagon, Inc.",
       "starB" : "Torgatu"
     },
     "-MN5l84r7JL2KOgHIDRv" : {
@@ -1447,7 +1529,7 @@
     },
     "-MN5l84r7JL2KOgHIDRw" : {
       "starA" : "B-PRISM-300",
-      "starB" : "Paradise"
+      "starB" : "Octagon, Inc."
     },
     "-MN5lKUcCtcz0pExqhJo" : {
       "starA" : "Concilium",
@@ -1522,24 +1604,24 @@
       "starB" : "RDSU-227"
     },
     "-MN5oPSLMTsiasDwCFjm" : {
-      "starA" : "Arboria",
+      "starA" : "Chesterton",
       "starB" : "RDSU-227"
     },
     "-MN5oYK4VRxoYvCrfY13" : {
       "starA" : "CHIME-0227",
-      "starB" : "Arboria"
+      "starB" : "Chesterton"
     },
     "-MN5oeaghT2Pt4DpsjzU" : {
       "starA" : "CHIME-0244",
       "starB" : "CHIME-0227"
     },
     "-MN5onIV3bBs9u4aezK0" : {
-      "starA" : "CHIME-0231",
-      "starB" : "Arboria"
+      "starA" : "Lane",
+      "starB" : "Chesterton"
     },
     "-MN5owz2HyDeS68KDEhD" : {
       "starA" : "CHIME-0168",
-      "starB" : "Arboria"
+      "starB" : "Chesterton"
     },
     "-MN5p7LuIOrErBkofhaJ" : {
       "starA" : "CHIME-0157",
@@ -1796,6 +1878,206 @@
     "-MN603FUpH0LsYYfZO_i" : {
       "starA" : "JM6-S",
       "starB" : "Novopol"
+    },
+    "-MO82rS_rYyI72qdV1RD" : {
+      "starA" : "CHIME-0052",
+      "starB" : "CHIME-0057"
+    },
+    "-MO82rS_rYyI72qdV1RE" : {
+      "starA" : "CHIME-0052",
+      "starB" : "Eisenhower"
+    },
+    "-MO8364padmV1KqhPdxq" : {
+      "starA" : "Grande Oro",
+      "starB" : "CHIME-0052"
+    },
+    "-MO8364padmV1KqhPdxr" : {
+      "starA" : "Grande Oro",
+      "starB" : "Eisenhower"
+    },
+    "-MO83I4HZQ23ncTuduae" : {
+      "starA" : "Gelicia",
+      "starB" : "Pollux"
+    },
+    "-MO83VV7eYXlo-HWSLZg" : {
+      "starA" : "REM-300",
+      "starB" : "Far Osaka"
+    },
+    "-MO83hj1VvaMV8-_KnRd" : {
+      "starA" : "PRISM-233",
+      "starB" : "PRISM-230"
+    },
+    "-MO84TWyHhgmCAWzCLM4" : {
+      "starA" : "PRISM-73",
+      "starB" : "Eisenhower"
+    },
+    "-MO84TWyHhgmCAWzCLM5" : {
+      "starA" : "PRISM-73",
+      "starB" : "PRISM-71"
+    },
+    "-MO84f-TYH8DMqB9KpFO" : {
+      "starA" : "PRISM-95",
+      "starB" : "Eisenhower"
+    },
+    "-MO84f-TYH8DMqB9KpFP" : {
+      "starA" : "PRISM-95",
+      "starB" : "Larnax"
+    },
+    "-MOv4rX_RWQyAXUpv2vS" : {
+      "starA" : "Terminus Astra",
+      "starB" : "BiS-179"
+    },
+    "-MOv524MjxLF9Ga3NW35" : {
+      "starA" : "Anadul",
+      "starB" : "Terminus Astra"
+    },
+    "-MOv5Fv2M8DJ38HmrhTe" : {
+      "starA" : "Centrum A",
+      "starB" : "Anadul"
+    },
+    "-MOv5PCL4PTdWNuntWw-" : {
+      "starA" : "Ceres",
+      "starB" : "Centrum A"
+    },
+    "-MOv5WqNPvl0Qfvzd52x" : {
+      "starA" : "Hercules",
+      "starB" : "Ceres"
+    },
+    "-MOv5ioB0QTFKP_cIhkV" : {
+      "starA" : "Centrum B",
+      "starB" : "Centrum A"
+    },
+    "-MOv5vZW2XqhbOHiojD8" : {
+      "starA" : "Exteriores",
+      "starB" : "Centrum B"
+    },
+    "-MOv63DfXdvml0NVq3Bl" : {
+      "starA" : "Caminus",
+      "starB" : "Centrum B"
+    },
+    "-MOv6B8Tv1GTHFqLI1Xg" : {
+      "starA" : "Buran",
+      "starB" : "Caminus"
+    },
+    "-MPyxQjoBsUxh_lTD5ju" : {
+      "starA" : "TSC06",
+      "starB" : "REM-300"
+    },
+    "-MPyxZVT95SMijz2R-LN" : {
+      "starA" : "TSC05",
+      "starB" : "TSC06"
+    },
+    "-MPyxhSel0LLdS_Ryb88" : {
+      "starA" : "Margrave",
+      "starB" : "TSC05"
+    },
+    "-MPyxq1MNIG04VH_dr5E" : {
+      "starA" : "TSC04",
+      "starB" : "Margrave"
+    },
+    "-MPyy0cl8e-CaLMwFDNx" : {
+      "starA" : "TSC01",
+      "starB" : "TSC04"
+    },
+    "-MPyyEL7Q501BZn6eXKP" : {
+      "starA" : "Terranova",
+      "starB" : "TSC01"
+    },
+    "-MPyyNFDshOmXqH4s3yG" : {
+      "starA" : "TSC03",
+      "starB" : "Terranova"
+    },
+    "-MPyyVy2_6w6gkTy86M3" : {
+      "starA" : "Jinx",
+      "starB" : "TSC03"
+    },
+    "-MPyyieqdNF-tHFwZxIL" : {
+      "starA" : "Leitner Station",
+      "starB" : "Leitner's Second End"
+    },
+    "-MPyyieqdNF-tHFwZxIM" : {
+      "starA" : "Leitner Station",
+      "starB" : "Terranova"
+    },
+    "-MPyyt8BCicfW6xYJAFc" : {
+      "starA" : "Down",
+      "starB" : "Leitner Station"
+    },
+    "-MPyzqNIAX_w8JN2nV2q" : {
+      "starA" : "SLM-800",
+      "starB" : "New Cairo"
+    },
+    "-MPyzqNIAX_w8JN2nV2r" : {
+      "starA" : "SLM-800",
+      "starB" : "Sogdana"
+    },
+    "-MPz2eeORFfWIV9Jq4mo" : {
+      "starA" : "REM-13/2",
+      "starB" : "Freehold"
+    },
+    "-MPz2eeORFfWIV9Jq4mp" : {
+      "starA" : "REM-13/2",
+      "starB" : "Istrelpia"
+    },
+    "-MPz2r0XLgtSI5tVZwJK" : {
+      "starA" : "Neue Sverige",
+      "starB" : "Freehold"
+    },
+    "-MPz2r0XLgtSI5tVZwJL" : {
+      "starA" : "Neue Sverige",
+      "starB" : "REM-13/2"
+    },
+    "-MPz3kzhMHAyFIo2GE4d" : {
+      "starA" : "CHIME-0249",
+      "starB" : "CHIME-0240"
+    },
+    "-MPz45ZTO5dlhQ-FzxVf" : {
+      "starA" : "Bastiat",
+      "starB" : "CHIME-0249"
+    },
+    "-MPz4kAHxEF7nc3E3NQ-" : {
+      "starA" : "Haven (REM-60)",
+      "starB" : "REM-62"
+    },
+    "-MPz4kAHxEF7nc3E3NQ0" : {
+      "starA" : "Haven (REM-60)",
+      "starB" : "Solidarity"
+    },
+    "-MPz5c3x75rpRLM6wYMq" : {
+      "starA" : "Pegasus",
+      "starB" : "Haven (REM-60)"
+    },
+    "-MPz5oK5Nn-L9xpqgyWJ" : {
+      "starA" : "B/REM-015",
+      "starB" : "Pegasus"
+    },
+    "-MPz5oK5Nn-L9xpqgyWK" : {
+      "starA" : "B/REM-015",
+      "starB" : "REM-62"
+    },
+    "-MPz6-KpKM-a5Mmiyqeo" : {
+      "starA" : "Trevor's Star",
+      "starB" : "B/REM-015"
+    },
+    "-rem15TyranLane" : {
+      "starA" : "REM-15",
+      "starB" : "Tyran"
+    },
+    "-rem19TyranLane" : {
+      "starA" : "REM-19",
+      "starB" : "Tyran"
+    },
+    "HavenSlm650Lane" : {
+      "starA" : "Haven",
+      "starB" : "SLM-650"
+    },
+    "-ByronSlm650Lance" : {
+      "starA" : "SLM-650",
+      "starB" : "Byron"
+    },
+    "-cyranNewCairoLane" : {
+      "starA" : "New Cairo",
+      "starB" : "Cyran"
     }
   },
   "polities" : {
@@ -2684,12 +2966,12 @@
       "description" : "The Pary Deza of the mid-twenty-eighth century is a total state, which every aspect of life directed by an enormous bureaucracy according to precisely compiled and continually updated actuarial tables, cost matrices, and even eugenical programs. Each citizen surrenders their genome to the state as a matter of course, receiving in return every possible (state-acknowledged) need, including housing, education, personal effects, work, and a variety of cost-efficient entertainments and social settings. Registered children are birthed in huge state-run hatcheries according to government-run plans, and housed and educated in boarding complexes alongside the unregistered issue of privately-arranged romantic liaisons. As there is no concept of \"household\" beyond state-run civic organizations at the village/complex level, nor any significant personal property or marriage, such liaisons are conducted according strictly to free-love or informal barter arrangement principles. While external observers often consider the Deza a psychotic mass prison or inscrutable headless post-totalitarianism, the standard of living is generally high, and Dezans report a reasonable level of satisfaction with both the material and immaterial sides of life. Critics point out, of course, that not only all education and entertainment but also all polling and statistics are produced purely by the Dezan state itself, and the argument invariably ends--or devolves from--there.",
       "gdp" : "",
       "name" : "The Pary Deza",
-      "starName" : "Paradise",
+      "starName" : "Octagon, Inc.",
       "territories" : [ {
         "description" : "The Pary Deza of the mid-twenty-eighth century is a total state, which every aspect of life directed by an enormous bureaucracy according to precisely compiled and continually updated actuarial tables, cost matrices, and even eugenical programs. Each citizen surrenders their genome to the state as a matter of course, receiving in return every possible (state-acknowledged) need, including housing, education, personal effects, work, and a variety of cost-efficient entertainments and social settings. Registered children are birthed in huge state-run hatcheries according to government-run plans, and housed and educated in boarding complexes alongside the unregistered issue of privately-arranged romantic liaisons. As there is no concept of \"household\" beyond state-run civic organizations at the village/complex level, nor any significant personal property or marriage, such liaisons are conducted according strictly to free-love or informal barter arrangement principles. While external observers often consider the Deza a psychotic mass prison or inscrutable headless post-totalitarianism, the standard of living is generally high, and Dezans report a reasonable level of satisfaction with both the material and immaterial sides of life. Critics point out, of course, that not only all education and entertainment but also all polling and statistics are produced purely by the Dezan state itself, and the argument invariably ends--or devolves from--there.",
         "name" : "The Pary Deza",
         "owner" : "The Pary Deza",
-        "star" : "Paradise",
+        "star" : "Octagon, Inc.",
         "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-68328664",
         "thumbnail" : ""
       } ],
@@ -3613,6 +3895,126 @@
       "threadlink" : "https://docs.google.com/document/d/1SyNy_jrMg5ZVo1YVteAaaU6ZKizuFPwrMkslWbio_5M/edit#",
       "thumbnail" : "",
       "type" : 0
+    },
+    "-MO8445t5OLw_3B1Qf8N" : {
+      "description" : "Some say that power corrupts the man. Others, that it merely reveals the corruption that was there all along, suppressed by social norms and consequences that would fall on all those too weak to resist. Whatever is the case, it’s hard to imagine a society more enamored with the concept power over another than that of Gelica’s orbital elite. It’s unclear what the origins of the people manning the large space station are, some saying that they are the remnants of planet’s government that chose to isolate itself from planetside woes during the Disconnect, while others claim that a group of particularly deviant businessmen and other equally rotten people of means decided to settle in the broken and isolated world’s orbit to enact their sick games. They refuse to say either way. Ultimately there is little difference for Gelica’s inhabitants, however, as they remain little more than ████████████████████.",
+      "gdp" : 500,
+      "name" : "Gelician Enclave",
+      "threadlink" : "https://docs.google.com/document/d/1SyNy_jrMg5ZVo1YVteAaaU6ZKizuFPwrMkslWbio_5M/edit#",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO85kMKxlgyH2S8PNPf" : {
+      "description" : "The Octagon Cartel is one of the largest corporate entities in the Verge, representing an enormous consolidated block with hundreds of subsidiaries. Originally little more than a pirate outfit, large stock of bullion, a few crypto-miners and significantly more ruthless practices than their rivals allowed them to launder their origins and use the confusion of Disconnect to reestablish as a legitimate house of trade. After a generation of conquests, the new Cartel leadership were able administrators who consolidated control and moved the organization to a promising planet with vast growth potential. Octagon, an exotic gas giant with diffuse gravity and a semi-habitable upper atmosphere and several atmosphere-bearing moons, was made their seat of power through years of politicking, buyouts and outright violence.",
+      "gdp" : 0,
+      "name" : "Octagon Cartel",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO85rlHbqzsEge4VpJ6" : {
+      "description" : "A byzantine industrial megacorporation ruled by an elect of immortal cyborgs, their bodies swollen to maddening proportions by ever-expanding masses of tumescent flesh and life support machinery. Their exports models though? Top notch.",
+      "gdp" : 600,
+      "name" : "Toha Heavy Industries",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO865HUUf15OJnQCpQS" : {
+      "description" : "An aerospace corporation, reportedly descended from the remains of EuroRaytheon after that company was utterly destroyed in the aftermath of the Circum-Atlantic War. Many of its staff are war criminals, fanatics for the missed New Euro Century.",
+      "gdp" : 600,
+      "name" : "Banat Aerospace",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO86G_7QQQqi8rFrOht" : {
+      "description" : "An orphaned branch of a powerful chocolate company that was broken up during the Disconnect, it originally set up operations in Octagon in pursuit of new flavors. The executives crave and worship something wicked.",
+      "gdp" : 600,
+      "name" : "NeoMars CC",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO86PkcXLkrfVXPybaP" : {
+      "description" : "(Independent): A mish-mash of settlements and orbitals strung together as a cohesive polity by one man cleverly buying up colonial debts in order to finance further debt emancipation, now a self-governing fiefdom with relatively good quality of life.",
+      "gdp" : 300,
+      "name" : "8man Finance",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO86awbMAppo2mEjMpC" : {
+      "description" : "(Independent): A fiercely independent democratic state, populated by elf cosplayers who took it to the genetic level and lived in agrarian idyll. Briefly vassalized by the small militaristic nation of Laurasia, now angry and free.",
+      "gdp" : 300,
+      "name" : "Republic of Evenfall",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO86iahgyGMRv9we6Z0" : {
+      "description" : "(Independent): A small rebel force that rules over one half of what used to be Laurasia. Few people argue they didn't have it coming, but the FLIA deployed atomics against High Command's citadel and killed thirty thousand people in the surrounding city. A few years ago that meant something.",
+      "gdp" : 300,
+      "name" : "Free Laurasia Independence Army",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO86q-QqFGoDyN0B10J" : {
+      "description" : " (Independent): A remnant government led by a cabal of Laurasia's more liberal navy officers, previously sympathetic to FLIA but now left holding the bag as the country is shattered.",
+      "gdp" : 300,
+      "name" : "New Pezun",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO87Zaz6XppP7M1gS2M" : {
+      "description" : "Little more than a front for the Octagon Cartel, the Salieri Concern provides top-notch security specialists to regional interests.",
+      "gdp" : 300,
+      "name" : "Salieri Concern",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO87hgeRY3PWznXNpVW" : {
+      "description" : " (Independent): A country-sized experiment in artificial intelligence, essentially millions of expert-system runtimes meant to emulate human economic activity and operate machinery. The results are not promising, but all that computing power has uses. Actual population is about ten thousand haggard software engineers, plus support staff.",
+      "gdp" : 300,
+      "name" : "Ranch:\\SPHERICAL",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO87qQnJIDQiW7dPlBs" : {
+      "description" : " (Independent): The Magog commune is a pleasant place, peaceful and stable through several decades. The locals practice obligate naturalism, making them a curiosity that draws the prying eyes of a burgeoning tourism industry. Visitors of a more austere nature may opt into AR censorship via implants or lenses.",
+      "gdp" : 300,
+      "name" : "Magog Commune",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MO8JdEP5A8I_zWzz8D6" : {
+      "description" : "The UNSC votes to establish the Haven Mandate to rebuild the destroyed polity, and bring democracy to the Quon people.",
+      "gdp" : 0,
+      "name" : "Haven Mandate",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72205730",
+      "thumbnail" : "",
+      "type" : 3
+    },
+    "-MOv4HsUIaYJOwH42NWc" : {
+      "description" : "Mao is a grueling desert world that the locals were cometfalling with the goal of turning it green, during Disconnect all the ice trawlers got conscripted by the Mutineers and the orbital shade got blown so the climate got worse. There's some minor statelets dotting it but the surface is dominated in the north by the People's State of Mao, a large and prosperous city-state that would be an L2 colony. In the south there's various feuding technobarb communities, remnants of Qin Antarctic and PRC military formations from across eras. The equator is hot enough to kill a man in about an hour of exposure. 5 colony slots, mostly around the poles.",
+      "gdp" : 0,
+      "name" : "Mao",
+      "threadlink" : "",
+      "thumbnail" : "",
+      "type" : 0
+    },
+    "-MOv8jXyI4NnvUDwt5mI" : {
+      "description" : "The Eighth Imperium is a previously isolated branch of humanity that claims descent from the Roman Empire, though this claim is contested. The Imperium is a strict genetic stratocracy that practices a extremely limited constitutional democracy, with a unicameral legislature holding unlimited authority, though this power is sometimes installed into an Emperor.",
+      "gdp" : 0,
+      "name" : "Eighth Imperium",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : "",
+      "type" : 0
     }
   },
   "stars" : {
@@ -4082,45 +4484,45 @@
       "name" : "TORT-19",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "945",
-      "xEnd" : "1004",
-      "xStart" : "935",
-      "y" : "710",
-      "yEnd" : "719",
-      "yStart" : "682"
+      "x" : "915",
+      "xEnd" : "964",
+      "xStart" : "896",
+      "y" : "678",
+      "yEnd" : "693",
+      "yStart" : "655"
     },
     "-MN0LVpZBHBHlMEp_5bd" : {
       "name" : "TORT-26",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "983",
-      "xEnd" : "1040",
-      "xStart" : "971",
-      "y" : "780",
-      "yEnd" : "801",
-      "yStart" : "764"
+      "x" : "949",
+      "xEnd" : "1010",
+      "xStart" : "933",
+      "y" : "751",
+      "yEnd" : "770",
+      "yStart" : "751"
     },
     "-MN0LmylMs74FMha0wcE" : {
       "name" : "Outer Oblivia",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "925",
-      "xEnd" : "942",
-      "xStart" : "843",
-      "y" : "780",
-      "yEnd" : "804",
-      "yStart" : "760"
+      "x" : "889",
+      "xEnd" : "928",
+      "xStart" : "850",
+      "y" : "754",
+      "yEnd" : "793",
+      "yStart" : "737"
     },
     "-MN0LznML6t5V1fvskFU" : {
       "name" : "Treadstone",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1000",
-      "xEnd" : "1044",
+      "x" : "966",
+      "xEnd" : "1004",
       "xStart" : "963",
-      "y" : "825",
-      "yEnd" : "863",
-      "yStart" : "812"
+      "y" : "797",
+      "yEnd" : "835",
+      "yStart" : "781"
     },
     "-MN0MILQ9OQTTjwvc93m" : {
       "name" : "Oblivia",
@@ -4181,12 +4583,12 @@
       "name" : "Istrelpia",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "896",
-      "xEnd" : "964",
-      "xStart" : "885",
-      "y" : "498",
-      "yEnd" : "534",
-      "yStart" : "476"
+      "x" : "877",
+      "xEnd" : "930",
+      "xStart" : "886585",
+      "y" : "494",
+      "yEnd" : "500",
+      "yStart" : "455"
     },
     "-MN0O9llMMj63f_eTVeh" : {
       "name" : "Dis",
@@ -4302,34 +4704,34 @@
       "name" : "Freehold",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1014",
-      "xEnd" : "1055",
-      "xStart" : "976",
-      "y" : "481",
-      "yEnd" : "539",
-      "yStart" : "469"
+      "x" : "1070",
+      "xEnd" : "1112",
+      "xStart" : "1032",
+      "y" : "477",
+      "yEnd" : "532",
+      "yStart" : "467"
     },
     "-MN0R-PB8f3ctb2UNI-j" : {
       "name" : "REM-15",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1104",
-      "xEnd" : "1131",
-      "xStart" : "1071",
-      "y" : "424",
-      "yEnd" : "439",
-      "yStart" : "391"
+      "x" : "1165",
+      "xEnd" : "1186",
+      "xStart" : "1132",
+      "y" : "418",
+      "yEnd" : "428",
+      "yStart" : "384"
     },
     "-MN0RByNLX00uJt_QNdG" : {
       "name" : "Tyran",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1146",
-      "xEnd" : "1184",
-      "xStart" : "1118",
-      "y" : "481",
-      "yEnd" : "528",
-      "yStart" : "467"
+      "x" : "1167",
+      "xEnd" : "1205",
+      "xStart" : "1134",
+      "y" : "496",
+      "yEnd" : "545",
+      "yStart" : "487"
     },
     "-MN0ROSan4aQpVgSODBE" : {
       "name" : "Old Stockton",
@@ -4401,12 +4803,12 @@
       "name" : "Yamato",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1277",
-      "xEnd" : "1334",
-      "xStart" : "1261",
-      "y" : "354",
-      "yEnd" : "375",
-      "yStart" : "322"
+      "x" : "1275",
+      "xEnd" : "1335",
+      "xStart" : "1264",
+      "y" : "314",
+      "yEnd" : "342",
+      "yStart" : "288"
     },
     "-MN0TXaIg8DGz1hXFDeO" : {
       "name" : "M0-CH1",
@@ -4475,70 +4877,70 @@
       "yStart" : "317"
     },
     "-MN0UiCCyS3ZdnFLuBix" : {
-      "name" : "REM-28",
+      "name" : "Shiloh",
       "nodesPresent" : 0,
       "thumbnail" : "",
       "x" : "1362",
-      "xEnd" : "1427",
-      "xStart" : "1342",
+      "xEnd" : "1380",
+      "xStart" : "1301",
       "y" : "388",
-      "yEnd" : "411",
-      "yStart" : "368"
+      "yEnd" : "416",
+      "yStart" : "371"
     },
     "-MN0V-6_nwE3kdqI46GS" : {
       "name" : "Solidarity",
       "nodesPresent" : 1,
       "thumbnail" : "",
-      "x" : "1390",
-      "xEnd" : "1405",
-      "xStart" : "1298",
-      "y" : "468",
-      "yEnd" : "509",
-      "yStart" : "448"
+      "x" : "1356",
+      "xEnd" : "1373",
+      "xStart" : "1273",
+      "y" : "466",
+      "yEnd" : "513",
+      "yStart" : "449"
     },
     "-MN0WGIWkHlno9C-xXL7" : {
       "name" : "Byron",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1521",
-      "xEnd" : "1604",
-      "xStart" : "1504",
-      "y" : "536",
-      "yEnd" : "570",
-      "yStart" : "524"
+      "x" : "1519",
+      "xEnd" : "1528",
+      "xStart" : "1449",
+      "y" : "549",
+      "yEnd" : "587",
+      "yStart" : "535"
     },
     "-MN0WaQ4u6y45qMEsw9S" : {
       "name" : "Canaan",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1576",
-      "xEnd" : "1614",
+      "x" : "1583",
+      "xEnd" : "1617",
       "xStart" : "1540",
-      "y" : "447",
-      "yEnd" : "458",
-      "yStart" : "403"
+      "y" : "534",
+      "yEnd" : "555",
+      "yStart" : "491"
     },
     "-MN0WkdFqn7aHHWzw6t6" : {
       "name" : "CRM-300",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1621",
-      "xEnd" : "1665",
-      "xStart" : "1591",
-      "y" : "553",
-      "yEnd" : "579",
-      "yStart" : "524"
+      "x" : "1595",
+      "xEnd" : "1628",
+      "xStart" : "1549",
+      "y" : "592",
+      "yEnd" : "623",
+      "yStart" : "571"
     },
     "-MN0WwV65_AV5LQc2vKq" : {
       "name" : "Neu Istanbul",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1530",
-      "xEnd" : "1563",
-      "xStart" : "1489",
-      "y" : "619",
-      "yEnd" : "661",
-      "yStart" : "606"
+      "x" : "1519",
+      "xEnd" : "1559",
+      "xStart" : "1479",
+      "y" : "628",
+      "yEnd" : "668",
+      "yStart" : "616"
     },
     "-MN0kHBZIW7xi0MRZB6G" : {
       "name" : "REM-62",
@@ -4786,12 +5188,12 @@
       "name" : "SLM-650",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1413",
-      "xEnd" : "1468",
-      "xStart" : "1398",
-      "y" : "534",
-      "yEnd" : "553",
-      "yStart" : "517"
+      "x" : "1426",
+      "xEnd" : "1445",
+      "xStart" : "1373",
+      "y" : "547",
+      "yEnd" : "571",
+      "yStart" : "536"
     },
     "-MN4pLm09u393XKYCgF9" : {
       "name" : "New Acre",
@@ -4830,12 +5232,12 @@
       "name" : "Ecthelion",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1449",
-      "xEnd" : "1494",
-      "xStart" : "1408",
-      "y" : "795",
-      "yEnd" : "831",
-      "yStart" : "777"
+      "x" : "1445",
+      "xEnd" : "1462",
+      "xStart" : "1359",
+      "y" : "787",
+      "yEnd" : "808",
+      "yStart" : "765"
     },
     "-MN4un70oHyG5qvMBQdE" : {
       "name" : "Shenzhen",
@@ -4940,12 +5342,12 @@
       "name" : "SLM-500",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1383",
-      "xEnd" : "1398",
-      "xStart" : "1309",
-      "y" : "528",
-      "yEnd" : "550",
-      "yStart" : "504"
+      "x" : "1354",
+      "xEnd" : "1369",
+      "xStart" : "1297",
+      "y" : "534",
+      "yEnd" : "549",
+      "yStart" : "514"
     },
     "-MN4wLmVkBjLEEuRoDEy" : {
       "name" : "Gamma Orionis",
@@ -5337,22 +5739,22 @@
       "nodesPresent" : 0,
       "thumbnail" : "",
       "x" : "1099",
-      "xEnd" : "1172",
-      "xStart" : "1083",
-      "y" : "1327",
-      "yEnd" : "1356",
-      "yStart" : "1311"
+      "xEnd" : "1169",
+      "xStart" : "1085",
+      "y" : "1289",
+      "yEnd" : "1319",
+      "yStart" : "1273"
     },
     "-MN5iOy66gRKDVGi60Tr" : {
       "name" : "PRISM-921",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1080",
-      "xEnd" : "1151",
-      "xStart" : "1062",
-      "y" : "1372",
-      "yEnd" : "1396",
-      "yStart" : "1351"
+      "x" : "1078",
+      "xEnd" : "1145",
+      "xStart" : "1061",
+      "y" : "1342",
+      "yEnd" : "1364",
+      "yStart" : "1318"
     },
     "-MN5ijjt_24fw7ZvzIpJ" : {
       "name" : "PRISM-121",
@@ -5380,23 +5782,23 @@
       "name" : "Monad",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1243",
-      "xEnd" : "1265",
-      "xStart" : "1198",
-      "y" : "973",
-      "yEnd" : "984",
-      "yStart" : "931"
+      "x" : "1263",
+      "xEnd" : "1331",
+      "xStart" : "1247",
+      "y" : "943",
+      "yEnd" : "961",
+      "yStart" : "915"
     },
     "-MN5japCnLHX4Qbt8ivO" : {
       "name" : "MiC-7",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "1316",
-      "xEnd" : "1351",
-      "xStart" : "1284",
-      "y" : "954",
-      "yEnd" : "992",
-      "yStart" : "939"
+      "x" : "1294",
+      "xEnd" : "1322",
+      "xStart" : "1277",
+      "y" : "971",
+      "yEnd" : "996",
+      "yStart" : "961"
     },
     "-MN5jl9a36nkLDP6kg9M" : {
       "name" : "BiS-99",
@@ -5476,7 +5878,7 @@
       "yStart" : "1146"
     },
     "-MN5kuew5ToHUkwD88Kf" : {
-      "name" : "Paradise",
+      "name" : "Octagon, Inc.",
       "nodesPresent" : 0,
       "thumbnail" : "",
       "x" : "1171",
@@ -5652,7 +6054,7 @@
       "yStart" : "1682"
     },
     "-MN5oPSLMTsiasDwCFjl" : {
-      "name" : "Arboria",
+      "name" : "Chesterton",
       "nodesPresent" : 0,
       "thumbnail" : "",
       "x" : "894",
@@ -5685,26 +6087,26 @@
       "yStart" : "1726"
     },
     "-MN5onIV3bBs9u4aezK-" : {
-      "name" : "CHIME-0231",
+      "name" : "Lane",
       "nodesPresent" : 0,
       "thumbnail" : "",
       "x" : "837",
-      "xEnd" : "874",
-      "xStart" : "774",
+      "xEnd" : "883",
+      "xStart" : "779074",
       "y" : "1620",
-      "yEnd" : "1629",
-      "yStart" : "1584"
+      "yEnd" : "1631",
+      "yStart" : "1572"
     },
     "-MN5owz2HyDeS68KDEhC" : {
       "name" : "CHIME-0168",
       "nodesPresent" : 0,
       "thumbnail" : "",
       "x" : "896",
-      "xEnd" : "914",
-      "xStart" : "814",
+      "xEnd" : "971",
+      "xStart" : "880",
       "y" : "1577",
       "yEnd" : "1599",
-      "yStart" : "1554"
+      "yStart" : "1564"
     },
     "-MN5p7LuIOrErBkofhaI" : {
       "name" : "CHIME-0157",
@@ -5776,34 +6178,34 @@
       "name" : "PRISM-71",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "800",
-      "xEnd" : "877",
-      "xStart" : "782",
-      "y" : "846",
-      "yEnd" : "862",
-      "yStart" : "815"
+      "x" : "805",
+      "xEnd" : "857",
+      "xStart" : "792",
+      "y" : "844",
+      "yEnd" : "851",
+      "yStart" : "820"
     },
     "-MN5rtzd8665Xdm4ctJe" : {
       "name" : "Eisenhower",
       "nodesPresent" : "1",
       "thumbnail" : "",
-      "x" : "798",
-      "xEnd" : "807",
-      "xStart" : "703",
-      "y" : "978",
-      "yEnd" : "988",
-      "yStart" : "931"
+      "x" : "790",
+      "xEnd" : "809",
+      "xStart" : "699",
+      "y" : "927",
+      "yEnd" : "939",
+      "yStart" : "844"
     },
     "-MN5s1_NXFhN37F9sMNC" : {
       "name" : "PRISM-82",
       "nodesPresent" : 0,
       "thumbnail" : "",
-      "x" : "894",
-      "xEnd" : "932",
+      "x" : "900",
+      "xEnd" : "923",
       "xStart" : "864",
-      "y" : "884",
-      "yEnd" : "903",
-      "yStart" : "859"
+      "y" : "890",
+      "yEnd" : "907",
+      "yStart" : "863"
     },
     "-MN5sCjhfT9ecVLcECFh" : {
       "name" : "PRISM-88",
@@ -6255,6 +6657,413 @@
       "y" : "1153",
       "yEnd" : "1179",
       "yStart" : "1135"
+    },
+    "-MO82rS_rYyI72qdV1RC" : {
+      "name" : "CHIME-0052",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "764",
+      "xEnd" : "809",
+      "xStart" : "721",
+      "y" : "975",
+      "yEnd" : "1001",
+      "yStart" : "958"
+    },
+    "-MO8364padmV1KqhPdxp" : {
+      "name" : "Grande Oro",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "711",
+      "xEnd" : "727",
+      "xStart" : "612",
+      "y" : "935",
+      "yEnd" : "953",
+      "yStart" : "912"
+    },
+    "-MO83I4HZQ23ncTuduad" : {
+      "name" : "Gelicia",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "707",
+      "xEnd" : "796",
+      "xStart" : "681",
+      "y" : "176",
+      "yEnd" : "192",
+      "yStart" : "151"
+    },
+    "-MO83VV7eYXlo-HWSLZf" : {
+      "name" : "REM-300",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1812",
+      "xEnd" : "1895",
+      "xStart" : "1780",
+      "y" : "456",
+      "yEnd" : "470",
+      "yStart" : "429"
+    },
+    "-MO83hj1VvaMV8-_KnRc" : {
+      "name" : "PRISM-233",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1695",
+      "xEnd" : "1725",
+      "xStart" : "1653",
+      "y" : "1654",
+      "yEnd" : "1666",
+      "yStart" : "1622"
+    },
+    "-MO84TWyHhgmCAWzCLM3" : {
+      "name" : "PRISM-73",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "834",
+      "xEnd" : "900",
+      "xStart" : "831",
+      "y" : "867",
+      "yEnd" : "876",
+      "yStart" : "844"
+    },
+    "-MO84f-TYH8DMqB9KpFN" : {
+      "name" : "PRISM-95",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "870",
+      "xEnd" : "884",
+      "xStart" : "815",
+      "y" : "958",
+      "yEnd" : "977",
+      "yStart" : "945"
+    },
+    "-MOv4rX_RWQyAXUpv2vR" : {
+      "name" : "Terminus Astra",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1559",
+      "xEnd" : "1617",
+      "xStart" : "1530",
+      "y" : "1166",
+      "yEnd" : "1189",
+      "yStart" : "1148"
+    },
+    "-MOv524MjxLF9Ga3NW34" : {
+      "name" : "Anadul",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1638",
+      "xEnd" : "1670",
+      "xStart" : "1621",
+      "y" : "1149",
+      "yEnd" : "1158",
+      "yStart" : "1126"
+    },
+    "-MOv5Fv2M8DJ38HmrhTd" : {
+      "name" : "Centrum A",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1682",
+      "xEnd" : "1697",
+      "xStart" : "1615",
+      "y" : "1181",
+      "yEnd" : "1202",
+      "yStart" : "1168"
+    },
+    "-MOv5PCL4PTdWNuntWvz" : {
+      "name" : "Ceres",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1733",
+      "xEnd" : "1760",
+      "xStart" : "1678",
+      "y" : "1138",
+      "yEnd" : "1154",
+      "yStart" : "1120"
+    },
+    "-MOv5WqNPvl0Qfvzd52w" : {
+      "name" : "Hercules",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1858",
+      "xEnd" : "1893",
+      "xStart" : "1811",
+      "y" : "1160",
+      "yEnd" : "1184",
+      "yStart" : "1150"
+    },
+    "-MOv5ioB0QTFKP_cIhkU" : {
+      "name" : "Centrum B",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1700",
+      "xEnd" : "1720",
+      "xStart" : "1638",
+      "y" : "1200",
+      "yEnd" : "1224",
+      "yStart" : "1190"
+    },
+    "-MOv5vZW2XqhbOHiojD7" : {
+      "name" : "Exteriores",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1807",
+      "xEnd" : "1846",
+      "xStart" : "1764",
+      "y" : "1257",
+      "yEnd" : "1278",
+      "yStart" : "1244"
+    },
+    "-MOv63DfXdvml0NVq3Bk" : {
+      "name" : "Caminus",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1714",
+      "xEnd" : "1728",
+      "xStart" : "1646",
+      "y" : "1249",
+      "yEnd" : "1268",
+      "yStart" : "1234"
+    },
+    "-MOv6B8Tv1GTHFqLI1Xf" : {
+      "name" : "Buran",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1670",
+      "xEnd" : "1702",
+      "xStart" : "1620",
+      "y" : "1289",
+      "yEnd" : "1308",
+      "yStart" : "1274"
+    },
+    "-MPyxQjni8cfeF0X45dx" : {
+      "name" : "TSC06",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1820",
+      "xEnd" : "1854",
+      "xStart" : "1765",
+      "y" : "530",
+      "yEnd" : "551",
+      "yStart" : "515"
+    },
+    "-MPyxZVT95SMijz2R-LM" : {
+      "name" : "TSC05",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1880",
+      "xEnd" : "1910",
+      "xStart" : "1821",
+      "y" : "604",
+      "yEnd" : "623",
+      "yStart" : "587"
+    },
+    "-MPyxhSel0LLdS_Ryb87" : {
+      "name" : "Margrave",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1983",
+      "xEnd" : "2062",
+      "xStart" : "1973",
+      "y" : "509",
+      "yEnd" : "523",
+      "yStart" : "487"
+    },
+    "-MPyxq1MNIG04VH_dr5D" : {
+      "name" : "TSC04",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "2041",
+      "xEnd" : "2116",
+      "xStart" : "2027",
+      "y" : "611",
+      "yEnd" : "625",
+      "yStart" : "589"
+    },
+    "-MPyy0cl8e-CaLMwFDNw" : {
+      "name" : "TSC01",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1937",
+      "xEnd" : "2006",
+      "xStart" : "1917",
+      "y" : "708",
+      "yEnd" : "723",
+      "yStart" : "687"
+    },
+    "-MPyyEL7Q501BZn6eXKO" : {
+      "name" : "Terranova",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1867",
+      "xEnd" : "1884",
+      "xStart" : "1799",
+      "y" : "742",
+      "yEnd" : "774",
+      "yStart" : "721"
+    },
+    "-MPyyNFDshOmXqH4s3yF" : {
+      "name" : "TSC03",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1947",
+      "xEnd" : "1988",
+      "xStart" : "1927",
+      "y" : "818",
+      "yEnd" : "837",
+      "yStart" : "793"
+    },
+    "-MPyyVy2_6w6gkTy86M2" : {
+      "name" : "Jinx",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "2083",
+      "xEnd" : "2116",
+      "xStart" : "2055",
+      "y" : "867",
+      "yEnd" : "903",
+      "yStart" : "859"
+    },
+    "-MPyyieqdNF-tHFwZxIK" : {
+      "name" : "Leitner Station",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1746",
+      "xEnd" : "1820",
+      "xStart" : "1732",
+      "y" : "725",
+      "yEnd" : "736",
+      "yStart" : "679"
+    },
+    "-MPyyt8BCicfW6xYJAFb" : {
+      "name" : "Down",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1759",
+      "xEnd" : "1801",
+      "xStart" : "1726",
+      "y" : "791",
+      "yEnd" : "829",
+      "yStart" : "777"
+    },
+    "-MPyzqNIAX_w8JN2nV2p" : {
+      "name" : "SLM-800",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1313",
+      "xEnd" : "1379",
+      "xStart" : "1302",
+      "y" : "738",
+      "yEnd" : "757",
+      "yStart" : "723"
+    },
+    "-MPz2eeN2Xmw0QYK6G_P" : {
+      "name" : "REM-13/2",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "949",
+      "xEnd" : "990",
+      "xStart" : "913",
+      "y" : "502",
+      "yEnd" : "526",
+      "yStart" : "492"
+    },
+    "-MPz2r0XLgtSI5tVZwJJ" : {
+      "name" : "Neue Sverige",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "985",
+      "xEnd" : "1038",
+      "xStart" : "945",
+      "y" : "456",
+      "yEnd" : "466",
+      "yStart" : "412"
+    },
+    "-MPz30-IdXMWdTPTMNd1" : {
+      "name" : "Say",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "694",
+      "xEnd" : "769",
+      "xStart" : "676",
+      "y" : "1596",
+      "yEnd" : "1637",
+      "yStart" : "1583"
+    },
+    "-MPz3TmruPNvCAUAeCNI" : {
+      "name" : "CHIME-0240",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "730",
+      "xEnd" : "771",
+      "xStart" : "690",
+      "y" : "1707",
+      "yEnd" : "1715",
+      "yStart" : "1680"
+    },
+    "-MPz3kzhMHAyFIo2GE4c" : {
+      "name" : "CHIME-0249",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "692",
+      "xEnd" : "769",
+      "xStart" : "684",
+      "y" : "1777",
+      "yEnd" : "1789",
+      "yStart" : "1751"
+    },
+    "-MPz45ZTO5dlhQ-FzxVe" : {
+      "name" : "Bastiat",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "775",
+      "xEnd" : "815",
+      "xStart" : "728",
+      "y" : "1787",
+      "yEnd" : "1830",
+      "yStart" : "1777"
+    },
+    "-MPz4kAHxEF7nc3E3NPz" : {
+      "name" : "Haven (REM-60)",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1434",
+      "xEnd" : "1455",
+      "xStart" : "1380",
+      "y" : "449",
+      "yEnd" : "462",
+      "yStart" : "398"
+    },
+    "-MPz5c3x75rpRLM6wYMp" : {
+      "name" : "Pegasus",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1489",
+      "xEnd" : "1538",
+      "xStart" : "1447",
+      "y" : "479",
+      "yEnd" : "528",
+      "yStart" : "469"
+    },
+    "-MPz5oK5Nn-L9xpqgyWI" : {
+      "name" : "B/REM-015",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1583",
+      "xEnd" : "1651",
+      "xStart" : "1562",
+      "y" : "462",
+      "yEnd" : "473",
+      "yStart" : "431"
+    },
+    "-MPz6-KpKM-a5Mmiyqen" : {
+      "name" : "Trevor's Star",
+      "nodesPresent" : 0,
+      "thumbnail" : "",
+      "x" : "1678",
+      "xEnd" : "1720",
+      "xStart" : "1637",
+      "y" : "477",
+      "yEnd" : "517",
+      "yStart" : "461"
     }
   },
   "territories" : {
@@ -6678,7 +7487,7 @@
       "description" : "The Pary Deza of the mid-twenty-eighth century is a total state, which every aspect of life directed by an enormous bureaucracy according to precisely compiled and continually updated actuarial tables, cost matrices, and even eugenical programs. Each citizen surrenders their genome to the state as a matter of course, receiving in return every possible (state-acknowledged) need, including housing, education, personal effects, work, and a variety of cost-efficient entertainments and social settings. Registered children are birthed in huge state-run hatcheries according to government-run plans, and housed and educated in boarding complexes alongside the unregistered issue of privately-arranged romantic liaisons. As there is no concept of \"household\" beyond state-run civic organizations at the village/complex level, nor any significant personal property or marriage, such liaisons are conducted according strictly to free-love or informal barter arrangement principles. While external observers often consider the Deza a psychotic mass prison or inscrutable headless post-totalitarianism, the standard of living is generally high, and Dezans report a reasonable level of satisfaction with both the material and immaterial sides of life. Critics point out, of course, that not only all education and entertainment but also all polling and statistics are produced purely by the Dezan state itself, and the argument invariably ends--or devolves from--there.",
       "name" : "The Pary Deza",
       "owner" : "The Pary Deza",
-      "star" : "Paradise",
+      "star" : "Octagon, Inc.",
       "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-68328664",
       "thumbnail" : ""
     },
@@ -7152,6 +7961,190 @@
       "owner" : "The Ruins of Praetoria",
       "star" : "Praetoria",
       "threadlink" : "https://docs.google.com/document/d/1SyNy_jrMg5ZVo1YVteAaaU6ZKizuFPwrMkslWbio_5M/edit#",
+      "thumbnail" : ""
+    },
+    "-MO8445t5OLw_3B1Qf8O" : {
+      "description" : "Some say that power corrupts the man. Others, that it merely reveals the corruption that was there all along, suppressed by social norms and consequences that would fall on all those too weak to resist. Whatever is the case, it’s hard to imagine a society more enamored with the concept power over another than that of Gelica’s orbital elite. It’s unclear what the origins of the people manning the large space station are, some saying that they are the remnants of planet’s government that chose to isolate itself from planetside woes during the Disconnect, while others claim that a group of particularly deviant businessmen and other equally rotten people of means decided to settle in the broken and isolated world’s orbit to enact their sick games. They refuse to say either way. Ultimately there is little difference for Gelica’s inhabitants, however, as they remain little more than ████████████████████.",
+      "name" : "Gelician Enclave",
+      "owner" : "Gelician Enclave",
+      "star" : "Gelicia",
+      "threadlink" : "https://docs.google.com/document/d/1SyNy_jrMg5ZVo1YVteAaaU6ZKizuFPwrMkslWbio_5M/edit#",
+      "thumbnail" : ""
+    },
+    "-MO85kMKxlgyH2S8PNPg" : {
+      "description" : "The Octagon Cartel is one of the largest corporate entities in the Verge, representing an enormous consolidated block with hundreds of subsidiaries. Originally little more than a pirate outfit, large stock of bullion, a few crypto-miners and significantly more ruthless practices than their rivals allowed them to launder their origins and use the confusion of Disconnect to reestablish as a legitimate house of trade. After a generation of conquests, the new Cartel leadership were able administrators who consolidated control and moved the organization to a promising planet with vast growth potential. Octagon, an exotic gas giant with diffuse gravity and a semi-habitable upper atmosphere and several atmosphere-bearing moons, was made their seat of power through years of politicking, buyouts and outright violence.",
+      "name" : "Octagon Cartel",
+      "owner" : "Octagon Cartel",
+      "star" : "Octagon, Inc.",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO85rlHbqzsEge4VpJ7" : {
+      "description" : "A byzantine industrial megacorporation ruled by an elect of immortal cyborgs, their bodies swollen to maddening proportions by ever-expanding masses of tumescent flesh and life support machinery. Their exports models though? Top notch.",
+      "name" : "Toha Heavy Industries",
+      "owner" : "Toha Heavy Industries",
+      "star" : "Octagon, Inc.",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO865HUUf15OJnQCpQT" : {
+      "description" : "An aerospace corporation, reportedly descended from the remains of EuroRaytheon after that company was utterly destroyed in the aftermath of the Circum-Atlantic War. Many of its staff are war criminals, fanatics for the missed New Euro Century.",
+      "name" : "Banat Aerospace",
+      "owner" : "Banat Aerospace",
+      "star" : "Octagon, Inc.",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO86G_7QQQqi8rFrOhu" : {
+      "description" : "An orphaned branch of a powerful chocolate company that was broken up during the Disconnect, it originally set up operations in Octagon in pursuit of new flavors. The executives crave and worship something wicked.",
+      "name" : "NeoMars CC",
+      "owner" : "NeoMars CC",
+      "star" : "Octagon, Inc.",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO86PkcXLkrfVXPybaQ" : {
+      "description" : "(Independent): A mish-mash of settlements and orbitals strung together as a cohesive polity by one man cleverly buying up colonial debts in order to finance further debt emancipation, now a self-governing fiefdom with relatively good quality of life.",
+      "name" : "8man Finance",
+      "owner" : "8man Finance",
+      "star" : "Octagon, Inc.",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO86awcX1lLhIjkdPP0" : {
+      "description" : "(Independent): A fiercely independent democratic state, populated by elf cosplayers who took it to the genetic level and lived in agrarian idyll. Briefly vassalized by the small militaristic nation of Laurasia, now angry and free.",
+      "name" : "Republic of Evenfall",
+      "owner" : "Republic of Evenfall",
+      "star" : "Octagon, Inc.",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO86iahgyGMRv9we6Z1" : {
+      "description" : "(Independent): A small rebel force that rules over one half of what used to be Laurasia. Few people argue they didn't have it coming, but the FLIA deployed atomics against High Command's citadel and killed thirty thousand people in the surrounding city. A few years ago that meant something.",
+      "name" : "Free Laurasia Independence Army",
+      "owner" : "Free Laurasia Independence Army",
+      "star" : "Octagon, Inc.",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO86q-QqFGoDyN0B10K" : {
+      "description" : " (Independent): A remnant government led by a cabal of Laurasia's more liberal navy officers, previously sympathetic to FLIA but now left holding the bag as the country is shattered.",
+      "name" : "New Pezun",
+      "owner" : "New Pezun",
+      "star" : "Octagon, Inc.",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO87Zb-Wr8YMAVvlGM8" : {
+      "description" : "Little more than a front for the Octagon Cartel, the Salieri Concern provides top-notch security specialists to regional interests.",
+      "name" : "Salieri Concern",
+      "owner" : "Salieri Concern",
+      "star" : "Larnax",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO87hgeRY3PWznXNpVX" : {
+      "description" : " (Independent): A country-sized experiment in artificial intelligence, essentially millions of expert-system runtimes meant to emulate human economic activity and operate machinery. The results are not promising, but all that computing power has uses. Actual population is about ten thousand haggard software engineers, plus support staff.",
+      "name" : "Ranch:\\SPHERICAL",
+      "owner" : "Ranch:\\SPHERICAL",
+      "star" : "Larnax",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO87qQnJIDQiW7dPlBt" : {
+      "description" : " (Independent): The Magog commune is a pleasant place, peaceful and stable through several decades. The locals practice obligate naturalism, making them a curiosity that draws the prying eyes of a burgeoning tourism industry. Visitors of a more austere nature may opt into AR censorship via implants or lenses.",
+      "name" : "Magog Commune",
+      "owner" : "Magog Commune",
+      "star" : "Larnax",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-69596713",
+      "thumbnail" : ""
+    },
+    "-MO8JdEP5A8I_zWzz8D7" : {
+      "description" : "The UNSC votes to establish the Haven Mandate to rebuild the destroyed polity, and bring democracy to the Quon people.",
+      "name" : "Haven Mandate",
+      "owner" : "Haven Mandate",
+      "star" : "Haven",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72205730",
+      "thumbnail" : ""
+    },
+    "-MOv4HsUIaYJOwH42NWd" : {
+      "description" : "Mao is a grueling desert world that the locals were cometfalling with the goal of turning it green, during Disconnect all the ice trawlers got conscripted by the Mutineers and the orbital shade got blown so the climate got worse. There's some minor statelets dotting it but the surface is dominated in the north by the People's State of Mao, a large and prosperous city-state that would be an L2 colony. In the south there's various feuding technobarb communities, remnants of Qin Antarctic and PRC military formations from across eras. The equator is hot enough to kill a man in about an hour of exposure. 5 colony slots, mostly around the poles.",
+      "name" : "Mao",
+      "owner" : "Mao",
+      "star" : "Mao",
+      "threadlink" : "",
+      "thumbnail" : ""
+    },
+    "-MOv8jXyI4NnvUDwt5mJ" : {
+      "description" : "The Eighth Imperium is a previously isolated branch of humanity that claims descent from the Roman Empire, though this claim is contested. The Imperium is a strict genetic stratocracy that practices a extremely limited constitutional democracy, with a unicameral legislature holding unlimited authority, though this power is sometimes installed into an Emperor.",
+      "name" : "Eighth Imperium",
+      "owner" : "Eighth Imperium",
+      "star" : "Centrum A",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MOv8slQYw3xwaDmtVHV" : {
+      "description" : " The system directly beyond BiS-179. Has one habitable planet, a near garden world who's flora and fauna are dominated by massive pollen creating trees. These trees, which apparently have major medical and anagathic properties, are grown in massive orchards and plantations by a population composed of slaves, both born and subject to judicial punishment from all other worlds. Mortality from the unusual cancers generated by exposure to the pollen is apparently high. A powerful fleet element is known to be in this system, including a large border fortress.",
+      "name" : "Terminus Astra",
+      "owner" : "Eighth Imperium",
+      "star" : "Terminus Astra",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MOv91uMIHR4o5LyIcVD" : {
+      "description" : "Anadul A and B are two of what appear to be first age of colonization colonies settled by a coalition of Middle Eastern, Turkish and North African people. Both appear to have started with conditions only slightly better than mars and been subject to several centuries of terraforming, to the point where they are about as habitable as the extreme northern and southern hemispheres of earth. The Anadulan people are viewed as an inferior subject people by the Imperium, though trusted enough to act as enlisted spacers and soldiers, and relatively 'low skill' technical assignments. Anadula was annexed by the empire fairly recently after its culdesac system was discovered. There are considerable numbers of rebel groups, including remnants of the old government, and the Islamic Socialist Union, to which the crew of the Freedom belong.",
+      "name" : "Anadus A and B",
+      "owner" : "Eighth Imperium",
+      "star" : "Anadul",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MOv9DNxNQUG4wnHeirh" : {
+      "description" : " An Earth-sized Garden World, Ceres is the Empire's most populous planet, and the only one, other than Centrum-A and B with a significant population of imperial humans. It also has a large slave population.",
+      "name" : "Ceres",
+      "owner" : "Eighth Imperium",
+      "star" : "Ceres",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MOv9MeBqN1HcwPbGjZj" : {
+      "description" : "The Capital System. An Alpha Centauri style triple star system, where each side has a capital planet. Approximately five months of standard travel exist between the two halves of the system and their jump point. Centrum-A, the capital of the Northern Empire is a relatively cold Terran style planet, which orbits near a rocky super-earth which has its own native life nearby. Centrum-B, capital of the Southern is much hotter, with a climate similar to that of Tempest. Both include large Imperial human and slave populations, though mostly genetic.",
+      "name" : "Centrum A and B",
+      "owner" : "Eighth Imperium",
+      "star" : "Centrum B",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MOv9TTPgRwwgqX_T4Q9" : {
+      "description" : " A long ago conquered world and economic engine of the northern empire, Buran's inhabitants are automatically slaves under Imperium law, though they are allowed to organize into communities under imperial edict providing they can pay local authorities a certain tax each year. The excesses of this tax are taken in the lives of Buran's citizens.",
+      "name" : "Buran",
+      "owner" : "Eighth Imperium",
+      "star" : "Buran",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MOv9aetbG8f9hp2H0Sk" : {
+      "description" : "A relatively newly settled world, Hercules is the furthest East of all Imperial planets. The planet is similar to earth in the Cambrian period. It is apparently the scene of conflict between the Imperium and an alien race which they call 'the tacet' and thus has a heavy fleet garrison. The furthest extent of the Northern Empire",
+      "name" : "Herculues",
+      "owner" : "Eighth Imperium",
+      "star" : "Hercules",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MOv9hl_w6h4V4WxgRQ4" : {
+      "description" : " A large industrial world, Caminus's factories serve as the industrial heart of the Southern Empire. Most of the population are genetically bred bioroid slave labourers.",
+      "name" : "Caminus",
+      "owner" : "Eighth Imperium",
+      "star" : "Caminus",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
+      "thumbnail" : ""
+    },
+    "-MOv9ocP9FnANCtgCukW" : {
+      "description" : "The furthest extent of the Southern Empire. Apparently includes large scale alien ruins, which may be the source of the Imperium's \"disruption shield\" technology. A native population of humans exist, but are apparently subject to heavy suppression, and perhaps genocide by the Imperium.",
+      "name" : "Exteriores",
+      "owner" : "Eighth Imperium",
+      "star" : "Exteriores",
+      "threadlink" : "https://forums.spacebattles.com/threads/ruins-of-alien-stars-2752-year-5.861199/post-72487262",
       "thumbnail" : ""
     }
   }
