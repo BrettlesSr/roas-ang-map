@@ -1,12 +1,23 @@
-<mat-tab-group *ngIf="starInfo" mat-align-tabs="center">
-    <mat-tab label="{{starInfo.name}}">
+<mat-tab-group *ngIf="polityInfo" mat-align-tabs="center">
+    <mat-tab label="State">
 
-        <div *ngIf="starInfo.thumbnail.length > 0" class="tab-content" class="image-container">
-            <img src="{{starInfo.thumbnail}}" width=480px>
+        <div>
+            <a *ngIf="polity.threadlink" href="{{polity.threadlink}}" target="_blank">{{polity.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+            <div *ngIf="!polity.threadlink" class="non-link">{{polity.name}}</div>
+        </div>
+        <div class="image-container">
+            <img src="{{polity.thumbnail}}" width="480px">
+        </div>
+        <div>
+            {{polity.description}}
         </div>
 
+    </mat-tab>
+
+    <mat-tab label="Territories">
+
         <div *ngIf="filteredTerritories && filteredTerritories.length > 0"  class="title">
-            Territories In {{starInfo.name}}
+            Territories In {{polity.name}}
         </div>
         
         <div *ngFor="let territory of filteredTerritories" class="tab-content">
@@ -19,7 +30,7 @@
                 <img src="{{territory.thumbnail}}" width="480px">
             </div>
             <div>
-                {{shortened(territory.description, 200)}}
+                {{getTerritoryDescriptor(territory)}}
             </div>
         </div>
 
@@ -28,7 +39,7 @@
     <mat-tab label="History" *ngIf="orderedHistory && orderedHistory.length > 0">
 
         <div class="title">
-            History Of {{starInfo.name}}
+            History Of {{polity.name}}
         </div>
 
         <div *ngFor="let history of orderedHistory" class="tab-content">
@@ -42,24 +53,6 @@
             </div>            
             <div>
                 {{history.description}}
-            </div>
-        </div>
-
-    </mat-tab>
-
-    <mat-tab label="Trade" *ngIf="starInfo.nodesPresent > 0">
-
-        <div class="title">
-            {{starInfo.name}} Trade Nodes
-        </div>
-    
-        <div class="tab-content">    
-            <div>
-                <div class="non-link">Trade Node</div>
-            </div>        
-            <div>
-                This system contains {{starInfo.nodesPresent}} Trade Node(s).
-                It can support freighters providing up to {{starInfo.nodesPresent * 25}}% of a state's territorial income (twice that for Merchant Marine).
             </div>
         </div>
 

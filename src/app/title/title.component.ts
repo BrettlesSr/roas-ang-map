@@ -142,15 +142,17 @@ export class TitleComponent implements OnInit {
       const key1 = this.db.database.ref().child('polities').push().key;
       const updates = {};
       updates['/polities/' + key1] = result.polity;
-      const key2 = this.db.database.ref().child('territories').push().key;
-      updates['/territories/' + key2] = {
-        name: result.polity.name,
-        description: result.polity.description,
-        thumbnail: result.polity.thumbnail,
-        threadlink: result.polity.threadlink,
-        owner: result.polity.name,
-        star: result.star
-      };
+      if (result.star && result.star.length > 0) {
+        const key2 = this.db.database.ref().child('territories').push().key;
+        updates['/territories/' + key2] = {
+          name: result.polity.name,
+          description: result.polity.description,
+          thumbnail: result.polity.thumbnail,
+          threadlink: result.polity.threadlink,
+          owner: result.polity.name,
+          star: result.star
+        };
+      }      
       this.db.database.ref().update(updates);
     });
   }

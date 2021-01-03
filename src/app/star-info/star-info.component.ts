@@ -42,4 +42,12 @@ export class StarInfoComponent implements OnInit {
     const withoutCommas = yearString.replace(',', '');
     return title + ' - ' + withoutCommas + ' ';
   }
+
+  shortened(input: string, count: number): string {
+    if (input.length < count) {
+      return input;
+    } else {
+      return input.substring(0, count) + "...";
+    }
+  }
 }
