@@ -1,9 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Polity } from '../models/polity';
-import { Star } from '../models/star';
 import { Territory } from '../models/territory';
 import { History } from '../models/history';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-polity-info',
@@ -14,6 +14,7 @@ export class PolityInfoComponent implements OnInit {
   constructor(private db: AngularFireDatabase) {}
 
   @Input() polityInfo: Polity;
+  @Input() parent: AppComponent;
   history: History[] = [];
   territories: Territory[] = [];
 
@@ -34,7 +35,7 @@ export class PolityInfoComponent implements OnInit {
   }
 
   get filteredTerritories(): Territory[] {
-    return this.territories.filter(t => t.star === this.polityInfo.name);
+    return this.territories.filter(t => t.owner === this.polityInfo.name);
   }
   
   getTerritoryDescriptor(territory: Territory) {
@@ -45,5 +46,13 @@ export class PolityInfoComponent implements OnInit {
     } else {
       return territory.description;
     }
+  }
+
+  openPolity(polity: string) {
+    this.parent.openPolity(polity);
+  }
+
+  openStar(star: string) {
+    this.parent.openStar(star);
   }
 }

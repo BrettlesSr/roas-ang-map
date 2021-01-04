@@ -8,13 +8,19 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="sidenav-fixed" mode="side" position="end">
     <app-star-info
-      [starInfo]="activeStar">
+      *ngIf = "mode === 0"
+      [starInfo]="activeStar"
+      [parent]="this">
     </app-star-info>
+    <app-polity-info
+    *ngIf = "mode === 1"
+    [starInfo]="activePolity"
+    [parent]="this">
+    </app-polity-info>
   </mat-drawer>
 
   <pan-zoom [config]="panZoomConfig">
     <div style="position: relative;">
-
       <img src="{{mapUrls[mapIndex]}}" width="2400" height="2400" usemap="#starmap">    
       <map name="starmap">
         <area *ngFor="let star of allStars" shape="rect" coords="{{star.xStart}}, {{star.yStart}}, {{star.xEnd}}, {{star.yEnd}}" alt="{{star.name}}" (click)="openDrawer(star.name)">

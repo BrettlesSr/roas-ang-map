@@ -21,6 +21,11 @@
             <div>
                 {{shortened(territory.description, 200)}}
             </div>
+            <div>
+                <mat-chip-list>
+                    <mat-chip color="primary" (click)="openPolity(territory.owner)"> {{territory.owner}}</mat-chip>
+                </mat-chip-list>
+            </div>
         </div>
 
     </mat-tab>
@@ -43,6 +48,11 @@
             <div>
                 {{history.description}}
             </div>
+            <div>
+                <mat-chip-list>
+                    <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary" (click)="openPolity(polity)"> {{polity}}</mat-chip>
+                </mat-chip-list>
+            </div>
         </div>
 
     </mat-tab>
@@ -60,6 +70,7 @@
             <div>
                 This system contains {{starInfo.nodesPresent}} Trade Node(s).
                 It can support freighters providing up to {{starInfo.nodesPresent * 25}}% of a state's territorial income (twice that for Merchant Marine).
+                This mechanic is undergoing revision for the year 2753 and onwards.
             </div>
         </div>
 

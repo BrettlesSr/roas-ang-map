@@ -32,6 +32,12 @@
             <div>
                 {{getTerritoryDescriptor(territory)}}
             </div>
+            <div>
+                Star system: 
+                <mat-chip-list>
+                    <mat-chip color="primary" (click)="openStar(territory.star)"> {{territory.star}}</mat-chip>
+                </mat-chip-list>
+            </div>
         </div>
 
     </mat-tab>
@@ -53,6 +59,11 @@
             </div>            
             <div>
                 {{history.description}}
+            </div>
+            <div>
+                <mat-chip-list>
+                    <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary" (click)="openPolity(polity)"> {{polity}}</mat-chip>
+                </mat-chip-list>
             </div>
         </div>
 

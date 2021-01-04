@@ -19,6 +19,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { TitleComponent } from './title/title.component';
 
@@ -60,6 +61,7 @@ import { PolityInfoComponent } from './polity-info/polity-info.component';
     MatDialogModule,
     MatSelectModule,
     MatDatepickerModule,
+    MatChipsModule,
     MatNativeDateModule,
     AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
     AngularFireDatabaseModule,

@@ -9,6 +9,7 @@ import { map } from 'rxjs/internal/operators/map';
 import { CookieService } from './services/cookie-service';
 import { PanZoomConfig, PanZoomAPI, PanZoomModel, PanZoomConfigOptions } from 'ngx-panzoom';
 import { Subscription } from 'rxjs';
+import { SidebarMode } from './enums/sidebarMode';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,9 @@ export class AppComponent implements OnInit {
   showFiller = false;
   isOpen = false;
   timeToOpen = 270;
+  mode = SidebarMode.Star;
   activeStar: Star;
+  activePolity: Polity;
   allStars: Star[];
   allPolities: Polity[];
   allTerritories: Territory[];
@@ -73,6 +76,7 @@ export class AppComponent implements OnInit {
       this.drawer.open();
       this.isOpen = true;
       this.activeStar = matchingStars[0];
+      this.mode = SidebarMode.Star;
     }
   }
 
@@ -109,6 +113,17 @@ export class AppComponent implements OnInit {
   dismissNotification(): void {
     this.cookieService.setCookie('roas-ang-map.displayNotification', 'no', 600);
     this.displayNotification = false;
+  }
+
+  openPolity(name: string): void {
+    this.mode = SidebarMode.Polity;
+    this.activePolity = this.allPolities.find(p => p.name === name);
+  }
+
+  openStar(name: string): void {
+    this.mode = SidebarMode.Star;
+    this.activeStar = this.allStars.find(p => p.name === name);
+    this.scrollToStar(name);
   }
 
   readInFromDatabase(): void {

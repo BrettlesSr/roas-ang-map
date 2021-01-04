@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { AppComponent } from '../app.component';
 import { History } from '../models/history';
 import { Star } from '../models/star';
 import { Territory } from '../models/territory';
@@ -13,6 +14,7 @@ export class StarInfoComponent implements OnInit {
   constructor(private db: AngularFireDatabase) {}
 
   @Input() starInfo: Star;
+  @Input() parent: AppComponent;
   history: History[] = [];
   territories: Territory[] = [];
 
@@ -49,5 +51,9 @@ export class StarInfoComponent implements OnInit {
     } else {
       return input.substring(0, count) + "...";
     }
+  }
+
+  openPolity(polity: string) {
+    this.parent.openPolity(polity);
   }
 }
