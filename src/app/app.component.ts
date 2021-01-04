@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
   x = false;
   mapUrls = ['https://i.imgur.com/HtDiIoI.jpg'];
   mapIndex = 0;
+  mapDimension = 2500;
   cookieService = new CookieService();
   displayNotification = true;
   panZoomConfig: PanZoomConfig = new PanZoomConfig();
@@ -140,7 +141,7 @@ export class AppComponent implements OnInit {
         .subscribe(k => {
           for (let i = 0; i < k.length; i++) {
             this.allStars[i].key = k[i];
-          }
+          }      
         });
       }
     );
