@@ -1,15 +1,17 @@
 <mat-tab-group *ngIf="polityInfo" mat-align-tabs="center">
     <mat-tab label="State">
 
-        <div>
-            <a *ngIf="polity.threadlink" href="{{polity.threadlink}}" target="_blank">{{polity.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
-            <div *ngIf="!polity.threadlink" class="non-link">{{polity.name}}</div>
+        <div class="title">
+            <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+            <div *ngIf="!polityInfo.threadlink" class="non-link">{{polityInfo.name}}</div>
         </div>
-        <div class="image-container">
-            <img src="{{polity.thumbnail}}" width="480px">
+
+        <div class="image-container tab-content">
+            <img src="{{polityInfo.thumbnail}}" width="480px">
         </div>
-        <div>
-            {{polity.description}}
+
+        <div class="tab-content">
+            {{polityInfo.description}}
         </div>
 
     </mat-tab>
@@ -17,7 +19,7 @@
     <mat-tab label="Territories">
 
         <div *ngIf="filteredTerritories && filteredTerritories.length > 0"  class="title">
-            Territories In {{polity.name}}
+            Territories In {{polityInfo.name}}
         </div>
         
         <div *ngFor="let territory of filteredTerritories" class="tab-content">
@@ -45,7 +47,7 @@
     <mat-tab label="History" *ngIf="orderedHistory && orderedHistory.length > 0">
 
         <div class="title">
-            History Of {{polity.name}}
+            History Of {{polityInfo.name}}
         </div>
 
         <div *ngFor="let history of orderedHistory" class="tab-content">

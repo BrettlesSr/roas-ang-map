@@ -92,13 +92,11 @@ export class AppComponent implements OnInit {
     this.openDrawer(name);
     const zoom = this.panZoomAPI.model.zoomLevel;
     const adjustment = (1080/zoom)-110;
-    console.log(adjustment);
     const point = {
       x: this.activeStar.x * 1 + adjustment,
       y: this.activeStar.y * 1
     };
     setTimeout(() => {
-      console.log(point);
       this.panZoomAPI.detectContentDimensions();
       this.panZoomAPI.panToPoint(point);
     }, (this.isOpen ? 0 : this.timeToOpen));        

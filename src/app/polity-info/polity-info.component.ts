@@ -30,7 +30,7 @@ export class PolityInfoComponent implements OnInit {
   }
 
   get orderedHistory(): History[]{
-    return this.history.filter(h => h.politiesInvolved.includes(this.polityInfo.name))
+    return this.history.filter(h => h.politiesInvolved && h.politiesInvolved.includes(this.polityInfo.name))
     .sort((a, b) => a.date - b.date);
   }
 
@@ -40,7 +40,7 @@ export class PolityInfoComponent implements OnInit {
   
   getTerritoryDescriptor(territory: Territory) {
     if (territory.description == this.polityInfo.description) {
-      return `Capital of the ${ this.polityInfo.name }, located within the system ${ territory.star }.`;
+      return `Capital of the ${ this.polityInfo.name }, located within the ${ territory.star } system.`;
     } else if (territory.description.length === 0) {
       return `Located within the system ${ territory.star }.`;
     } else {
@@ -54,5 +54,12 @@ export class PolityInfoComponent implements OnInit {
 
   openStar(star: string) {
     this.parent.openStar(star);
+  }
+
+  getHistoryDescriptor(title: string, date: number): string {
+    const year = Math.floor(date);
+    const yearString = year.toString();
+    const withoutCommas = yearString.replace(',', '');
+    return title + ' - ' + withoutCommas + ' ';
   }
 }
