@@ -15,15 +15,18 @@
                 <a *ngIf="territory.threadlink" href="{{territory.threadlink}}" target="_blank">{{territory.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
                 <div *ngIf="!territory.threadlink" class="non-link">{{territory.name}}</div>
             </div>
+
             <div class="image-container">
                 <img src="{{territory.thumbnail}}" width="480px">
             </div>
+            
             <div>
                 {{shortened(territory.description, 200)}}
             </div>
+            
             <div>
                 <mat-chip-list>
-                    <mat-chip color="primary" (click)="openPolity(territory.owner)"> {{territory.owner}}</mat-chip>
+                    <mat-chip color="primary" (click)="openPolity(territory.owner)"  class="link-chip"> {{territory.owner}}</mat-chip>
                 </mat-chip-list>
             </div>
         </div>
@@ -50,7 +53,7 @@
             </div>
             <div>
                 <mat-chip-list>
-                    <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary" (click)="openPolity(polity)"> {{polity}}</mat-chip>
+                    <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary" (click)="openPolity(polity)"  class="link-chip"> {{polity}}</mat-chip>
                 </mat-chip-list>
             </div>
         </div>
@@ -69,9 +72,9 @@
             </div>        
             <div>
                 This system contains {{starInfo.nodesPresent}} Trade Node(s).
-                It can support freighters providing up to {{starInfo.nodesPresent * 25}}% of a state's territorial income (twice that for Merchant Marine).
-                This mechanic is undergoing revision for the year 2753 and onwards.
+                It can support freighters providing up to {{starInfo.nodesPresent * 25}}% of a state's territorial income (twice that for Merchant Marine).                
             </div>
+            <a href="https://forums.spacebattles.com/threads/ruins-of-alien-suns-space-empire-game.857793/post-72723114" target="_blank">This mechanic is undergoing revision for the year 2753 and onwards.<i class="fas fa-external-link-alt fa-xs"></i> </a>
         </div>
 
     </mat-tab>

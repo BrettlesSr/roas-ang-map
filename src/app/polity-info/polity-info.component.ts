@@ -4,6 +4,7 @@ import { Polity } from '../models/polity';
 import { Territory } from '../models/territory';
 import { History } from '../models/history';
 import { AppComponent } from '../app.component';
+import { PolityType } from '../enums/polityType';
 
 @Component({
   selector: 'app-polity-info',
@@ -37,10 +38,35 @@ export class PolityInfoComponent implements OnInit {
   get filteredTerritories(): Territory[] {
     return this.territories.filter(t => t.owner === this.polityInfo.name);
   }
+
+  get stateType(): string {
+    switch (this.polityInfo.type) {
+      case PolityType.VergeState:
+        return "State";
+      case PolityType.PMC:
+        return "PMC";
+      case PolityType.UNTaskforce:
+        return "Taskforce";
+      case PolityType.SolGreatPower:
+        return "State";
+      default:
+        return "Polity";
+    }
+  }
   
-  getTerritoryDescriptor(territory: Territory) {
+  getTerritoryDescriptor(territory: Territory): string {
+    const article = this.polityInfo.name.toLowerCase().startsWith('the') ? '' : 'the ';
     if (territory.description == this.polityInfo.description) {
-      return `Capital of the ${ this.polityInfo.name }, located within the ${ territory.star } system.`;
+      switch (this.polityInfo.type) {
+        case PolityType.VergeState:
+        case PolityType.SolGreatPower:
+          return `Capital of ${ article }${ this.polityInfo.name }, located within the ${ territory.star } system.`;
+        case PolityType.PMC:
+        case PolityType.UNTaskforce:
+          return `Operating base of ${ article }${ this.polityInfo.name }, hosted within the ${ territory.star } system.`;
+        default:
+          return `Capital of ${ article }${ this.polityInfo.name }, located within the ${ territory.star } system.`;
+      }      
     } else if (territory.description.length === 0) {
       return `Located within the system ${ territory.star }.`;
     } else {

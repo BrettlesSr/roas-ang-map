@@ -1,12 +1,12 @@
 <mat-tab-group *ngIf="polityInfo" mat-align-tabs="center">
-    <mat-tab label="State">
+    <mat-tab label="{{stateType}}">
 
         <div class="title">
             <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
             <div *ngIf="!polityInfo.threadlink" class="non-link">{{polityInfo.name}}</div>
         </div>
 
-        <div class="image-container tab-content">
+        <div class="image-container">
             <img src="{{polityInfo.thumbnail}}" width="480px">
         </div>
 
@@ -19,7 +19,7 @@
     <mat-tab label="Territories">
 
         <div *ngIf="filteredTerritories && filteredTerritories.length > 0"  class="title">
-            Territories In {{polityInfo.name}}
+            Territories In {{polityInfo.name | article}}
         </div>
         
         <div *ngFor="let territory of filteredTerritories" class="tab-content">
@@ -35,9 +35,8 @@
                 {{getTerritoryDescriptor(territory)}}
             </div>
             <div>
-                Star system: 
                 <mat-chip-list>
-                    <mat-chip color="primary" (click)="openStar(territory.star)"> {{territory.star}}</mat-chip>
+                    <mat-chip color="primary" (click)="openStar(territory.star)" class="link-chip"> {{territory.star}}</mat-chip>
                 </mat-chip-list>
             </div>
         </div>
@@ -47,7 +46,7 @@
     <mat-tab label="History" *ngIf="orderedHistory && orderedHistory.length > 0">
 
         <div class="title">
-            History Of {{polityInfo.name}}
+            History Of {{polityInfo.name | article}}
         </div>
 
         <div *ngFor="let history of orderedHistory" class="tab-content">
@@ -64,7 +63,7 @@
             </div>
             <div>
                 <mat-chip-list>
-                    <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary" (click)="openPolity(polity)"> {{polity}}</mat-chip>
+                    <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary" (click)="openPolity(polity)" class="link-chip"> {{polity}}</mat-chip>
                 </mat-chip-list>
             </div>
         </div>
