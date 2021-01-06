@@ -1,4 +1,6 @@
 export class History {
+    key: string;
+
     name: string;
     description: string;
     thumbnail: string;

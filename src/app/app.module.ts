@@ -34,6 +34,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { AddPolityComponent } from './add-polity/add-polity.component';
 import { PolityInfoComponent } from './polity-info/polity-info.component';
 import { ArticlePipe } from './article.pipe';
+import { AddPolityToHistoryComponent } from './add-polity-to-history/add-polity-to-history.component';
+import { RegionInfoComponent } from './region-info/region-info.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { ArticlePipe } from './article.pipe';
     AddStarComponent,
     AddPolityComponent,
     PolityInfoComponent,
-    ArticlePipe 
+    ArticlePipe,
+    AddPolityToHistoryComponent,
+    RegionInfoComponent 
   ],
   imports: [
     BrowserModule,

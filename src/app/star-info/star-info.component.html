@@ -54,6 +54,7 @@
             <div>
                 <mat-chip-list>
                     <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary" (click)="openPolity(polity)"  class="link-chip"> {{polity}}</mat-chip>
+                    <mat-chip (click)="openAddPolityToHistoryModal(history)" color="primary" class="link-chip">Add missing</mat-chip>
                 </mat-chip-list>
             </div>
         </div>
