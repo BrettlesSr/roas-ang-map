@@ -1,4 +1,5 @@
 export enum SidebarMode {
     Star,
-    Polity
+    Polity,
+    Region
 }

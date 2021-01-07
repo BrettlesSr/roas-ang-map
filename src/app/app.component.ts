@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Papa } from 'ngx-papaparse';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Star } from './models/star';
@@ -8,8 +8,9 @@ import { Territory } from './models/territory';
 import { map } from 'rxjs/internal/operators/map';
 import { CookieService } from './services/cookie-service';
 import { PanZoomConfig, PanZoomAPI, PanZoomModel, PanZoomConfigOptions } from 'ngx-panzoom';
-import { Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { SidebarMode } from './enums/sidebarMode';
+import { Region } from './models/region';
 
 @Component({
   selector: 'app-root',
@@ -25,8 +26,10 @@ export class AppComponent implements OnInit {
   mode = SidebarMode.Star;
   activeStar: Star;
   activePolity: Polity;
+  activeRegion: Region;
   allStars: Star[];
   allPolities: Polity[];
+  allRegions: Region[];
   allTerritories: Territory[];
   x = false;
   mapUrls = ['https://i.imgur.com/HtDiIoI.jpg'];
@@ -38,7 +41,7 @@ export class AppComponent implements OnInit {
   private panZoomAPI: PanZoomAPI;
   private apiSubscription: Subscription;
 
-  constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase) {    
+  constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase, private papa: Papa) {    
   }
 
   @ViewChild('drawer') drawer: { open: () => void; close: () => void; };
@@ -71,13 +74,23 @@ export class AppComponent implements OnInit {
     this.apiSubscription.unsubscribe();
   }
 
-  openDrawer(name: string): void {
+  openDrawerToStar(name: string): void {
     const matchingStars = this.allStars.filter(a => a.name === name);
     if (matchingStars.length > 0) {
       this.drawer.open();
       this.isOpen = true;
       this.activeStar = matchingStars[0];
       this.mode = SidebarMode.Star;
+    }
+  }
+
+  openDrawerToRegion(name: string): void {
+    const matchingRegions = this.allRegions.filter(a => a.name === name);
+    if (matchingRegions.length > 0) {
+      this.drawer.open();
+      this.isOpen = true;
+      this.activeRegion = matchingRegions[0];
+      this.mode = SidebarMode.Region;
     }
   }
 
@@ -89,7 +102,7 @@ export class AppComponent implements OnInit {
   }
 
   scrollToStar(name: string): void {  
-    this.openDrawer(name);
+    this.openDrawerToStar(name);
     const zoom = this.panZoomAPI.model.zoomLevel;
     const adjustment = (1080/zoom)-110;
     const point = {
@@ -143,6 +156,7 @@ export class AppComponent implements OnInit {
         });
       }
     );
+
     this.db.list('/polities').valueChanges().subscribe((polities: Polity[]) => {
       this.allPolities = polities;
       this.db.list('/polities').snapshotChanges()
@@ -155,6 +169,7 @@ export class AppComponent implements OnInit {
           }
         });
     });
+
     this.db.list('/territories').valueChanges().subscribe((t: Territory[]) => {
       this.allTerritories = t;
       this.titleChild.buildOptions();
@@ -168,5 +183,88 @@ export class AppComponent implements OnInit {
           }
         });
     });
+
+    this.db.list('/regions').valueChanges().subscribe((regions: Region[]) => {
+      this.allRegions = regions;
+      this.fetchGoogleSheet('1MuRqRi3qJ0Tn74ohy7SvnFHe3HeRvkqHh6Befwv76NU', 'Titan_SOV')
+        .subscribe((csv: string) => {
+          this.papa.parse(csv,{
+            header: true,
+            complete: (result) => {
+              for (const region of this.allRegions) {
+               const terror = result.data.find(r => r["Stellar Region"] === region.name);
+               region.autonomists = this.asNumber(terror["Autonomists"]);
+               region.blackHand = this.asNumber(terror["Black Hand"]);
+               region.corruptReformists = this.asNumber(terror["Corrupt Reformists"]);
+               region.dominantSoVFaction = this.asNumber(terror["Dominant SOV Faction"]);
+               region.murderApes = this.asNumber(terror["Murder Apes"]);
+               region.petitioners = this.asNumber(terror["Petitioners"]);
+               region.tfTitans = this.asNumber(terror["TF Titans"]);
+              }
+            }
+          });
+        });
+        this.fetchGoogleSheet('1MuRqRi3qJ0Tn74ohy7SvnFHe3HeRvkqHh6Befwv76NU', 'Demimonde')
+        .subscribe((csv: string) => {
+          this.papa.parse(csv,{
+            header: true,
+            complete: (result) => {
+              for (const region of this.allRegions) {
+               const piracy = result.data.find(r => r["Stellar Region"] === region.name);
+               region.prismConcern = this.asNumber(piracy["Prism Concern"]);
+               region.midgardAthling = this.asNumber(piracy["Midgard Allthing"]);
+               region.myCorp = this.asNumber(piracy["MyCorp"]);
+               region.pack = this.asNumber(piracy["The Pack"]);
+               region.knights = this.asNumber(piracy["The Knights"]);
+               region.freebooters = this.asNumber(piracy["Freebooters"]);
+              }
+            }
+          });
+        });
+        this.fetchGoogleSheet('1MuRqRi3qJ0Tn74ohy7SvnFHe3HeRvkqHh6Befwv76NU', 'Regional_Trade_Power')
+        .subscribe((csv: string) => {
+          this.papa.parse(csv,{
+            header: true,
+            complete: (result) => {
+              for (const region of this.allRegions) {
+               const trade = result.data.find(r => r["Stellar Region"] === region.name);
+               region.tradeNodes = this.asNumber(trade["Trade Nodes"]);
+               region.totalTradeValue = this.asNumber(trade["Total"]);
+               region.baseTradeValue = this.asNumber(trade["Base Trade"]);
+              }
+            }
+          });
+        });
+    });
+  }
+
+  fetchGoogleSheet(id: string, page: string): Observable<string> {
+    const options: {
+        headers?: HttpHeaders;
+        observe?: 'body';
+        params?: HttpParams;
+        reportProgress?: boolean;
+        responseType: 'text';
+        withCredentials?: boolean;
+    } = {
+        responseType: 'text'
+    };
+
+    return this.http
+        .get('https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?tqx=out:csv&sheet=' + page, options)
+        .pipe(
+            map((file: string) => {
+                return file;
+            })
+        );
+  }
+
+  asNumber(input: string) : number {
+    if (input === undefined || input.length === 0) {
+      return 0;
+    }
+    var sentence = input.split(' ');
+    var first = sentence[0];
+    return Number.parseInt(first);
   }
 }

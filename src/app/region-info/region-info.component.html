@@ -3,7 +3,19 @@
 
         <div class="title">
             Trade
-        </div>      
+        </div>
+        
+        <div class="tab-content">
+            <div>
+                Base trade value: {{regionInfo.baseTradeValue}}
+            </div>
+            <div> 
+                Trade nodes in region: {{regionInfo.tradeNodes}}
+            </div>
+            <div> 
+                Total trade value: {{regionInfo.totalTradeValue}}
+            </div>
+        </div>        
 
     </mat-tab>
 
@@ -11,6 +23,30 @@
 
         <div class="title">
             Piracy
+        </div>      
+        
+        <div class="tab-content">
+            <div>
+                Piracy Status: {{getPiracyStatusDescriptor()}}
+            </div>
+            <div>
+                Prism Concern level: {{regionInfo.prismConcern}}
+            </div>
+            <div>
+                Midgard Allthing level: {{regionInfo.midgardAthling}}
+            </div>
+            <div>
+                MyCorp level: {{regionInfo.myCorp}}
+            </div>
+            <div>
+                The Pack level: {{regionInfo.pack}}
+            </div>
+            <div>
+                The Knights level: {{regionInfo.knights}}
+            </div>
+            <div>            
+                Freebooters level: {{regionInfo.freebooters}}
+            </div>
         </div>        
 
     </mat-tab>
@@ -19,8 +55,29 @@
 
         <div class="title">
             Terrorism
+        </div>    
+        
+        <div class="tab-content">
+            <div>
+                Corrupt Reformists level: {{regionInfo.corruptReformists}}
+            </div>
+            <div> 
+                Autonomists level: {{regionInfo.autonomists}}
+            </div>
+            <div> 
+                Petitioners level: {{regionInfo.petitioners}}
+            </div>
+            <div> 
+                Black Hand level: {{regionInfo.blackHand}}
+            </div>
+            <div> 
+                Murder Apes level: {{regionInfo.murderApes}}
+            </div>
+            <div> 
+                TF Titans level: {{regionInfo.tfTitans}}
+            </div>
         </div>        
 
-    </mat-tab>   
+    </mat-tab>
     
 </mat-tab-group>

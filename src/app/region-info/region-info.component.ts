@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { Component, Input, OnInit } from '@angular/core';
+import { PiracyState } from '../enums/piracyState';
+import { Region } from '../models/region';
 
 @Component({
   selector: 'app-region-info',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegionInfoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {
+  @Input() regionInfo: Region;
+
+  ngOnInit(): void {    
   }
 
+  getPiracyStatusDescriptor(): string {
+    switch (this.regionInfo.piracyState) {
+      case PiracyState.None:
+        return 'Minimal piracy activity';
+      case PiracyState.Stronghold:
+        return 'Pirate stronghold';
+      case PiracyState.TurfWar:
+        return 'Active Turf War';
+    }
+  }  
 }
