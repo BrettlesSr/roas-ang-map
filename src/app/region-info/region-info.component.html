@@ -29,6 +29,9 @@
             <div>
                 Piracy Status: {{getPiracyStatusDescriptor()}}
             </div>
+            <div *ngIf="regionInfo.stronghold && regionInfo.stronghold.length > 0">
+                Stronghold for {{regionInfo.stronghold | article}}
+            </div>
             <div>
                 Prism Concern level: {{regionInfo.prismConcern}}
             </div>

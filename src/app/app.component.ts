@@ -11,6 +11,7 @@ import { PanZoomConfig, PanZoomAPI, PanZoomModel, PanZoomConfigOptions } from 'n
 import { Observable, Subscription } from 'rxjs';
 import { SidebarMode } from './enums/sidebarMode';
 import { Region } from './models/region';
+import { PiracyState } from './enums/piracyState';
 
 @Component({
   selector: 'app-root',
@@ -217,6 +218,8 @@ export class AppComponent implements OnInit {
                region.pack = this.asNumber(piracy["The Pack"]);
                region.knights = this.asNumber(piracy["The Knights"]);
                region.freebooters = this.asNumber(piracy["Freebooters"]);
+               region.stronghold = piracy["Stronghold Faction"];
+               region.piracyState = piracy["Is in Turf War?"] === "Yes" ? PiracyState.TurfWar : PiracyState.None;
               }
             }
           });

@@ -22,6 +22,7 @@ export class Region {
     pack: number;
     knights: number;
     freebooters: number;
+    stronghold: string;
 
     baseTradeValue: number;
     tradeNodes: number;

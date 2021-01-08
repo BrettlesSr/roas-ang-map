@@ -21,8 +21,6 @@ export class RegionInfoComponent implements OnInit {
     switch (this.regionInfo.piracyState) {
       case PiracyState.None:
         return 'Minimal piracy activity';
-      case PiracyState.Stronghold:
-        return 'Pirate stronghold';
       case PiracyState.TurfWar:
         return 'Active Turf War';
     }
