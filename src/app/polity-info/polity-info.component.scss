@@ -8,36 +8,10 @@
     margin-bottom: 20px;
 }
 
-a:link {
-    font-size: larger;
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    font-size: larger;
-    color: black;
-    text-decoration: underline;
-}
-
 .non-link {
     font-size: larger;
     color: black;
     text-decoration: none;
-}
-
-.image-container {
-    width:100%;
-    max-height:240px;
-    overflow: hidden;
-}
-
-img {
-    min-width:100%;
 }
 
 .link-chip{

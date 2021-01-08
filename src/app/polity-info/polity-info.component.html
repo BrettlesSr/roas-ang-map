@@ -2,12 +2,12 @@
     <mat-tab label="{{stateType}}">
 
         <div class="title">
-            <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+            <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank" class="external-link-large">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
             <div *ngIf="!polityInfo.threadlink" class="non-link">{{polityInfo.name}}</div>
         </div>
 
-        <div class="image-container">
-            <img src="{{polityInfo.thumbnail}}" width="480px">
+        <div *ngIf="polityInfo.thumbnail && polityInfo.thumbnail.length > 0">
+            <img src="{{polityInfo.thumbnail}}" width="480px" class="thumbnail">
         </div>
 
         <div class="tab-content">
@@ -25,11 +25,11 @@
         <div *ngFor="let territory of filteredTerritories" class="tab-content">
 
             <div>
-                <a *ngIf="territory.threadlink" href="{{territory.threadlink}}" target="_blank">{{territory.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+                <a *ngIf="territory.threadlink" href="{{territory.threadlink}}" target="_blank" class="external-link-large">{{territory.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
                 <div *ngIf="!territory.threadlink" class="non-link">{{territory.name}}</div>
             </div>
-            <div class="image-container">
-                <img src="{{territory.thumbnail}}" width="480px">
+            <div *ngIf="territory.thumbnail && territory.thumbnail.length > 0">
+                <img src="{{territory.thumbnail}}" width="480px" class="thumbnail">
             </div>
             <div>
                 {{getTerritoryDescriptor(territory)}}
@@ -52,11 +52,11 @@
         <div *ngFor="let history of orderedHistory" class="tab-content">
 
             <div>
-                <a *ngIf="history.threadlink" href="{{history.threadlink}}" target="_blank">{{getHistoryDescriptor(history.name, history.date)}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+                <a *ngIf="history.threadlink" href="{{history.threadlink}}" target="_blank" class="external-link-large">{{getHistoryDescriptor(history.name, history.date)}} <i class="fas fa-external-link-alt fa-xs"></i></a>
                 <div *ngIf="!history.threadlink" class="non-link">{{getHistoryDescriptor(history.name, history.date)}}</div>
             </div>
-            <div class="image-container">
-                <img src="{{history.thumbnail}}" width="460px">
+            <div *ngIf="history.thumbnail && history.thumbnail.length > 0">
+                <img src="{{history.thumbnail}}" width="460px" class="thumbnail">
             </div>            
             <div>
                 {{history.description}}
