@@ -20,6 +20,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatChipsModule } from '@angular/material/chips';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import { TitleComponent } from './title/title.component';
 
@@ -68,6 +69,7 @@ import { RegionInfoComponent } from './region-info/region-info.component';
     MatSelectModule,
     MatDatepickerModule,
     MatChipsModule,
+    MatExpansionModule,
     MatNativeDateModule,
     AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
     AngularFireDatabaseModule,

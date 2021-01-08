@@ -2,7 +2,8 @@
     <mat-tab label="{{stateType}}">
 
         <div class="title">
-            <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank" class="external-link-large">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+            <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank"
+                class="external-link-large">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
             <div *ngIf="!polityInfo.threadlink" class="non-link">{{polityInfo.name}}</div>
         </div>
 
@@ -18,14 +19,15 @@
 
     <mat-tab label="Territories">
 
-        <div *ngIf="filteredTerritories && filteredTerritories.length > 0"  class="title">
+        <div *ngIf="filteredTerritories && filteredTerritories.length > 0" class="title">
             Territories In {{polityInfo.name | article}}
         </div>
-        
+
         <div *ngFor="let territory of filteredTerritories" class="tab-content">
 
             <div>
-                <a *ngIf="territory.threadlink" href="{{territory.threadlink}}" target="_blank" class="external-link-large">{{territory.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
+                <a *ngIf="territory.threadlink" href="{{territory.threadlink}}" target="_blank"
+                    class="external-link-large">{{territory.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
                 <div *ngIf="!territory.threadlink" class="non-link">{{territory.name}}</div>
             </div>
             <div *ngIf="territory.thumbnail && territory.thumbnail.length > 0">
@@ -36,7 +38,8 @@
             </div>
             <div>
                 <mat-chip-list>
-                    <mat-chip color="primary" (click)="openStar(territory.star)" class="link-chip"> {{territory.star}}</mat-chip>
+                    <mat-chip color="primary" (click)="openStar(territory.star)" class="link-chip"> {{territory.star}}
+                    </mat-chip>
                 </mat-chip-list>
             </div>
         </div>
@@ -49,26 +52,34 @@
             History Of {{polityInfo.name | article}}
         </div>
 
-        <div *ngFor="let history of orderedHistory" class="tab-content">
-
-            <div>
-                <a *ngIf="history.threadlink" href="{{history.threadlink}}" target="_blank" class="external-link-large">{{getHistoryDescriptor(history.name, history.date)}} <i class="fas fa-external-link-alt fa-xs"></i></a>
-                <div *ngIf="!history.threadlink" class="non-link">{{getHistoryDescriptor(history.name, history.date)}}</div>
-            </div>
-            <div *ngIf="history.thumbnail && history.thumbnail.length > 0">
-                <img src="{{history.thumbnail}}" width="460px" class="thumbnail">
-            </div>            
-            <div>
-                {{history.description}}
-            </div>
-            <div>
-                <mat-chip-list>
-                    <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary" (click)="openPolity(polity)" class="link-chip"> {{polity}}</mat-chip>
-                    <mat-chip (click)="openAddPolityToHistoryModal(history)" color="primary" class="link-chip">Add missing</mat-chip>
-                </mat-chip-list>
-            </div>
-        </div>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle *ngFor="let history of orderedHistory" class="tab-content">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <a *ngIf="history.threadlink" href="{{history.threadlink}}" target="_blank"
+                            class="external-link-large">{{getHistoryDescriptor(history.name, history.date)}} <i
+                                class="fas fa-external-link-alt fa-xs"></i></a>
+                        <div *ngIf="!history.threadlink" class="non-link">{{getHistoryDescriptor(history.name,
+                            history.date)}}</div>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div *ngIf="history.thumbnail && history.thumbnail.length > 0">
+                    <img src="{{history.thumbnail}}" width="460px" class="thumbnail">
+                </div>
+                <div>
+                    {{history.description}}
+                </div>
+                <div>
+                    <mat-chip-list>
+                        <mat-chip *ngFor="let polity of history.politiesInvolved" color="primary"
+                            (click)="openPolity(polity)" class="link-chip"> {{polity}}</mat-chip>
+                        <mat-chip (click)="openAddPolityToHistoryModal(history)" color="primary" class="link-chip">Add
+                            missing</mat-chip>
+                    </mat-chip-list>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
 
     </mat-tab>
-    
-  </mat-tab-group>
+
+</mat-tab-group>

@@ -1,7 +1,7 @@
 <h1 mat-dialog-title cdkDrag
 cdkDragRootElement=".cdk-overlay-pane" 
-cdkDragHandle><i class="fas fa-book"></i>Edit historical event</h1>
-<div mat-dialog-content>
+cdkDragHandle><i class="fas fa-book"></i> Edit historical event</h1>
+<div mat-dialog-content class="tall">
     <div>
         <mat-form-field>
           <mat-label>Polities involved</mat-label>
@@ -10,6 +10,7 @@ cdkDragHandle><i class="fas fa-book"></i>Edit historical event</h1>
               type="text"
               aria-label="search box"
               matInput
+              autofocus
               class="mat-select-search-input"
               (keyup)="politySearchChanged($event)">  
               <mat-option *ngFor="let polity of data.possiblePolities" [value]="polity.name" [ngStyle]="{ display : isPolityVisible(polity.name) ? '' : 'none' }">
