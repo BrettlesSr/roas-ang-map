@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   allPolities: Polity[];
   allTerritories: Territory[];
   x = false;
-  mapUrls = ['https://i.imgur.com/HtDiIoI.jpg'];
+  mapUrls = ['https://i.imgur.com/LR2U3Ak.jpg'];
   mapIndex = 0;
   mapDimension = 2500;
   cookieService = new CookieService();
