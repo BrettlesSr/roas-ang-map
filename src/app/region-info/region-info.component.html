@@ -5,17 +5,26 @@
             Trade
         </div>
         
-        <div class="tab-content">
-            <div>
-                Base trade value: {{regionInfo.baseTradeValue}}
-            </div>
-            <div> 
-                Trade nodes in region: {{regionInfo.tradeNodes}}
-            </div>
-            <div> 
-                Total trade value: {{regionInfo.totalTradeValue}}
-            </div>
-        </div>        
+        <div *ngIf="regionInfo.baseTradeValue > 0" class="tab-content">
+            <app-number-display
+             [description]="'Base trade volume'"
+             [value]="regionInfo.baseTradeValue"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'Trade nodes'"
+             [value]="regionInfo.tradeNodes"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'Total trade volume'"
+             [value]="regionInfo.totalTradeValue"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+        </div>   
+        <div *ngIf="regionInfo.baseTradeValue === 0">
+            This region does not permit human commerce.
+        </div>     
 
     </mat-tab>
 
@@ -26,30 +35,37 @@
         </div>      
         
         <div class="tab-content">
-            <div>
-                Piracy Status: {{getPiracyStatusDescriptor()}}
+            <div *ngIf="regionInfo.piracyState === 1">
+                Active Turf War
             </div>
             <div *ngIf="regionInfo.stronghold && regionInfo.stronghold.length > 0">
                 Stronghold for {{regionInfo.stronghold | article}}
             </div>
-            <div>
-                Prism Concern level: {{regionInfo.prismConcern}}
-            </div>
-            <div>
-                Midgard Allthing level: {{regionInfo.midgardAthling}}
-            </div>
-            <div>
-                MyCorp level: {{regionInfo.myCorp}}
-            </div>
-            <div>
-                The Pack level: {{regionInfo.pack}}
-            </div>
-            <div>
-                The Knights level: {{regionInfo.knights}}
-            </div>
-            <div>            
-                Freebooters level: {{regionInfo.freebooters}}
-            </div>
+            <app-number-display
+             [description]="'Prism Concern activity level'"
+             [value]="regionInfo.prismConcern"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'Midgard Allthing activity level'"
+             [value]="regionInfo.midgardAthling"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'MyCorp activity level'"
+             [value]="regionInfo.myCorp"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'The Knights activity level'"
+             [value]="regionInfo.knights"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'Freebooters activity level'"
+             [value]="regionInfo.freebooters"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
         </div>        
 
     </mat-tab>
@@ -64,21 +80,36 @@
             <div>
                 Corrupt Reformists level: {{regionInfo.corruptReformists}}
             </div>
-            <div> 
-                Autonomists level: {{regionInfo.autonomists}}
-            </div>
-            <div> 
-                Petitioners level: {{regionInfo.petitioners}}
-            </div>
-            <div> 
-                Black Hand level: {{regionInfo.blackHand}}
-            </div>
-            <div> 
-                Murder Apes level: {{regionInfo.murderApes}}
-            </div>
-            <div> 
-                TF Titans level: {{regionInfo.tfTitans}}
-            </div>
+            <app-number-display
+             [description]="'Corrupt Reformers activity level'"
+             [value]="regionInfo.corruptReformists"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'Autonomists activity level'"
+             [value]="regionInfo.autonomists"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'Petitioners activity level'"
+             [value]="regionInfo.petitioners"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'Black Hand activity level'"
+             [value]="regionInfo.blackHand"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'Murder Apes activity level'"
+             [value]="regionInfo.murderApes"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
+            <app-number-display
+             [description]="'TF Titans activity level'"
+             [value]="regionInfo.tfTitans"
+             [iconSource]="'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'">
+            </app-number-display>
         </div>        
 
     </mat-tab>

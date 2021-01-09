@@ -16,13 +16,4 @@ export class RegionInfoComponent implements OnInit {
 
   ngOnInit(): void {    
   }
-
-  getPiracyStatusDescriptor(): string {
-    switch (this.regionInfo.piracyState) {
-      case PiracyState.None:
-        return 'Minimal piracy activity';
-      case PiracyState.TurfWar:
-        return 'Active Turf War';
-    }
-  }  
 }

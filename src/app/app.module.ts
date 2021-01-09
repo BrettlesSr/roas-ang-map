@@ -37,6 +37,7 @@ import { PolityInfoComponent } from './polity-info/polity-info.component';
 import { ArticlePipe } from './article.pipe';
 import { AddPolityToHistoryComponent } from './add-polity-to-history/add-polity-to-history.component';
 import { RegionInfoComponent } from './region-info/region-info.component';
+import { NumberDisplayComponent } from './number-display/number-display.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { RegionInfoComponent } from './region-info/region-info.component';
     PolityInfoComponent,
     ArticlePipe,
     AddPolityToHistoryComponent,
-    RegionInfoComponent 
+    RegionInfoComponent,
+    NumberDisplayComponent 
   ],
   imports: [
     BrowserModule,

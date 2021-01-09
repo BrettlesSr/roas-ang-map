@@ -1,0 +1,19 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    color: gray;
+    font-size: medium;
+}
+
+.value {
+    color: black;
+    font-size: large;
+}
