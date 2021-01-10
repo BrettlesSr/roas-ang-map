@@ -14,6 +14,6 @@ export class RegionInfoComponent implements OnInit {
 
   @Input() regionInfo: Region;
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
   }
 }

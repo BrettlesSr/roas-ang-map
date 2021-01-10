@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Papa } from 'ngx-papaparse';
 import { AngularFireDatabase } from 'angularfire2/database';
@@ -19,7 +19,7 @@ import { PiracyState } from './enums/piracyState';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
   title = 'roas-ang-map';
   showFiller = false;
   isOpen = false;
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
   private panZoomAPI: PanZoomAPI;
   private apiSubscription: Subscription;
 
-  constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase, private papa: Papa) {    
+  constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase, private papa: Papa) {
   }
 
   @ViewChild('drawer') drawer: { open: () => void; close: () => void; };
@@ -52,15 +52,14 @@ export class AppComponent implements OnInit {
     this.panZoomConfig.keepInBounds = false;
     this.panZoomConfig.zoomLevels = 7;
     this.panZoomConfig.neutralZoomLevel = 3;
-    this.panZoomConfig.scalePerZoomLevel = 1.5; 
-    this.panZoomConfig.freeMouseWheel = false;   
+    this.panZoomConfig.scalePerZoomLevel = 1.5;
+    this.panZoomConfig.freeMouseWheel = false;
     this.panZoomConfig.invertMouseWheel = true;
     this.panZoomConfig.initialZoomLevel = 3;
     this.readInFromDatabase();
     this.apiSubscription = this.panZoomConfig.api.subscribe( (api: PanZoomAPI) => this.panZoomAPI = api );
-    for (let i = 0; i < this.mapUrls.length; i++) {
-      const url = this.mapUrls[i];
-      var img = new Image();
+    for (const url of this.mapUrls) {
+      const img = new Image();
       img.src = url;
     }
     const notCookie = this.cookieService.getCookie('roas-ang-map.displayNotification');
@@ -102,10 +101,10 @@ export class AppComponent implements OnInit {
     }, this.timeToOpen);
   }
 
-  scrollToStar(name: string): void {  
+  scrollToStar(name: string): void {
     this.openDrawerToStar(name);
     const zoom = this.panZoomAPI.model.zoomLevel;
-    const adjustment = (1080/zoom)-110;
+    const adjustment = (1080 / zoom) - 110;
     const point = {
       x: this.activeStar.x * 1 + adjustment,
       y: this.activeStar.y * 1
@@ -113,7 +112,7 @@ export class AppComponent implements OnInit {
     setTimeout(() => {
       this.panZoomAPI.detectContentDimensions();
       this.panZoomAPI.panToPoint(point);
-    }, (this.isOpen ? 0 : this.timeToOpen));        
+    }, (this.isOpen ? 0 : this.timeToOpen));
   }
 
   bumpMapIndex(): void {
@@ -153,7 +152,7 @@ export class AppComponent implements OnInit {
         .subscribe(k => {
           for (let i = 0; i < k.length; i++) {
             this.allStars[i].key = k[i];
-          }      
+          }
         });
       }
     );
@@ -189,51 +188,52 @@ export class AppComponent implements OnInit {
       this.allRegions = regions;
       this.fetchGoogleSheet('1MuRqRi3qJ0Tn74ohy7SvnFHe3HeRvkqHh6Befwv76NU', 'Titan_SOV')
         .subscribe((csv: string) => {
-          this.papa.parse(csv,{
+          this.papa.parse(csv, {
             header: true,
             complete: (result) => {
               for (const region of this.allRegions) {
-               const terror = result.data.find(r => r["Stellar Region"] === region.name);
-               region.autonomists = this.asNumber(terror["Autonomists"]);
-               region.blackHand = this.asNumber(terror["Black Hand"]);
-               region.corruptReformists = this.asNumber(terror["Corrupt Reformists"]);
-               region.dominantSoVFaction = this.asNumber(terror["Dominant SOV Faction"]);
-               region.murderApes = this.asNumber(terror["Murder Apes"]);
-               region.petitioners = this.asNumber(terror["Petitioners"]);
-               region.tfTitans = this.asNumber(terror["TF Titans"]);
+                // tslint:disable: no-string-literal
+               const terror = result.data.find(r => r['Stellar Region'] === region.name);
+               region.autonomists = this.asNumber(terror['Autonomists']);
+               region.blackHand = this.asNumber(terror['Black Hand']);
+               region.corruptReformists = this.asNumber(terror['Corrupt Reformists']);
+               region.dominantSoVFaction = this.asNumber(terror['Dominant SOV Faction']);
+               region.murderApes = this.asNumber(terror['Murder Apes']);
+               region.petitioners = this.asNumber(terror['Petitioners']);
+               region.tfTitans = this.asNumber(terror['TF Titans']);
               }
             }
           });
         });
-        this.fetchGoogleSheet('1MuRqRi3qJ0Tn74ohy7SvnFHe3HeRvkqHh6Befwv76NU', 'Demimonde')
+      this.fetchGoogleSheet('1MuRqRi3qJ0Tn74ohy7SvnFHe3HeRvkqHh6Befwv76NU', 'Demimonde')
         .subscribe((csv: string) => {
-          this.papa.parse(csv,{
+          this.papa.parse(csv, {
             header: true,
             complete: (result) => {
               for (const region of this.allRegions) {
-               const piracy = result.data.find(r => r["Stellar Region"] === region.name);
-               region.prismConcern = this.asNumber(piracy["Prism Concern"]);
-               region.midgardAthling = this.asNumber(piracy["Midgard Allthing"]);
-               region.myCorp = this.asNumber(piracy["MyCorp"]);
-               region.pack = this.asNumber(piracy["The Pack"]);
-               region.knights = this.asNumber(piracy["The Knights"]);
-               region.freebooters = this.asNumber(piracy["Freebooters"]);
-               region.stronghold = piracy["Stronghold Faction"];
-               region.piracyState = piracy["Is in Turf War?"] === "Yes" ? PiracyState.TurfWar : PiracyState.None;
+               const piracy = result.data.find(r => r['Stellar Region'] === region.name);
+               region.prismConcern = this.asNumber(piracy['Prism Concern']);
+               region.midgardAthling = this.asNumber(piracy['Midgard Allthing']);
+               region.myCorp = this.asNumber(piracy['MyCorp']);
+               region.pack = this.asNumber(piracy['The Pack']);
+               region.knights = this.asNumber(piracy['The Knights']);
+               region.freebooters = this.asNumber(piracy['Freebooters']);
+               region.stronghold = piracy['Stronghold Faction'];
+               region.piracyState = piracy['Is in Turf War?'] === 'Yes' ? PiracyState.TurfWar : PiracyState.None;
               }
             }
           });
         });
-        this.fetchGoogleSheet('1MuRqRi3qJ0Tn74ohy7SvnFHe3HeRvkqHh6Befwv76NU', 'Regional_Trade_Power')
+      this.fetchGoogleSheet('1MuRqRi3qJ0Tn74ohy7SvnFHe3HeRvkqHh6Befwv76NU', 'Regional_Trade_Power')
         .subscribe((csv: string) => {
-          this.papa.parse(csv,{
+          this.papa.parse(csv, {
             header: true,
             complete: (result) => {
               for (const region of this.allRegions) {
-               const trade = result.data.find(r => r["Stellar Region"] === region.name);
-               region.tradeNodes = this.asNumber(trade["Trade Nodes"]);
-               region.totalTradeValue = this.asNumber(trade["Total"]);
-               region.baseTradeValue = this.asNumber(trade["Base Trade"]);
+               const trade = result.data.find(r => r['Stellar Region'] === region.name);
+               region.tradeNodes = this.asNumber(trade['Trade Nodes']);
+               region.totalTradeValue = this.asNumber(trade['Total']);
+               region.baseTradeValue = this.asNumber(trade['Base Trade']);
               }
             }
           });
@@ -262,12 +262,12 @@ export class AppComponent implements OnInit {
         );
   }
 
-  asNumber(input: string) : number {
+  asNumber(input: string): number {
     if (input === undefined || input.length === 0) {
       return 0;
     }
-    var sentence = input.split(' ');
-    var first = sentence[0];
-    return Number.parseInt(first);
+    const sentence = input.split(' ');
+    const first = sentence[0];
+    return Number.parseInt(first, 10);
   }
 }
