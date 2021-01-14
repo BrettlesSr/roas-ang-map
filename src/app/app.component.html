@@ -6,6 +6,7 @@
   <mat-icon>donut_small</mat-icon>
 </button>
 <mat-drawer-container class="example-container" autosize>
+
   <mat-drawer #drawer class="sidenav-fixed" mode="side" position="end">
     <app-star-info
       *ngIf = "mode === 0"
@@ -31,7 +32,11 @@
         <area *ngFor="let region of allRegions" shape="rect" coords="{{region.xStart}}, {{region.yStart}}, {{region.xEnd}}, {{region.yEnd}}" alt="{{region.name}}" (click)="openDrawerToRegion(region.name)">
         <area shape="rect" coords="0,0,{{mapDimension}},{{mapDimension}}" (click)="closeDrawer()"> 
       </map>
-    </div>
-  </pan-zoom>
+      <div
+        class="highlight"
+        [ngStyle]="highlightDimensionsCss">
+      </div>
+    </div>    
+  </pan-zoom>  
   
 </mat-drawer-container>

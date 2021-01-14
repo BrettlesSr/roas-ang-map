@@ -3,9 +3,12 @@
     flex-direction: row;
 }
 
-.text {
+.text-box {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+    margin-left: 0px;
+    justify-content: space-between;
 }
 
 .description {
@@ -15,5 +18,10 @@
 
 .value {
     color: black;
-    font-size: large;
+    font-size: xx-large;
+    margin-bottom: 4px;
+}
+
+.icon {
+    margin: 10px;
 }

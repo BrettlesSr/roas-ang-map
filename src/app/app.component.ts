@@ -39,6 +39,7 @@ export class AppComponent implements OnInit, OnDestroy {
   cookieService = new CookieService();
   displayNotification = true;
   panZoomConfig: PanZoomConfig = new PanZoomConfig();
+  scrollCountdown = 0;
   private panZoomAPI: PanZoomAPI;
   private apiSubscription: Subscription;
 
@@ -80,6 +81,7 @@ export class AppComponent implements OnInit, OnDestroy {
       this.drawer.open();
       this.isOpen = true;
       this.activeStar = matchingStars[0];
+      console.log(this.highlightDimensionsCss);
       this.mode = SidebarMode.Star;
     }
   }
@@ -103,6 +105,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   scrollToStar(name: string): void {
     this.openDrawerToStar(name);
+    this.scrollCountdown = 1000;
     const zoom = this.panZoomAPI.model.zoomLevel;
     const adjustment = (1080 / zoom) - 110;
     const point = {
@@ -113,6 +116,9 @@ export class AppComponent implements OnInit, OnDestroy {
       this.panZoomAPI.detectContentDimensions();
       this.panZoomAPI.panToPoint(point);
     }, (this.isOpen ? 0 : this.timeToOpen));
+    setTimeout(() => {
+      this.tickDownCountdown();
+    }, 1500);
   }
 
   bumpMapIndex(): void {
@@ -241,6 +247,16 @@ export class AppComponent implements OnInit, OnDestroy {
     });
   }
 
+  tickDownCountdown(): void {
+    if (this.scrollCountdown < 10){
+      this.scrollCountdown = 0;
+    }
+    this.scrollCountdown = this.scrollCountdown - 10;
+    setTimeout(() => {
+      this.tickDownCountdown();
+    }, 10);
+  }
+
   fetchGoogleSheet(id: string, page: string): Observable<string> {
     const options: {
         headers?: HttpHeaders;
@@ -269,5 +285,25 @@ export class AppComponent implements OnInit, OnDestroy {
     const sentence = input.split(' ');
     const first = sentence[0];
     return Number.parseInt(first, 10);
+  }
+
+  get highlightDimensionsCss(): object{
+    if (this.scrollCountdown === 0) {
+      return {
+        height: this.mapDimension + 'px',
+        width: this.mapDimension + 'px',
+        top: '0px',
+        left: '0px',
+        'box-shadow': '0 0 0 100vmax rgba(0,0,0,0)'
+     };
+    }
+    const alpha = (this.scrollCountdown / 2300).toFixed(1);
+    return {
+       height: (this.activeStar.yEnd - this.activeStar.yStart).toFixed(0) + 'px',
+       width: (this.activeStar.xEnd - this.activeStar.xStart).toFixed(0) + 'px',
+       top: this.activeStar.yStart.toFixed(0) + 'px',
+       left: this.activeStar.xStart.toFixed(0) + 'px',
+       'box-shadow': ('0 0 0 100vmax rgba(0,0,0,' + alpha + ')')
+    };
   }
 }
