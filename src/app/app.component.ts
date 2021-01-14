@@ -251,10 +251,12 @@ export class AppComponent implements OnInit, OnDestroy {
     if (this.scrollCountdown < 10){
       this.scrollCountdown = 0;
     }
-    this.scrollCountdown = this.scrollCountdown - 10;
-    setTimeout(() => {
-      this.tickDownCountdown();
-    }, 10);
+    else {
+      this.scrollCountdown = this.scrollCountdown - 10;
+      setTimeout(() => {
+        this.tickDownCountdown();
+      }, 10);
+    }
   }
 
   fetchGoogleSheet(id: string, page: string): Observable<string> {
