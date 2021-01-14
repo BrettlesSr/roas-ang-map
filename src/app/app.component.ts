@@ -12,6 +12,7 @@ import { Observable, Subscription } from 'rxjs';
 import { SidebarMode } from './enums/sidebarMode';
 import { Region } from './models/region';
 import { PiracyState } from './enums/piracyState';
+import { MatChipSelectionChange } from '@angular/material/chips';
 
 @Component({
   selector: 'app-root',
@@ -81,7 +82,6 @@ export class AppComponent implements OnInit, OnDestroy {
       this.drawer.open();
       this.isOpen = true;
       this.activeStar = matchingStars[0];
-      console.log(this.highlightDimensionsCss);
       this.mode = SidebarMode.Star;
     }
   }
@@ -299,8 +299,8 @@ export class AppComponent implements OnInit, OnDestroy {
     }
     const alpha = (this.scrollCountdown / 2300).toFixed(1);
     return {
-       height: (this.activeStar.yEnd - this.activeStar.yStart).toFixed(0) + 'px',
-       width: (this.activeStar.xEnd - this.activeStar.xStart).toFixed(0) + 'px',
+       height: Math.abs(this.activeStar.yEnd - this.activeStar.yStart).toFixed(0) + 'px',
+       width: Math.abs(this.activeStar.xEnd - this.activeStar.xStart).toFixed(0) + 'px',
        top: this.activeStar.yStart.toFixed(0) + 'px',
        left: this.activeStar.xStart.toFixed(0) + 'px',
        'box-shadow': ('0 0 0 100vmax rgba(0,0,0,' + alpha + ')')

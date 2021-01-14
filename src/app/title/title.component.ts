@@ -147,7 +147,6 @@ export class TitleComponent implements OnInit {
         updates['/territories/' + key2] = {
           name: result.polity.name,
           description: result.polity.description,
-          thumbnail: result.polity.thumbnail,
           threadlink: result.polity.threadlink,
           owner: result.polity.name,
           star: result.star
