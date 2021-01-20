@@ -16,7 +16,7 @@ export class Icon{
 })
 export class RegionInfoComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   @Input() regionInfo: Region;
 
@@ -28,19 +28,19 @@ export class RegionInfoComponent implements OnInit {
       {
         description: 'Base trade volume',
         value: this.regionInfo.baseTradeValue,
-        icon: ''
+        icon: 'https://i.imgur.com/OS3oc4N.png'
       },
       {
         description: 'Trade nodes',
         value: this.regionInfo.tradeNodes,
-        icon: ''
+        icon: 'https://i.imgur.com/olKjOZM.png'
       },
       {
         description: 'Total trade volume',
         value: this.regionInfo.totalTradeValue,
-        icon: ''
+        icon: 'https://i.imgur.com/Xe4p9er.png'
       },
-    ]
+    ];
   }
 
   get piracyIcons(): Icon[]{
@@ -48,32 +48,32 @@ export class RegionInfoComponent implements OnInit {
       {
         description: 'Prism Concern activity level',
         value: this.regionInfo.prismConcern,
-        icon: ''
+        icon: 'https://i.imgur.com/USowViC.png'
       },
       {
         description: 'Midgard Allthing activity level',
         value: this.regionInfo.midgardAthling,
-        icon: ''
+        icon: 'https://i.imgur.com/3R9cKHw.png'
       },
       {
         description: 'MyCorp activity level',
         value: this.regionInfo.myCorp,
-        icon: ''
+        icon: 'https://i.imgur.com/pOsmtRX.png'
       },
       {
         description: 'The Knights activity level',
         value: this.regionInfo.knights,
-        icon: ''
+        icon: 'https://i.imgur.com/UhCly3C.png'
       },
       {
         description: 'The Pack activity level',
         value: this.regionInfo.pack,
-        icon: ''
+        icon: 'https://i.imgur.com/6Mh6bdX.png'
       },
       {
         description: 'Freebooters activity level',
         value: this.regionInfo.freebooters,
-        icon: ''
+        icon: 'https://i.imgur.com/vYSGAp9.png'
       },
     ].sort((a, b) => b.value - a.value);
   }
@@ -83,32 +83,32 @@ export class RegionInfoComponent implements OnInit {
       {
         description: 'Corrupt Reformers activity level',
         value: this.regionInfo.corruptReformists,
-        icon: ''
+        icon: 'https://i.imgur.com/Kon6CDy.png'
       },
       {
         description: 'Autonomists activity level',
         value: this.regionInfo.autonomists,
-        icon: ''
+        icon: 'https://i.imgur.com/Pqni6ef.png'
       },
       {
         description: 'Petitioners activity level',
         value: this.regionInfo.petitioners,
-        icon: ''
+        icon: 'https://i.imgur.com/zTlwzdk.png'
       },
       {
         description: 'Black Hand activity level',
         value: this.regionInfo.blackHand,
-        icon: ''
+        icon: 'https://i.imgur.com/jnZjiyG.png'
       },
       {
         description: 'Murder Apes activity level',
         value: this.regionInfo.murderApes,
-        icon: ''
+        icon: 'https://i.imgur.com/ePF7i0W.png'
       },
       {
         description: 'Task Force Titan activity level',
         value: this.regionInfo.tfTitans,
-        icon: ''
+        icon: 'https://i.imgur.com/YbBmApx.png'
       },
     ].sort((a, b) => b.value - a.value);
   }

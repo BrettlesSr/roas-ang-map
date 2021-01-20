@@ -1,13 +1,13 @@
 .main-container {
     display: flex;
     flex-direction: row;
+    margin-bottom: 10px;
 }
 
 .text-box {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    margin-left: 0px;
     justify-content: space-between;
 }
 
@@ -20,8 +20,4 @@
     color: black;
     font-size: xx-large;
     margin-bottom: 4px;
-}
-
-.icon {
-    margin: 10px;
 }

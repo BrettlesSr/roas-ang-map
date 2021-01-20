@@ -20,7 +20,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatChipsModule } from '@angular/material/chips';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
 
 import { TitleComponent } from './title/title.component';
 
@@ -52,7 +53,7 @@ import { NumberDisplayComponent } from './number-display/number-display.componen
     ArticlePipe,
     AddPolityToHistoryComponent,
     RegionInfoComponent,
-    NumberDisplayComponent 
+    NumberDisplayComponent
   ],
   imports: [
     BrowserModule,
@@ -72,6 +73,7 @@ import { NumberDisplayComponent } from './number-display/number-display.componen
     MatDatepickerModule,
     MatChipsModule,
     MatExpansionModule,
+    MatCardModule,
     MatNativeDateModule,
     AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
     AngularFireDatabaseModule,

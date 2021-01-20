@@ -64,10 +64,15 @@ export class AppComponent implements OnInit, OnDestroy {
       const img = new Image();
       img.src = url;
     }
-    const notCookie = this.cookieService.getCookie('roas-ang-map.displayNotification');
-    if (notCookie === 'yes') {
-      this.displayNotification = true;
-    } else if (notCookie === 'no'){
+    if (this.mapUrls.length > 1) {
+      const notCookie = this.cookieService.getCookie('roas-ang-map.displayNotification');
+      if (notCookie === 'yes') {
+        this.displayNotification = true;
+      } else if (notCookie === 'no'){
+        this.displayNotification = false;
+      }
+    }
+    else {
       this.displayNotification = false;
     }
   }
@@ -303,8 +308,8 @@ export class AppComponent implements OnInit, OnDestroy {
     return {
        height: Math.abs(this.activeStar.yEnd - this.activeStar.yStart).toFixed(0) + 'px',
        width: Math.abs(this.activeStar.xEnd - this.activeStar.xStart).toFixed(0) + 'px',
-       top: this.activeStar.yStart.toFixed(0) + 'px',
-       left: this.activeStar.xStart.toFixed(0) + 'px',
+       top: (this.activeStar.yStart ?? 0).toFixed(0) + 'px',
+       left: (this.activeStar.xStart ?? 0).toFixed(0) + 'px',
        'box-shadow': ('0 0 0 100vmax rgba(0,0,0,' + alpha + ')')
     };
   }
