@@ -66,6 +66,7 @@ export class TitleComponent implements OnInit {
         this.parent.allStars === undefined) {
         return;
     }
+    const newOptionsList = [];
     for (const star of this.parent.allStars) {
       const starOption = {
         value: star.name,
@@ -73,7 +74,7 @@ export class TitleComponent implements OnInit {
         fullSearchText: star.name,
         order: 0
       };
-      this.options.push(starOption);
+      newOptionsList.push(starOption);
       if (!this.parent.allTerritories) {
         continue;
       }
@@ -85,9 +86,10 @@ export class TitleComponent implements OnInit {
         fullSearchText: star.name + territory.name + territory.description,
         order: 1
         };
-        this.options.push(polityOption);
+        newOptionsList.push(polityOption);
       }
     }
+    this.options = newOptionsList;
   }
 
   openAddHistory(): void {
