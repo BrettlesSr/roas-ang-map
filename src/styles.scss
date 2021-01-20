@@ -41,3 +41,47 @@ body {
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.thumbnail {
+  min-width:auto;
+  height: auto;
+  width:auto;
+  max-height:240px;
+  overflow: hidden;
+  margin: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.external-link-large{  
+  &:visited {
+      color: black;
+  }  
+  &:link {
+      font-size: larger;
+      color: black;
+      text-decoration: none;
+      &:hover {
+          font-size: larger;
+          color: black;
+          text-decoration: underline;
+      }
+      
+  }
+}
+
+.external-link-standard{  
+  &:visited {
+      color: black;
+  }  
+  &:link {
+      color: black;
+      text-decoration: none;
+      &:hover {
+          color: black;
+          text-decoration: underline;
+      }
+      
+  }
+}

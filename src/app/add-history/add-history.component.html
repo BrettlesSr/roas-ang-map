@@ -78,9 +78,9 @@ cdkDragHandle><i class="fas fa-book"></i> Add new historical event</h1>
     <mat-form-field>
       <mat-label>Polities involved</mat-label>
       <mat-select multiple [(value)]="history.politiesInvolved">
-        <input
+        <input 
+          autocomplete="off"
           type="text"
-          aria-label="search box"
           matInput
           class="mat-select-search-input"
           (keyup)="politySearchChanged($event)">  

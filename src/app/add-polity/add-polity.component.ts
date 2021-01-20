@@ -54,8 +54,7 @@ export class AddPolityComponent implements OnInit {
 
   get isValid(): boolean {
     return this.polity.name.length > 0 &&
-    this.polity.description.length > 0 &&
-    this.star.length > 0;
+    this.polity.description.length > 0
   }
 
   starSearchChanged(event): void {

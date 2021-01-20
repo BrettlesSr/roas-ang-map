@@ -19,6 +19,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
 
 import { TitleComponent } from './title/title.component';
 
@@ -31,6 +34,11 @@ import { AddTerritoryComponent } from './add-territory/add-territory.component';
 import { AddStarComponent } from './add-star/add-star.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AddPolityComponent } from './add-polity/add-polity.component';
+import { PolityInfoComponent } from './polity-info/polity-info.component';
+import { ArticlePipe } from './article.pipe';
+import { AddPolityToHistoryComponent } from './add-polity-to-history/add-polity-to-history.component';
+import { RegionInfoComponent } from './region-info/region-info.component';
+import { NumberDisplayComponent } from './number-display/number-display.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +48,12 @@ import { AddPolityComponent } from './add-polity/add-polity.component';
     AddHistoryComponent,
     AddTerritoryComponent,
     AddStarComponent,
-    AddPolityComponent    
+    AddPolityComponent,
+    PolityInfoComponent,
+    ArticlePipe,
+    AddPolityToHistoryComponent,
+    RegionInfoComponent,
+    NumberDisplayComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +71,9 @@ import { AddPolityComponent } from './add-polity/add-polity.component';
     MatDialogModule,
     MatSelectModule,
     MatDatepickerModule,
+    MatChipsModule,
+    MatExpansionModule,
+    MatCardModule,
     MatNativeDateModule,
     AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
     AngularFireDatabaseModule,
