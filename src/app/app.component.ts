@@ -305,11 +305,12 @@ export class AppComponent implements OnInit, OnDestroy {
      };
     }
     const alpha = (this.scrollCountdown / 2300).toFixed(1);
+    console.log(this.activeStar);
     return {
        height: Math.abs(this.activeStar.yEnd - this.activeStar.yStart).toFixed(0) + 'px',
        width: Math.abs(this.activeStar.xEnd - this.activeStar.xStart).toFixed(0) + 'px',
-       top: (this.activeStar.yStart ?? 0).toFixed(0) + 'px',
-       left: (this.activeStar.xStart ?? 0).toFixed(0) + 'px',
+       top: ((this.activeStar.yStart ?? 0) * 1).toFixed(0) + 'px',
+       left: ((this.activeStar.xStart ?? 0) * 1).toFixed(0) + 'px',
        'box-shadow': ('0 0 0 100vmax rgba(0,0,0,' + alpha + ')')
     };
   }
