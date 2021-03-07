@@ -1,0 +1,25 @@
+<h1 mat-dialog-title cdkDrag
+cdkDragRootElement=".cdk-overlay-pane" 
+cdkDragHandle><i class="fas fa-star"></i> Remap an existing star system</h1>
+<div mat-dialog-content>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Star name</mat-label>
+      <input matInput disabled [(ngModel)]="star.name">
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field>
+      <mat-label>Image map code</mat-label>
+      <input matInput required (change)="codeChanged($event)">
+    </mat-form-field>
+  </div>
+
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+  <button mat-button (click)="next()" cdkFocusInitial>Next</button>
+</div>

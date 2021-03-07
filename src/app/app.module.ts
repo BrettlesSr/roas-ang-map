@@ -39,6 +39,7 @@ import { ArticlePipe } from './article.pipe';
 import { AddPolityToHistoryComponent } from './add-polity-to-history/add-polity-to-history.component';
 import { RegionInfoComponent } from './region-info/region-info.component';
 import { NumberDisplayComponent } from './number-display/number-display.component';
+import { EditStarsComponent } from './edit-stars/edit-stars.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { NumberDisplayComponent } from './number-display/number-display.componen
     ArticlePipe,
     AddPolityToHistoryComponent,
     RegionInfoComponent,
-    NumberDisplayComponent
+    NumberDisplayComponent,
+    EditStarsComponent
   ],
   imports: [
     BrowserModule,
