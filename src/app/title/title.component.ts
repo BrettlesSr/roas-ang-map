@@ -10,6 +10,7 @@ import { AddTerritoryComponent } from '../add-territory/add-territory.component'
 import { AddStarComponent } from '../add-star/add-star.component';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AddPolityComponent } from '../add-polity/add-polity.component';
+import { EditStarsComponent } from '../edit-stars/edit-stars.component';
 
 @Component({
   selector: 'app-title',
@@ -66,6 +67,7 @@ export class TitleComponent implements OnInit {
         this.parent.allStars === undefined) {
         return;
     }
+    const newOptions = [];
     for (const star of this.parent.allStars) {
       const starOption = {
         value: star.name,
@@ -73,7 +75,7 @@ export class TitleComponent implements OnInit {
         fullSearchText: star.name,
         order: 0
       };
-      this.options.push(starOption);
+      newOptions.push(starOption);
       if (!this.parent.allTerritories) {
         continue;
       }
@@ -85,9 +87,10 @@ export class TitleComponent implements OnInit {
         fullSearchText: star.name + territory.name + territory.description,
         order: 1
         };
-        this.options.push(polityOption);
+        newOptions.push(polityOption);
       }
     }
+    this.options = newOptions;
   }
 
   openAddHistory(): void {
@@ -183,6 +186,15 @@ export class TitleComponent implements OnInit {
       }
 
       this.db.database.ref().update(updates);
+    });
+  }
+
+  openEditStars(): void {
+    const dialogRef = this.dialog.open(EditStarsComponent, {
+      width: '600px',
+      data: {
+        allStars: this.parent.allStars
+      }
     });
   }
 }
