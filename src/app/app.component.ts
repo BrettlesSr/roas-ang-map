@@ -34,7 +34,7 @@ export class AppComponent implements OnInit, OnDestroy {
   allRegions: Region[];
   allTerritories: Territory[];
   x = false;
-  mapUrls = ['https://i.imgur.com/sNeIzPH.jpg'];
+  mapUrls = ['https://i.imgur.com/jqm6NP3.jpg'];
   mapIndex = 0;
   mapDimension = 3000;
   cookieService = new CookieService();
