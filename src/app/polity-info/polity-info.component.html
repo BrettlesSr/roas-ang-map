@@ -17,9 +17,9 @@
 
     </mat-tab>
 
-    <mat-tab label="Territories">
+    <mat-tab label="Territories" *ngIf="filteredTerritories && filteredTerritories.length > 0">
 
-        <div *ngIf="filteredTerritories && filteredTerritories.length > 0" class="title">
+        <div class="title">
             Territories In {{polityInfo.name | article}}
         </div>
 
@@ -42,6 +42,7 @@
                     </mat-chip>
                 </mat-chip-list>
             </div>
+
         </div>
 
     </mat-tab>
@@ -79,6 +80,34 @@
                 </div>
             </mat-expansion-panel>
         </mat-accordion>
+
+    </mat-tab>
+
+    <mat-tab label="Relations" *ngIf="groupedRelations && groupedRelations.length > 0">
+
+        <div *ngIf="polityInfo.polityType !== 5" class="title">
+            Foreign Relations Of {{polityInfo.name | article}}
+        </div>
+
+        <div *ngIf="polityInfo.polityType === 5" class="title">
+            Membership Of {{polityInfo.name | article}}
+        </div>
+
+        <div *ngFor="let relationGroup of groupedRelations" class="tab-content">
+
+            <div>
+                {{relationGroup.descriptor}}
+            </div>
+            
+            <div>
+                <mat-chip-list>
+                    <mat-chip *ngFor="let relation of relationGroup.relations" color="primary" (click)="openPolity(relation)" class="link-chip">
+                        {{relation}}
+                    </mat-chip>
+                </mat-chip-list>
+            </div>
+            
+        </div>
 
     </mat-tab>
 

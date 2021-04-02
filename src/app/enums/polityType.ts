@@ -3,5 +3,6 @@ export enum PolityType {
     UNTaskforce,
     PMC,
     Alien,
-    SolGreatPower
+    SolGreatPower,
+    Supranational
 }
