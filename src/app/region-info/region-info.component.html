@@ -14,7 +14,16 @@
             </app-number-display>
         </div>   
         <div *ngIf="regionInfo.baseTradeValue === 0" class="alert">
-            <i class="fas fa-exclamation-triangle"></i> This region does not permit human commerce. <i class="fas fa-exclamation-triangle"></i>
+
+            <i class="fas fa-exclamation-triangle"></i>
+            <span *ngIf="regionInfo.name !== 'Triumph'">
+                This region does not permit human commerce.
+            </span>
+            <span *ngIf="regionInfo.name === 'Triumph'">
+                Commerce, vetiti si lege senatus ordinem transferre moliretur.
+            </span>
+            <i class="fas fa-exclamation-triangle"></i>
+
         </div>     
 
     </mat-tab>

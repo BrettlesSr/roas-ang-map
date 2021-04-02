@@ -154,7 +154,9 @@ export class AppComponent implements OnInit, OnDestroy {
     .subscribe(
       (stars: Star[]) => {
         this.allStars = stars;
-        this.activeStar = this.allStars[0];
+        if (this.activeStar === undefined || this.allStars.find(s => s.name === this.activeStar.name) === undefined) {
+          this.activeStar = this.allStars[0];
+        }
         this.titleChild.buildOptions();
         this.db.list('/stars').snapshotChanges()
         .pipe(
