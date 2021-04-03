@@ -134,7 +134,8 @@ export class TitleComponent implements OnInit {
     const dialogRef = this.dialog.open(AddPolityComponent, {
       width: '600px',
       data: {
-        possibleStars: this.parent.allStars.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0)
+        possibleStars: this.parent.allStars.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0),
+        possiblePolities: this.parent.allPolities.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0)
       }
     });
 
@@ -154,7 +155,17 @@ export class TitleComponent implements OnInit {
           owner: result.polity.name,
           star: result.star
         };
-      }      
+      }
+      if (result.members && result.members.length > 0) {
+        for (const member of result.members) {
+          const key3 = this.db.database.ref().child('relationships').push().key;
+          updates['/relationships/' + key3] = {
+            APolity: result.polity.name,
+            BPolity: member,
+            groupType: 'member'
+          };
+        }
+      }
       this.db.database.ref().update(updates);
     });
   }

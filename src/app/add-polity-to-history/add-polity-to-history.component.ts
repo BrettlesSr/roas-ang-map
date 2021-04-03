@@ -23,7 +23,7 @@ export class AddPolityToHistoryComponent implements OnInit {
   onNoClick(): void {
     this.dialogRef.close();
   }
-  
+
   ngOnInit(): void {
   }
 

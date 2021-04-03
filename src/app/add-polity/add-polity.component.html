@@ -66,6 +66,24 @@ cdkDragHandle><i class="fas fa-globe-americas"></i> Add new polity</h1>
     </mat-form-field>
   </div>  
 
+  <div>
+    <mat-form-field>
+      <mat-label>Members</mat-label>
+      <mat-select multiple [(value)]="members">
+        <input
+          type="text"
+          aria-label="search box"
+          matInput
+          autofocus
+          class="mat-select-search-input"
+          (keyup)="politySearchChanged($event)">  
+          <mat-option *ngFor="let polity of data.possiblePolities" [value]="polity.name" [ngStyle]="{ display : isPolityVisible(polity.name) ? '' : 'none' }">
+          {{polity.name}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div> 
+
 </div>
 
 <div mat-dialog-actions>

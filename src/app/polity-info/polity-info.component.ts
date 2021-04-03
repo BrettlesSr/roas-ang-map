@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Polity } from '../models/polity';
 import { Territory } from '../models/territory';
@@ -23,7 +23,7 @@ export interface RelationGroup{
   styleUrls: ['./polity-info.component.scss']
 })
 
-export class PolityInfoComponent implements OnInit {
+export class PolityInfoComponent implements OnInit, OnChanges {
   constructor(public dialog: MatDialog, private db: AngularFireDatabase) {}
 
   @Input() polityInfo: Polity;
@@ -39,7 +39,13 @@ export class PolityInfoComponent implements OnInit {
   groups: Group[] = [];
   groupedRelations: RelationGroup[] = [];
 
-ngOnInit(): void {
+  ngOnChanges(changes): void {
+    this.orderedHistory = this.getOrderedHistory();
+    this.filteredTerritories = this.getFilteredTerritories();
+    this.groupedRelations = this.getGroupedRelations();
+  }
+
+  ngOnInit(): void {
     this.db.list('/history').valueChanges().subscribe((h: History[]) => {
       this.history = h;
       this.db.list('/history')
@@ -117,6 +123,8 @@ get stateType(): string {
         return "Taskforce";
       case PolityType.SolGreatPower:
         return "State";
+        case PolityType.Supranational:
+        return "Group";
       default:
         return "Polity";
     }
@@ -132,9 +140,11 @@ getTerritoryDescriptor(territory: Territory): string {
         case PolityType.PMC:
         case PolityType.UNTaskforce:
           return `Operating base of ${ article }${ this.polityInfo.name }, hosted within the ${ territory.star } system.`;
+        case PolityType.Supranational:
+          return `Centre of ${ article }${ this.polityInfo.name }, hosted within the ${ territory.star } system.`
         default:
           return `Capital of ${ article }${ this.polityInfo.name }, located within the ${ territory.star } system.`;
-      }      
+      }
     } else if (territory.description.length === 0) {
       return `Located within the system ${ territory.star }.`;
     } else {
