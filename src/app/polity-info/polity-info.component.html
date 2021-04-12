@@ -15,6 +15,12 @@
             {{polityInfo.description}}
         </div>
 
+        <div *ngIf="polityInfo.threadlink && polityInfo.threadlink.length > 0" class="tab-content"> 
+            <span class="bold">Link to thread: </span>
+            <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank" class="external-link-standard">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i>
+            </a>
+        </div>
+
     </mat-tab>
 
     <mat-tab label="Territories" *ngIf="filteredTerritories && filteredTerritories.length > 0">
@@ -38,7 +44,7 @@
             </div>
             <div>
                 <mat-chip-list>
-                    <mat-chip color="primary" (click)="openStar(territory.star)" class="link-chip"> {{territory.star}}
+                    <mat-chip color="primary" (click)="openStar(territory.star)" class="link-chip"> Go to star →
                     </mat-chip>
                 </mat-chip-list>
             </div>

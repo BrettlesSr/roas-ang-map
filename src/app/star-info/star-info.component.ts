@@ -4,6 +4,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { map } from 'rxjs/operators';
 import { AddPolityToHistoryComponent } from '../add-polity-to-history/add-polity-to-history.component';
 import { AppComponent } from '../app.component';
+import { PolityType } from '../enums/polityType';
 import { History } from '../models/history';
 import { Star } from '../models/star';
 import { Territory } from '../models/territory';

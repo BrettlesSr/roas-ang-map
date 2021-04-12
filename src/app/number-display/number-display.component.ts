@@ -12,6 +12,7 @@ export class NumberDisplayComponent implements OnInit {
   @Input() iconSource: string;
   @Input() description: string;
   @Input() value: number;
+  @Input() tooltip: string;
 
   ngOnInit(): void {
   }

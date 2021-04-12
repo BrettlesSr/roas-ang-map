@@ -10,7 +10,8 @@
              *ngFor="let icon of tradeIcons"
              [description]="icon.description"
              [value]="icon.value"
-             [iconSource]="icon.icon">
+             [iconSource]="icon.icon"
+             [tooltip]="icon.tooltip">
             </app-number-display>
         </div>   
         <div *ngIf="regionInfo.baseTradeValue === 0" class="alert">
@@ -45,7 +46,8 @@
              *ngFor="let icon of piracyIcons"
              [description]="icon.description"
              [value]="icon.value"
-             [iconSource]="icon.icon">
+             [iconSource]="icon.icon"
+             [tooltip]="icon.tooltip">
             </app-number-display>
         </div>        
 
@@ -62,7 +64,8 @@
              *ngFor="let icon of terrorIcons"
              [description]="icon.description"
              [value]="icon.value"
-             [iconSource]="icon.icon">
+             [iconSource]="icon.icon"
+             [tooltip]="icon.tooltip">
             </app-number-display>
         </div>        
 

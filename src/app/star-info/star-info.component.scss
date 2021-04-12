@@ -8,12 +8,25 @@
     margin-bottom: 20px;
 }
 
+
+.link-chip{
+    cursor: pointer;
+}
+
 .non-link {
     font-size: larger;
     color: black;
     text-decoration: none;
 }
 
-.link-chip{
-    cursor: pointer;
+.fake-external-link-large{  
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+    &:hover {
+        font-size: larger;
+        color: black;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
