@@ -80,8 +80,12 @@
             <div>
                 <div class="non-link">Trade Node</div>
             </div>
-            <div>
-                This system contains {{starInfo.nodesPresent}} Trade Node(s).
+            <div *ngIf="starInfo.nodesPresent > 1">
+                This system contains {{starInfo.nodesPresent}} Trade Nodes.
+                Access to it increases the effective available trade volume of a system by +{{starInfo.nodesPresent * 100}}%.
+            </div>
+            <div *ngIf="starInfo.nodesPresent === 1">
+                This system contains {{starInfo.nodesPresent}} Trade Node.
                 Access to it increases the effective available trade volume of a system by +{{starInfo.nodesPresent * 100}}%.
             </div>
         </div>
