@@ -12,7 +12,6 @@ import { Observable, Subscription } from 'rxjs';
 import { SidebarMode } from './enums/sidebarMode';
 import { Region } from './models/region';
 import { PiracyState } from './enums/piracyState';
-import { MatChipSelectionChange } from '@angular/material/chips';
 
 @Component({
   selector: 'app-root',

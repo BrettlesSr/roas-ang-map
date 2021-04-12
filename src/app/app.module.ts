@@ -40,6 +40,7 @@ import { AddPolityToHistoryComponent } from './add-polity-to-history/add-polity-
 import { RegionInfoComponent } from './region-info/region-info.component';
 import { NumberDisplayComponent } from './number-display/number-display.component';
 import { EditStarsComponent } from './edit-stars/edit-stars.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { EditStarsComponent } from './edit-stars/edit-stars.component';
     MatExpansionModule,
     MatCardModule,
     MatNativeDateModule,
+    MatTooltipModule,
     AngularFireModule.initializeApp(environment.firebase, 'roas-ang-map'),
     AngularFireDatabaseModule,
     DragDropModule,

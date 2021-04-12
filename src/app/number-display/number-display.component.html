@@ -2,10 +2,13 @@
     <img src="{{iconSource}}" width="60" height="60">
     <div class="text-box">
         <div class="description">
-            {{description}}
+            {{description}} <i class="fas fa-question-circle fa-xs tooltip">
+                <span class="tooltiptext">{{tooltip}}</span>
+            </i>
         </div>
         <div class="value">
             {{value}}
         </div>
     </div>
 </mat-card>
+
