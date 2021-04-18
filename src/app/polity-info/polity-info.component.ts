@@ -10,6 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { map } from 'rxjs/operators';
 import { Relationship } from '../models/relationship';
 import { Group } from '../models/group';
+import { isNullOrUndefined } from 'util';
 
 export interface RelationGroup{
   type: string;
@@ -184,5 +185,9 @@ openAddPolityToHistoryModal(history: History): void {
       updates['/history/'+ key] = result;
       this.db.database.ref().update(updates);
     });
+  }
+
+  isUrl(input: string): boolean{
+    return input.startsWith('https://') || input.startsWith('http://');
   }
 }
