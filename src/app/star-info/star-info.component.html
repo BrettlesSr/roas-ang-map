@@ -12,7 +12,7 @@
         <div *ngFor="let territory of filteredTerritories" class="tab-content">
 
             <div>
-                <div class="fake-external-link-large">{{territory.name}}</div>
+                <div class="fake-external-link-large" (click)="openPolity(territory.owner)">{{territory.name}}</div>
             </div>
 
             <div *ngIf="territory.thumbnail && territory.thumbnail.length > 0">

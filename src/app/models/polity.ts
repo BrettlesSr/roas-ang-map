@@ -9,4 +9,9 @@ export class Polity {
     threadlink: string;
     gdp: number;
     type: PolityType;
+
+    traits: string[];
+    flaws: string[];
+    colonyThreadlink: string;
+    oobThreadlink: string;
 }

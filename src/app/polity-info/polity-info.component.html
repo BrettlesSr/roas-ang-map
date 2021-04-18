@@ -2,9 +2,10 @@
     <mat-tab label="{{stateType}}">
 
         <div class="title">
-            <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank"
+            <!-- <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank"
                 class="external-link-large">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i></a>
-            <div *ngIf="!polityInfo.threadlink" class="non-link">{{polityInfo.name}}</div>
+            <div *ngIf="!polityInfo.threadlink" class="non-link">{{polityInfo.name}}</div> -->
+            <div class="non-link">{{polityInfo.name}}</div>
         </div>
 
         <div *ngIf="polityInfo.thumbnail && polityInfo.thumbnail.length > 0">
@@ -15,10 +16,40 @@
             {{polityInfo.description}}
         </div>
 
-        <div *ngIf="polityInfo.threadlink && polityInfo.threadlink.length > 0" class="tab-content"> 
-            <span class="bold">Link to thread: </span>
+        <div *ngIf="polityInfo.threadlink && isUrl(polityInfo.threadlink)" class="tab-content"> 
+            <span class="bold">Link to original post: </span>
             <a *ngIf="polityInfo.threadlink" href="{{polityInfo.threadlink}}" target="_blank" class="external-link-standard">{{polityInfo.name}} <i class="fas fa-external-link-alt fa-xs"></i>
             </a>
+        </div>
+
+        <div *ngIf="polityInfo.oobThreadlink && isUrl(polityInfo.oobThreadlink)" class="tab-content"> 
+            <span class="bold">Link to Order of Battle (OOB): </span>
+            <a *ngIf="polityInfo.oobThreadlink" href="{{polityInfo.oobThreadlink}}" target="_blank" class="external-link-standard"> Jane's Warfleets and Formations <i class="fas fa-external-link-alt fa-xs"></i>
+            </a>
+        </div>
+
+        <div *ngIf="polityInfo.colonyThreadlink && isUrl(polityInfo.colonyThreadlink)" class="tab-content"> 
+            <span class="bold">Link to Colonization and Trade post: </span>
+            <a *ngIf="polityInfo.colonyThreadlink" href="{{polityInfo.colonyThreadlink}}" target="_blank" class="external-link-standard">Colonies <i class="fas fa-external-link-alt fa-xs"></i>
+            </a>
+        </div>
+
+        <div *ngIf="polityInfo.traits && polityInfo.traits.length > 0" class="tab-content">
+            <span class="bold">Traits: </span>
+            <mat-chip-list>
+                <mat-chip *ngFor="let trait of polityInfo.traits" color="primary">
+                    {{trait}}
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+
+        <div *ngIf="polityInfo.flaws && polityInfo.flaws.length > 0" class="tab-content">
+            <span class="bold">Flaws: </span>
+            <mat-chip-list>
+                <mat-chip *ngFor="let flaw of polityInfo.flaws" color="primary">
+                    {{flaw}}
+                </mat-chip>
+            </mat-chip-list>
         </div>
 
     </mat-tab>

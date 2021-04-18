@@ -180,6 +180,27 @@ export class AppComponent implements OnInit, OnDestroy {
             this.allPolities[i].key = k[i];
           }
         });
+      this.fetchGoogleSheet('1PRrKFV4U7aFBa7jNIaLLKGGZR9BkFs41NX2JN0q6CLs', 'Traits and Colonies')
+        .subscribe((csv: string) => {
+          this.papa.parse(csv, {
+            header: true,
+            complete: (result) => {
+              for (const polityRecord of result.data) {
+               const polity = this.bestFit(polityRecord, this.allPolities);
+               if (polity === undefined) {
+                 continue;
+               }
+               polity.oobThreadlink = polityRecord['Link to OOB '];
+               polity.colonyThreadlink = polityRecord['Colonies (Link to post)'];
+               polity.traits = (polityRecord['Trait 1'] + ',' + polityRecord['Trait 2'] + ','  + polityRecord['Trait 3'] + ','  +
+                    polityRecord['Trait 4'] + ',' + polityRecord['Trait 5'] + ',' + polityRecord['Trait 6'] + ',' +
+                    polityRecord['Any Other Traits']).split(',').map(x => x.trim()).filter(y => y !== '');
+               polity.flaws = (polityRecord['Flaw 1'] + ',' + polityRecord['Flaw 2'] + ',' + polityRecord['Any Other Flaws'])
+                    .split(',').map(x => x.trim()).filter(y => y !== '');
+              }
+            }
+          });
+        });
     });
 
     this.db.list('/territories').valueChanges().subscribe((t: Territory[]) => {
@@ -306,7 +327,6 @@ export class AppComponent implements OnInit, OnDestroy {
      };
     }
     const alpha = (this.scrollCountdown / 2300).toFixed(1);
-    console.log(this.activeStar);
     return {
        height: Math.abs(this.activeStar.yEnd - this.activeStar.yStart).toFixed(0) + 'px',
        width: Math.abs(this.activeStar.xEnd - this.activeStar.xStart).toFixed(0) + 'px',
@@ -314,5 +334,57 @@ export class AppComponent implements OnInit, OnDestroy {
        left: ((this.activeStar.xStart ?? 0) * 1).toFixed(0) + 'px',
        'box-shadow': ('0 0 0 100vmax rgba(0,0,0,' + alpha + ')')
     };
+  }
+
+  essenceOfString(input: string): string{
+    let lower = input.trim().toLowerCase();
+    if (lower.startsWith('the')) {
+      lower = lower.replace('the', '');
+    }
+    if (lower.startsWith('~ ')) {
+      lower = lower.replace('~ ', '');
+    }
+    lower = lower.replace(/ /g, '');
+    lower = lower.replace('taskforce', 'tf');
+    lower = lower.replace('unitednations', 'un');
+    return lower;
+  }
+
+  compareCountryStrings(inputRaw: string, properName: string): boolean {
+    if (inputRaw === undefined ) {
+      return false;
+    }
+    if (this.essenceOfString(inputRaw) === this.essenceOfString(properName)){
+      return true;
+    }
+    if (this.essenceOfString(properName) === 'torgatufreehold') {
+      return false;
+    }
+    if (this.essenceOfString(properName) === 'un') {
+      return false;
+    }
+    if (this.essenceOfString(inputRaw) === 'eisenhower' && this.essenceOfString(properName) === 'unitedamericancommonwealth') {
+      return true;
+    }
+    if (this.essenceOfString(inputRaw) === 'untfranger' && this.essenceOfString(properName) === 'tfranger') {
+      return true;
+    }
+    if (this.essenceOfString(inputRaw) === 'haf' && this.essenceOfString(properName) === 'habitatadaptionfoundation') {
+      return true;
+    }
+    if (this.essenceOfString(inputRaw).includes(this.essenceOfString(properName))) {
+      return true;
+    }
+    if (this.essenceOfString(properName).includes(this.essenceOfString(inputRaw))) {
+      return true;
+    }
+  }
+
+  bestFit(record: any, allPolities: Polity[]): Polity {
+    const pureMatch = allPolities.find(r => this.compareCountryStrings(record['Player'], r.name));
+    if (pureMatch !== undefined) {
+      return pureMatch;
+    }
+    return undefined;
   }
 }
