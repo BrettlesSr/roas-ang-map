@@ -381,7 +381,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   bestFit(record: any, allPolities: Polity[]): Polity {
-    const pureMatch = allPolities.find(r => this.compareCountryStrings(record['Player'], r.name));
+    const pureMatch = allPolities.find(r => record['Formal Name (for map)'] === r.name);
     if (pureMatch !== undefined) {
       return pureMatch;
     }
