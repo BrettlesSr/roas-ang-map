@@ -190,8 +190,8 @@ export class AppComponent implements OnInit, OnDestroy {
                if (polity === undefined) {
                  continue;
                }
-               polity.oobThreadlink = polityRecord['Link to OOB '];
-               polity.colonyThreadlink = polityRecord['Colonies (Link to post)'];
+               polity.oobThreadlink = polityRecord['Link to OOB '].split(' ').find(x => this.isUrl(x));
+               polity.colonyThreadlink = polityRecord['Colonies (Link to post)'].split(' ').find(x => this.isUrl(x));
                polity.traits = (polityRecord['Trait 1'] + ',' + polityRecord['Trait 2'] + ','  + polityRecord['Trait 3'] + ','  +
                     polityRecord['Trait 4'] + ',' + polityRecord['Trait 5'] + ',' + polityRecord['Trait 6'] + ',' +
                     polityRecord['Any Other Traits']).split(',').map(x => x.trim()).filter(y => y !== '');
@@ -386,5 +386,9 @@ export class AppComponent implements OnInit, OnDestroy {
       return pureMatch;
     }
     return undefined;
+  }
+
+  isUrl(input: string): boolean{
+    return input.startsWith('https://') || input.startsWith('http://');
   }
 }
