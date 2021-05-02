@@ -12,6 +12,8 @@ import { Observable, Subscription } from 'rxjs';
 import { SidebarMode } from './enums/sidebarMode';
 import { Region } from './models/region';
 import { PiracyState } from './enums/piracyState';
+import { SubMapModalComponent } from './sub-map-modal/sub-map-modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
@@ -34,6 +36,8 @@ export class AppComponent implements OnInit, OnDestroy {
   allTerritories: Territory[];
   x = false;
   mapUrls = ['https://i.imgur.com/gY7u8Id.jpg'];
+  drifterSubMapUrl = 'https://i.imgur.com/WMxWNbO.jpg';
+  drifterSubMapDimension = 1000;
   mapIndex = 0;
   mapDimension = 3000;
   cookieService = new CookieService();
@@ -43,7 +47,11 @@ export class AppComponent implements OnInit, OnDestroy {
   private panZoomAPI: PanZoomAPI;
   private apiSubscription: Subscription;
 
-  constructor(private http: HttpClient, private parser: Papa, private db: AngularFireDatabase, private papa: Papa) {
+  constructor(
+    private http: HttpClient,
+    private db: AngularFireDatabase,
+    private papa: Papa,
+    public dialog: MatDialog) {
   }
 
   @ViewChild('drawer') drawer: { open: () => void; close: () => void; };
@@ -98,6 +106,18 @@ export class AppComponent implements OnInit, OnDestroy {
       this.activeRegion = matchingRegions[0];
       this.mode = SidebarMode.Region;
     }
+  }
+
+  openSubMap(subMapUrl: string, subMapDimension: number, subMapTitle: string): void {
+    this.dialog.open(SubMapModalComponent, {
+      width: '800px',
+      height: '800px',
+      data: { subMapUrl, subMapDimension, subMapTitle }
+    });
+  }
+
+  openDrifterSubMap(): void{
+    this.openSubMap(this.drifterSubMapUrl, this.drifterSubMapDimension, 'Drifter Space');
   }
 
   closeDrawer(): void {
@@ -190,8 +210,8 @@ export class AppComponent implements OnInit, OnDestroy {
                if (polity === undefined) {
                  continue;
                }
-               polity.oobThreadlink = polityRecord['Link to OOB '];
-               polity.colonyThreadlink = polityRecord['Colonies (Link to post)'];
+               polity.oobThreadlink = polityRecord['Link to OOB '].split(' ').find(x => this.isUrl(x));
+               polity.colonyThreadlink = polityRecord['Colonies (Link to post)'].split(' ').find(x => this.isUrl(x));
                polity.traits = (polityRecord['Trait 1'] + ',' + polityRecord['Trait 2'] + ','  + polityRecord['Trait 3'] + ','  +
                     polityRecord['Trait 4'] + ',' + polityRecord['Trait 5'] + ',' + polityRecord['Trait 6'] + ',' +
                     polityRecord['Any Other Traits']).split(',').map(x => x.trim()).filter(y => y !== '');
@@ -386,5 +406,9 @@ export class AppComponent implements OnInit, OnDestroy {
       return pureMatch;
     }
     return undefined;
+  }
+
+  isUrl(input: string): boolean{
+    return input.startsWith('https://') || input.startsWith('http://');
   }
 }

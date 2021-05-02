@@ -117,17 +117,17 @@ export class PolityInfoComponent implements OnInit, OnChanges {
 get stateType(): string {
     switch (this.polityInfo.type) {
       case PolityType.VergeState:
-        return "State";
+        return 'State';
       case PolityType.PMC:
-        return "PMC";
+        return 'PMC';
       case PolityType.UNTaskforce:
-        return "Taskforce";
+        return 'Taskforce';
       case PolityType.SolGreatPower:
-        return "State";
+        return 'State';
         case PolityType.Supranational:
-        return "Group";
+        return 'Group';
       default:
-        return "Polity";
+        return 'Polity';
     }
   }
 
@@ -142,7 +142,7 @@ getTerritoryDescriptor(territory: Territory): string {
         case PolityType.UNTaskforce:
           return `Operating base of ${ article }${ this.polityInfo.name }, hosted within the ${ territory.star } system.`;
         case PolityType.Supranational:
-          return `Centre of ${ article }${ this.polityInfo.name }, hosted within the ${ territory.star } system.`
+          return `Centre of ${ article }${ this.polityInfo.name }, hosted within the ${ territory.star } system.`;
         default:
           return `Capital of ${ article }${ this.polityInfo.name }, located within the ${ territory.star } system.`;
       }
@@ -173,7 +173,7 @@ openAddPolityToHistoryModal(history: History): void {
       width: '600px',
       data: {
         possiblePolities: this.parent.allPolities.sort((a, b) => (a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0),
-        history: history
+        history
       }
     });
     dialogRef.afterClosed().subscribe(result => {
@@ -182,7 +182,7 @@ openAddPolityToHistoryModal(history: History): void {
       }
       const key = result.key;
       const updates = {};
-      updates['/history/'+ key] = result;
+      updates['/history/' + key] = result;
       this.db.database.ref().update(updates);
     });
   }
