@@ -253,7 +253,7 @@ export class AppComponent implements OnInit, OnDestroy {
                region.dominantSoVFaction = this.asNumber(terror['Dominant SOV Faction']);
                region.murderApes = this.asNumber(terror['Murder Apes']);
                region.petitioners = this.asNumber(terror['Petitioners']);
-               region.tfTitans = this.asNumber(terror['TF Titans']);
+               region.tfTitans = this.asNumber(terror['TF Titan']);
               }
             }
           });
