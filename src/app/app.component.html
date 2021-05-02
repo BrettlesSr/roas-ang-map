@@ -31,6 +31,7 @@
       <map name="starmap">
         <area *ngFor="let star of allStars" shape="rect" coords="{{star.xStart}}, {{star.yStart}}, {{star.xEnd}}, {{star.yEnd}}" alt="{{star.name}}" (click)="openDrawerToStar(star.name)">
         <area *ngFor="let region of allRegions" shape="rect" coords="{{region.xStart}}, {{region.yStart}}, {{region.xEnd}}, {{region.yEnd}}" alt="{{region.name}}" (click)="openDrawerToRegion(region.name)">
+        <area shape="rect" coords="1237,1627,1338,1669" alt="drifter space" (click)="openDrifterSubMap()">
         <area shape="rect" coords="0,0,{{mapDimension}},{{mapDimension}}" (click)="closeDrawer()"> 
       </map>
       <div

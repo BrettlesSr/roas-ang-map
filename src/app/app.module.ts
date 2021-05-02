@@ -41,6 +41,7 @@ import { RegionInfoComponent } from './region-info/region-info.component';
 import { NumberDisplayComponent } from './number-display/number-display.component';
 import { EditStarsComponent } from './edit-stars/edit-stars.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { SubMapModalComponent } from './sub-map-modal/sub-map-modal.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     AddPolityToHistoryComponent,
     RegionInfoComponent,
     NumberDisplayComponent,
-    EditStarsComponent
+    EditStarsComponent,
+    SubMapModalComponent
   ],
   imports: [
     BrowserModule,
